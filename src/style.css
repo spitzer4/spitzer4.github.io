@@ -1,18 +1,23 @@
 section {
-	height: 100vh;
 	background-color: white;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 .hero {
 	background-color: white;
-	height: 100vh;
 	font-size: 40px;
 }
 
-nav {
+.greedy-nav {
 	display: flex;
 	justify-content: space-between;
+	background: #f3f3f3;
+	color: #000000;
+}
+
+.greedy-nav a:hover {
+	color: #000000;
+	text-decoration: underline;
 }
 
 ul {
@@ -28,14 +33,20 @@ li {
 }
 
 h1 {
-	font-size: 90px;
-	margin: 0px;
+	font-size: 50px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 35px;
+	margin-top: 50px;
+	margin-bottom: 20px;
 }
 
 .hero-text {
 	margin-left: 40px;
 	margin-right: 40px;
-	margin-bottom: 400px;
 }
 
 p {
@@ -45,23 +56,63 @@ p {
 
 .hero-area {
 	display: flex;
-	height: 100%;
 	justify-content: space-between;
 }
 
 .socials {
-	justify-content: center;
+	margin-left: 0px;
+	justify-content: space-between;
 }
 
 img {
-	height: 50px;
-	width: 50px;
+	height: 100px;
+	width: 100px;
 }
 
-.github {
-	margin-left: auto;
+.logo {
+	height: 60px;
+	width: 60px;
+	margin: 40px;
 }
 
-.linkedin {
-	margin-left: auto;
+.headshot {
+	height: 140px;
+	width: 140px;
+	border-radius: 50%;
+	padding: 50px;
+}
+
+.project-card {
+	width: 350px;
+	height: 400px;
+}
+
+.project-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.project-title {
+	margin-left: 40px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.project-text {
+	font-size: 15px;
+}
+
+.project-image {
+	width: 350px;
+	height: 400px;
+}
+
+h3 {
+	text-align: center;
+}
+
+.read-more {
+	text-align: center;
+	font-size: 15px;
 }
