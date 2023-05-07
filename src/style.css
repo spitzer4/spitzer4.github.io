@@ -1,3 +1,8 @@
+body {
+	background-color: #F0EAD2;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 section {
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -17,7 +22,7 @@ section {
 	display: flex;
 	justify-content: space-between;
 	/* background: #DDC9B9; */
-	color: #3A312C;
+	color: #6C584C;
 	opacity: 0.8;
 	text-decoration: none;
 	/* background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 28px ), repeating-linear-gradient( #AD988B, #AD988B ); */
@@ -37,21 +42,11 @@ section {
 }
 
 ul {
-	width: 100%;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+	list-style-type: none;
 }
 
 li {
 	text-decoration: none;
-	display: inline-block;
-	list-style-type: none;
-	text-align: center;
 }
 
 h1 {
@@ -67,14 +62,12 @@ h2 {
 }
 
 .hero-text {
-	/* margin-left: 40px;
-	margin-right: 40px; */
 	display: flex;
 	text-align: center;
 	font-size: 100px;
 	justify-content: space-around;
 	margin-top: 150px;
-	color: #3A312C;
+	color: #6C584C;
 	font-weight: bold;
 }
 
@@ -84,7 +77,6 @@ p {
 }
 
 .hero-area {
-	/* display: inline-block; */
 	justify-content: space-between;
 }
 
@@ -132,7 +124,8 @@ img {
 	justify-content: space-around;
 	margin-top: 0px;
 	margin-bottom: 325px;
-	margin-left: 475px;
+	/* margin-left: 475px; */
+	margin-right: 100px
 }
 
 .project-card {
@@ -165,14 +158,14 @@ img {
 h3 {
 	text-align: center;
 	justify-content: space-around;
-	color: #3A312C;
+	color: #6C584C;
 }
 
 .dot {
 	height: 100px;
 	width: 100px;
 	line-height: 100px;
-	background-color: tan;
+	background-color: #A98467;
 	border-radius: 50%;
 	display: inline-block;
 	margin: 10px;
@@ -188,10 +181,6 @@ h3 {
 	margin-top: 10px;
 }
 
-.footer {
-
-}
-
 .footer li {
 	display: inline;
 	text-align: center;
@@ -200,11 +189,11 @@ h3 {
 
 .fas {
 	/* background-color: black; */
-	color: black;
+	color: #ADC178;
 }
 
 .fab {
-	color: black;
+	color: #ADC178;
 }
 
 a {
@@ -231,11 +220,13 @@ a {
 .left-container {
 	width: 50%;
 	left: 0;
+	float: left;
 }
 
 .right-container {
-	width: 75%;
+	width: 50%;
 	right: 0;
+	float: right;
 }
 
 .visible-links {
@@ -247,3 +238,33 @@ a {
 	text-align: center;
 	align-items: center;
 }
+
+.label {
+	color: #ADC178
+}
+
+.project-list {
+	list-style-type: none;
+}
+
+.project {
+	font-size: 30px;
+	margin: 20px;
+}
+
+.top-container {
+	width: 100%;
+	height: 200px;
+}
+
+.food-inspec-hidden {
+	display: none;
+	text-align: right;
+	margin-right: 0;
+}
+
+.food-inspec:hover + .food-inspec-hidden {
+	display: block;
+	color: red;
+}
+
