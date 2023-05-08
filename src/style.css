@@ -22,23 +22,18 @@ section {
 	display: flex;
 	justify-content: space-between;
 	/* background: #DDC9B9; */
-	color: #6C584C;
-	opacity: 0.8;
+	color: white;
+	/* opacity: 0.8; */
 	text-decoration: none;
 	/* background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 28px ), repeating-linear-gradient( #AD988B, #AD988B ); */
 }
 
-.greedy-nav a:hover {
-	color: #584B44;
-	/* text-decoration: underline; */
+.greedy-nav .dark-gray:visited {
+	color: #343A40;
 }
 
-.greedy-nav a:visited {
-	color: #584B44;
-}
-
-.greedy-nav a:active {
-	color: #584B44;
+.greedy-nav .dark-gray:active {
+	color: #6C757D;
 }
 
 ul {
@@ -67,7 +62,8 @@ h2 {
 	font-size: 100px;
 	justify-content: space-around;
 	margin-top: 150px;
-	color: #6C584C;
+	margin-bottom: 20px;
+	color: black;
 	font-weight: bold;
 }
 
@@ -84,7 +80,7 @@ p {
 	width: 100%;
 	text-align: center;
 	display: flex;
-	justify-content: center-between;
+	justify-content: center;
 	align-items: center;
 	list-style: none;
 	margin: 0;
@@ -100,7 +96,6 @@ p {
 .icon {
 	width: auto;
 	display: inline-block;
-
 }
 
 img {
@@ -155,27 +150,34 @@ img {
 h3 {
 	text-align: center;
 	justify-content: space-around;
-	color: #6C584C;
+	color: black;
 }
 
 .dot {
 	height: 100px;
 	width: 100px;
 	line-height: 100px;
-	background-color: #A98467;
+	background-color: black;
 	border-radius: 50%;
 	display: inline-block;
 	margin: 10px;
 	text-align: center;
 	font-weight: bold;
 	text-decoration: none;
+	color: white;
+}
+
+.dot-text {
+	color: white;
 }
 
 .about-me {
 	display: block;
 	text-align: center;
 	font-size: 30px;
-	margin-top: 10px;
+	margin-top: 0px;
+	padding: 0;
+	color: #343A40;
 }
 
 .footer li {
@@ -186,11 +188,11 @@ h3 {
 
 .fas {
 	/* background-color: black; */
-	color: #ADC178;
+	color: #343A40;
 }
 
 .fab {
-	color: #ADC178;
+	color: #343A40;
 }
 
 a {
@@ -237,7 +239,7 @@ a {
 }
 
 .label {
-	color: #ADC178
+	color: #343A40;
 }
 
 .project-list {
@@ -384,4 +386,12 @@ a {
 
 .project-title {
 	text-align: center;
+}
+
+.dark-gray {
+	color: #343A40;
+}
+
+.light-gray {
+	color: #ADB5BD;
 }
