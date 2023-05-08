@@ -1,5 +1,5 @@
 body {
-	background-color: #F0EAD2;
+	background-color: white;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -117,15 +117,12 @@ img {
 }
 
 .headshot {
-	height: 300px;
-	width: 300px;
-	/* border-radius: 50%; */
-	/* padding: 50px; */
-	justify-content: space-around;
-	margin-top: 0px;
-	margin-bottom: 325px;
-	/* margin-left: 475px; */
-	margin-right: 100px
+	height: 150px;
+	width: 150px;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 .project-card {
@@ -245,6 +242,13 @@ a {
 
 .project-list {
 	list-style-type: none;
+	text-align: left;
+}
+
+.project-title {
+	text-align: left;
+	margin-left: 50px;
+	justify-content: space-around;
 }
 
 .project {
@@ -260,7 +264,7 @@ a {
 .food-inspec-hidden {
 	display: none;
 	text-align: right;
-	margin-right: 0;
+	margin-right: 200px;
 }
 
 .food-inspec:hover + .food-inspec-hidden {
@@ -268,3 +272,116 @@ a {
 	color: red;
 }
 
+.about-header {
+	background-color: #f3f3f3;
+}
+
+.center {
+	text-align: center;
+}
+
+.name {
+	margin: 0px;
+}
+
+.description {
+	margin: 10px;
+}
+
+.border-top {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0,0,0,.125)
+}
+
+.border-bottom {
+	border-bottom-style: solid;
+    border-bottom-width: 1px;
+	border-bottom-color: rgba(0,0,0,.125)
+}
+
+.mb1 {
+	text-align: center;
+}
+
+.mb2 {
+	text-align: center;
+}
+
+.page-description {
+	font-size: 20px;
+	/* padding: 20px; */
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: left;
+}
+
+.col {
+	float: left;
+	box-sizing: border-box;
+}
+
+.sm-col-4 {
+	width: 33.33333%;
+}
+
+.px2 {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.container {
+	max-width: 64em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block {
+	display: block;
+	justify-content: space-between;
+}
+
+.p3 {
+	padding: 2rem;
+}
+
+.mxn2 {
+	margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.py3 {
+	padding-top: 2rem;
+    padding-bottom: 2rem
+}
+
+.left-align {
+	text-align: left;
+}
+
+.sm-col-8 {
+	width: 66.66667%
+}
+
+.mt0 {
+	margin-top: 0;
+}
+
+.mb0 {
+	margin-bottom: 0;
+}
+
+.project-img {
+	height: 250px;
+	width: 250px;
+}
+
+.h6 {
+	font-family: open sans, sans-serif;
+    color: #3a4145;
+	margin-top: 10px;
+}
+
+.project-title {
+	text-align: center;
+}
