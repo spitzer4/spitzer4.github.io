@@ -395,3 +395,42 @@ a {
 .light-gray {
 	color: #ADB5BD;
 }
+
+a .square:hover {
+	border-color: #495057;
+}
+
+.border {
+	border-style: solid;
+    border-width: 1px;
+    border-color: #ADB5BD;
+}
+
+.bg-white {
+	background-color: white;
+}
+
+.p1 {
+	padding: .5rem;
+}
+
+.circle-line:after {
+    display: block;
+    content: "";
+    width: .5rem;
+    height: .5rem;
+    border: #e7eef2 .1rem solid;
+    position: relative;
+    top: 2.3rem;
+    left: 50%;
+    margin-left: -.25rem;
+    background: #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    box-shadow: #fff 0 0 0 5px
+}
+
+.underline {
+	text-decoration: underline;
+}
