@@ -1,5 +1,5 @@
 body {
-	background-color: white;
+	/* background-color: white; */
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -11,6 +11,9 @@ section {
 	font-size: 40px;
 	height: 100vh;
 	opacity: 0.8;
+	background-image: url("../images/mountain-bkg.jpg");
+	background-repeat: no-repeat;
+	/* background-size: 3000px 1000px; */
 	/* background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 28px ), repeating-linear-gradient( #AD988B, #AD988B ); */
 }
 
@@ -25,6 +28,7 @@ section {
 	color: white;
 	/* opacity: 0.8; */
 	text-decoration: none;
+
 	/* background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 28px ), repeating-linear-gradient( #AD988B, #AD988B ); */
 }
 
@@ -187,12 +191,11 @@ h3 {
 }
 
 .fas {
-	/* background-color: black; */
-	color: #343A40;
+	color: #D0D6B3;
 }
 
 .fab {
-	color: #343A40;
+	color: #D0D6B3;
 }
 
 a {
@@ -239,7 +242,7 @@ a {
 }
 
 .label {
-	color: #343A40;
+	color: #D0D6B3;
 }
 
 .project-list {
@@ -433,4 +436,8 @@ a .square:hover {
 
 .underline {
 	text-decoration: underline;
+}
+
+.dark-green {
+	color: #143109;
 }
