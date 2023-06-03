@@ -191,11 +191,11 @@ h3 {
 }
 
 .fas {
-	color: #D0D6B3;
+	color: white;
 }
 
 .fab {
-	color: #D0D6B3;
+	color: white;
 }
 
 a {
@@ -242,7 +242,7 @@ a {
 }
 
 .label {
-	color: #D0D6B3;
+	color: white;
 }
 
 .project-list {
@@ -436,8 +436,4 @@ a .square:hover {
 
 .underline {
 	text-decoration: underline;
-}
-
-.dark-green {
-	color: #143109;
 }
