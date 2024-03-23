@@ -1299,6 +1299,10 @@ body {
 	text-decoration: none;
   }
 
+  .button:hover {
+	background-color: #4682bf;
+  }
+
   .social-icons {
 	margin: 0;
 	padding: 0;
@@ -1321,11 +1325,15 @@ body {
 	  *display: inline;
 	  padding-left: 10px;
 	  padding-right: 10px;
-	  color: black;
+	  color: #b11226;
 	}
   
 	.social-icons li a i {
 	  font-size: 30px;
+	}
+
+	.social-icons li a:hover {
+		color: #d92121;
 	}
   
   .sidebar a {
