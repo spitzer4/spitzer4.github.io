@@ -89,7 +89,7 @@ body {
   }
   
   .big-article-title-wrapper a:hover, a:active, a:focus {
-	background-color: #268bd2;
+	/* background-color: #268bd2; */
 	color: white;
 	outline: none;
 	text-decoration: none;
@@ -127,7 +127,7 @@ body {
 	  border-width: 1px;
 	  border-color: #e9eaec;
 	  border-radius: 40px;
-	  background-color: #fff;
+	  background-color: white;
 	  justify-content: space-between;
 	  align-items: center;
 	  display: flex;
@@ -135,16 +135,23 @@ body {
   }
   
   .container-2 {
-	  padding: 0;
-	  border-style: solid;
-	  border-width: 1px;
-	  border-color: #e9eaec;
-	  border-radius: 40px;
-	  /* background-color: #fff; */
-	  justify-content: space-between;
-	  align-items: center;
-	  display: flex;
-	  width: 90%;
+	padding: 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #e9eaec;
+	border-radius: 40px;
+	background-color: #fff;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	width: 90%;
+	margin: 0 auto; /* Center the container */
+  }
+
+  .container-cs {
+	margin: 0 auto;
+	padding: 85px;
+	/* max-width: 1200px; */
   }
   
   .container-wrap {
@@ -534,40 +541,42 @@ body {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   }
   
-  .footer-container {
-	  /* position: absolute;
-	  bottom: 0;
-	  width: 100%; */
-	  display: flex;
-	  position: relative;
-	  bottom: 0;
-  }
-  
-  footer {
-	  /* width: 100%;
-	  padding: 15px; */
+  /* footer {
 	  flex-direction: row;
 	  align-items: center;
 	  width: 100%;
 	  justify-content: space-between;
 	  margin-left: auto;
 	  margin-right: auto;
-  }
-  
-  #fh5co-contact,
-  #fh5co-work,
-  #fh5co-footer {
-	/* padding: 6em 0; */
-	padding-bottom: 0;
-	/* clear: both; */
-  }
-  @media screen and (max-width: 768px) {
-	#fh5co-contact,
-	#fh5co-work
-	/* #fh5co-footer {
-	  padding: 3em 1em;
-	} */
-  }
+  } */
+
+  .footer {
+    position: relative;
+    /* bottom: -8vw; */
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    color: #A3ABD0;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #e9eaec;
+	border-radius: 40px;
+	background-color: white;
+	width: 90%;
+	margin: 100px auto;
+	margin-bottom: 30px;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-left: auto;
+	padding-right: auto;
+}
+
+.footer-container {
+	margin-bottom: 100px !important;
+}
   
   #fh5co-intro {
 	padding: 6em 0 4em 50px;
@@ -715,32 +724,6 @@ body {
 	padding: 10px 15px;
   }
   
-  .fh5co-social-icons {
-	margin: 0;
-	padding: 0;
-  }
-  .fh5co-social-icons li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: -moz-inline-stack;
-	display: inline-block;
-	zoom: 1;
-	*display: inline;
-  }
-  .fh5co-social-icons li a {
-	display: -moz-inline-stack;
-	display: inline-block;
-	zoom: 1;
-	*display: inline;
-	color: #268bd2;
-	padding-left: 10px;
-	padding-right: 10px;
-  }
-  .fh5co-social-icons li a i {
-	font-size: 30px;
-  }
-  
   .fh5co-heading {
 	margin-bottom: 5em;
   }
@@ -772,17 +755,6 @@ body {
   #fh5co-footer .fh5co-footer-links li a:hover {
 	text-decoration: none;
   }
-  /* #fh5co-footer h4 {
-	margin-bottom: 30px;
-	font-size: 24px;
-  } */
-  /* #fh5co-footer .copyright {
-	display: block;
-	margin-top: 3em;
-  }
-  #fh5co-footer .copyright .block {
-	display: block;
-  } */
   
   #fh5co-offcanvas {
 	position: absolute;
@@ -1250,7 +1222,7 @@ body {
   .big-article {
 	width: 100%;
 	background-color: #fff;
-	border-radius: 8px;
+	border-radius: 24px;
 	flex-wrap: wrap;
 	align-items: stretch;
 	margin: 40px auto;
@@ -1266,7 +1238,7 @@ body {
 	  background-image: url("../images/art-museum.jpg");
 	  background-position: 50%;
 	  background-size: cover;
-	  border-radius: 8px;
+	  border-radius: 24px;
 	  padding-left: 0;
   }
   
@@ -1307,16 +1279,20 @@ body {
 	line-height: 40px;
 	display: inline-block;
   }
+
+  .social-icons {
+	margin: 0;
+	padding: 0;
+  }
   
   .social-icons li {
-	  /* margin: 0; */
-	  /* padding: 0; */
 	  list-style: none;
 	  display: -moz-inline-stack;
 	  display: inline-block;
 	  zoom: 1;
 	  *display: inline;
 	  text-align: center;
+	  align-items: center;
   }
   
   .social-icons li a {
@@ -1324,9 +1300,9 @@ body {
 	  display: inline-block;
 	  zoom: 1;
 	  *display: inline;
-	  color: #268bd2;
 	  padding-left: 10px;
 	  padding-right: 10px;
+	  color: black;
 	}
   
 	.social-icons li a i {
@@ -1393,7 +1369,7 @@ body {
   
   .cs-cover-image {
 	  width: 100%;
-	  border-radius: 8px;
+	  border-radius: 24px;
 	  margin-bottom: 48px;
   }
   
