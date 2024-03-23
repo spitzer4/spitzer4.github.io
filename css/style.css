@@ -316,7 +316,7 @@ body {
 	color: #fff;
   }
   .fh5co-nav ul li.btn-cta a span {
-	background: #268bd2;
+	/* background: #268bd2; */
 	padding: 4px 10px;
 	display: -moz-inline-stack;
 	display: inline-block;
@@ -1263,7 +1263,7 @@ body {
   .big-article-image-wrapper {
 	  width: 58.33333%;
 	  /* height: 200px; */
-	  background-image: url("../images/art-museum-thumb.jpg");
+	  background-image: url("../images/art-museum.jpg");
 	  background-position: 50%;
 	  background-size: cover;
 	  border-radius: 8px;
@@ -1271,7 +1271,7 @@ body {
   }
   
   .big-article-image-wrapper .art-museum-thumb {
-	background-image: url("../images/art-museum-thumb.jpg");
+	background-image: url("../images/art-museum.jpg");
   }
   
   .project-text-wrapper {
