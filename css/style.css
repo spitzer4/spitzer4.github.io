@@ -257,30 +257,6 @@ div {
 	padding: 0;
 }
 
-/* @media screen and (max-width: 991px) {
-	.navigation-links {
-		display: flex;
-		flex-direction: column;
-	}
-}
-
-@media screen and (max-width: 991px) {
-	.w-nav[data-collapse="medium"] .w-nav-button {
-		display: block;
-	}
-}
-
-@media screen and (max-width: 991px) {
-	.menu-button.w--open {
-		border-radius: 54px;
-		background-color: #4682bf;
-		color: white;
-		box-shadow:
-			0 5px 15px rgba(0, 0, 0, .1),
-			0 15px 35px rgba(0, 0, 0, .05);
-	}
-} */
-
 .navigation-button {
     padding: 12px 20px;
     border-style: solid;
@@ -292,9 +268,6 @@ div {
     transition: background-color 300ms ease;
     color: white;
     font-weight: 500;
-	/* box-shadow:
-		0 5px 15px rgba(0, 0, 0, .1),
-		0 15px 35px rgba(0, 0, 0, .05); */
 }
 
 .navigation-divider {
@@ -302,32 +275,6 @@ div {
     height: 16px;
     background-color: #d5d6d8;
 }
-
-/* @media screen and (max-width: 991px) {
-	.w-nav[data-collapse="medium"] .w-nav-menu {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 991px) {
-	.w-nav[data-collapse="medium"] .w-nav-button {
-		display: block;
-	}
-}
-
-@media screen and (max-width: 991px) {
-	.menu-button.w--open {
-		border-radius: 54px;
-		background-color: #4682bf;
-		color: white;
-	}
-} */
-
-/* .w-nav-button.w--open {
-    background-color: #C8C8C8;
-    color: white;
-	border-radius: 100px;
-} */
 
 .w-nav-overlay [data-nav-menu-open] {
     top: 0;
@@ -660,6 +607,16 @@ div {
 	display: flex;
 	width: 90%;
 	/* max-width: 1200px; */
+  }
+
+  .skyline-img img {
+	max-width:800px;
+  	max-height:250px;
+	height: auto;
+	width: auto;
+	margin-right: 25px;
+	border-radius: 24px;
+	filter: grayscale(100%);
   }
 
   
