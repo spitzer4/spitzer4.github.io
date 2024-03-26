@@ -34,23 +34,32 @@
 	<body>
 	
 	<div id="page">
-		<nav class="fh5co-nav" role="navigation" id="navbar">
-			<div class="container">
-				<div class="nav-left">
-					<div id="fh5co-logo">
-						<a href="index.html">ks</a>
-					</div>
-				</div>
-				<div class="nav-right">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about-me.html">About Me</a></li>
-						<li class="active"><a href="portfolio.html">Portfolio</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-
+		<div class="navigation-sticky">
+            <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
+                <div class="navigation-wrapper">
+                    <div class="navigation-left">
+                        <a href="index.html" class="navigation-brand w-nav-brand">
+							<h2>ks</h2>
+						</a>
+                        <nav role="navigation" class="navigation-menu-wrapper w-nav-menu">
+                            <div class="navigation-links">
+                                <a href="index.html" class="navigation-link">Home</a>
+								<a href="about-me.html" class="navigation-link">About Me</a>
+								<a href="portfolio.html" class="navigation-link">Portfolio</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="navigation-right">
+                        <div class="navigation-button w-button">
+                            Connect
+						</div>
+                        <div class="menu-button w-nav-button">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 		<img src="images/art-museum.jpg" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 767px) 93vw, (max-width: 991px) 92vw, 81vw" alt="MuseMe App" class="cs-cover-image"/>
 		<div class="about-project">
 			<h1 class="cs-title">
