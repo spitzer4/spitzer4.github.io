@@ -157,6 +157,15 @@ div {
 	.navigation-dropdown {
 		display: none;
 	}
+
+	.container-2 {
+		display: flex-start;
+	}
+
+	.skyline-img img {
+		margin-left: 25px;
+		margin-bottom: 25px;
+	}
 }
 
 @media screen and (min-width: 992px) {
@@ -176,6 +185,16 @@ div {
         background-color: #fff;
         align-items: center;
     }
+
+	.container-2 {
+		justify-content: space-between;
+		align-items: center;
+		display: flex;
+	}
+
+	.skyline-img img {
+		margin-right: 25px;
+	}
 }
 
 
@@ -582,9 +601,9 @@ div {
 	border-color: #e9eaec;
 	border-radius: 40px;
 	background-color: #fff;
-	justify-content: space-between;
+	/* justify-content: space-between;
 	align-items: center;
-	display: flex;
+	display: flex; */
 	width: 90%;
 	margin: 0 auto; /* Center the container */
 	margin-bottom: 50px;
@@ -610,11 +629,11 @@ div {
   }
 
   .skyline-img img {
-	max-width:800px;
-  	max-height:250px;
+	max-width: 800px;
+  	max-height: 250px;
 	height: auto;
 	width: auto;
-	margin-right: 25px;
+	/* margin-right: 25px; */
 	border-radius: 24px;
 	filter: grayscale(100%);
   }
