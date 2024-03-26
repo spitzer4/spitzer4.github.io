@@ -1636,18 +1636,23 @@ div {
   }
   
   .big-article-image-wrapper {
-	  width: 58.33333%;
-	  /* height: 200px; */
-	  background-image: url("../images/art-museum.jpg");
 	  background-position: 50%;
 	  background-size: cover;
 	  border-radius: 24px;
 	  padding-left: 0;
   }
-  
-  .big-article-image-wrapper .art-museum-thumb {
-	background-image: url("../images/art-museum.jpg");
+
+  .big-article-image-wrapper img {
+	width: 58.333333%;
+	max-height: 400px;
+	height: auto;
+	width: auto;
+	background-position: 50%;
+	background-size: cover;
+	border-radius: 24px;
+	padding-left: 0;
   }
+
   
   .project-text-wrapper {
 	flex-direction: column;
