@@ -4,6 +4,7 @@
   }
   
   html, body {
+	min-height: 100%;
 	width: 100%;
 	height: 100%;
 	line-height: 1.35;
@@ -53,7 +54,7 @@
 	font-size: 14px;
 	font-weight: 600;
 	padding: 32px 44px;
-	height: 140px;
+	/* height: 140px; */
 	padding-top: 8px;
 	animation: loading 1.2s 0s 1 both ease-in-out;
   }
@@ -128,14 +129,18 @@
 	align-items: center;
 	justify-content: center;
 	background: #eee8d5;
+	min-height: 100%;
+	height: auto;
   }
   header .header-container {
-	margin-top: 50px;
+	/* margin-top: 50px; */
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: space-between;
   }
+
   @keyframes loading {
 	0% {
 	  opacity: 0;
@@ -461,14 +466,18 @@
   .project-image img {
 	max-width: 100%;
 	/* max-height:400px; */
-	width: auto;
-	height: auto;
+	/* width: auto;
+	height: auto; */
 	border-radius: 12px;
+	margin: 0 auto;
+	display: block;
+
   }
 
   .about-project {
 	width: 100%;
 	margin: 50px auto;
+	padding: 100px;
 }
 
 .cs-overview {
@@ -479,6 +488,7 @@
 	margin-top: 36px;
 	padding-top: 24px;
 	padding-bottom: 24px;
+	/* height: 80px; */
 }
 
 .w-layout-grid {
@@ -693,6 +703,24 @@
 	  top: 0px;
 	}
   }
+
+  @media screen and (max-width: 768px) {
+	header {
+		padding: 2rem 1rem;
+		min-height: 100%;
+	}
+
+	.about-project {
+		width: 100%;
+		margin: 2rem auto;
+		padding: 0 1rem;
+	}
+
+	.cs-overview {
+		margin: 2rem 0;
+	}
+  }
+
   @media screen and (min-width: 1200px) {
 	.content .img {
 	  width: 1000px;
@@ -718,8 +746,9 @@
 	}
   
 	header .header-container {
+	  min-height: 100%;
 	  margin-top: 50px;
-	  width: 1200px;
+	  width: 100%;
 	}
 	header .header-words .header-title {
 	  font-size: 64px;
@@ -759,7 +788,7 @@
 	}
   
 	header {
-	  height: 100%;
+	  min-height: 100%;
 	  padding: 4%;
 	  padding-top: 33%;
 	  flex-wrap: wrap;
@@ -873,4 +902,11 @@
 	.sec1 {
 	  padding: 60px 3.6%;
 	}
+  }
+
+  .sketches {
+	max-width: 100%;
+	/* height: auto; */
+	margin: 0 auto;
+	display: block;
   }
