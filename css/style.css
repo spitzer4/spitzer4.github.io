@@ -9,7 +9,7 @@
 	line-height: 1.35;
 	padding: 0;
 	margin: 0;
-	font-family: "DM Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 	background: #fdf6e3;
@@ -17,15 +17,12 @@
 	margin-bottom: 0px;
   }
   html h1, html h2, html h3, html h4, body h1, body h2, body h3, body h4 {
-	font-family: "DM Sans", sans-serif;
+	font-family: "Lora", serif;
 	font-weight: 600;
 	width: 100%;
 	color: #586e75;
   }
   
-  .white {
-	background: #FFF;
-  }
   
   .img-block {
 	width: 100%;
@@ -64,12 +61,11 @@
 	width: 30%;
 	justify-content: flex-start;
 	font-size: 30px;
+	font-family: "Lora", serif;
   }
   nav .nav-left .logo {
-	font-family: "DM Sans";
 	font-weight: 600;
 	font-size: 18px;
-	color: #69C7D1;
 	color: #586e75;
   }
   nav .nav-right {
@@ -83,7 +79,7 @@
 	align-items: center;
   }
   nav .nav-right ul li {
-	font-family: "DM Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	margin: 0px 20px;
 	list-style: none;
 	transition: 0.1s linear;
@@ -149,14 +145,14 @@
 	}
   }
   header .header-words {
-	width: 50%;
 	color: #586e75;
   }
+
   header .header-words .header-title {
 	font-size: 3.6vw;
 	line-height: 120%;
 	font-weight: 700;
-	font-family: "DM Sans", sans-serif;
+	font-family: "Lora", serif;
 	animation: loading 1.2s 0s 1 both ease-in-out;
   }
   header .header-words .header-description {
@@ -233,7 +229,7 @@
 	background: #E3EAFF;
 	border-radius: 3px;
 	margin-right: 5px;
-	color: #586e75;
+	color: #002b36;
   }
   .project-text .project-text-firstline {
 	display: flex;
@@ -244,7 +240,7 @@
   .project-text .project-text-secondline {
 	font-size: 16px;
 	margin-top: 16px;
-	color: #586e75;
+	color: #002b36;
   }
   
   .title {
@@ -298,111 +294,6 @@
   .sec1-header {
 	padding-bottom: 32px;
 	width: 100%;
-  }
-  
-  #fun-thing {
-	background: #FDF9F8;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-  }
-  
-  .vtt-bg {
-	background: #EFF2FF;
-  }
-  
-  .fun-card {
-	background: #fff;
-	overflow: hidden;
-	border-radius: 12px;
-	position: relative;
-	border: 1px solid #E5E5E5;
-	padding-bottom: 12px;
-	transition: 0.2s ease;
-  }
-  
-  .fun-tag {
-	display: flex;
-	align-items: center;
-	padding: 6px 12px;
-	position: absolute;
-	top: 32px;
-	right: 24px;
-	background: #FBF9F8;
-	/* Button Chroming/Toggle Inactive */
-	font-weight: 600;
-	border: 1px solid #F1F1F1;
-	box-sizing: border-box;
-	border-radius: 8px;
-  }
-  .fun-tag i {
-	margin-right: 8px;
-	color: #FFAC33;
-	font-size: 18px;
-  }
-  
-  #oracle-expenses {
-	background: #F1EFED;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 100% 100%;
-  }
-  #oracle-expenses .project-card-tag {
-	background: #E8E5E2;
-  }
-  
-  #oracle-invoices {
-	background: #DCEDEC;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 100% 100%;
-  }
-  #oracle-invoices .project-card-tag {
-	background: #D6E5E5;
-  }
-  
-  #google-project {
-	background: #E5ECF7;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 100% 100%;
-  }
-  #google-project .project-card-tag {
-	background: #D8E0EE;
-  }
-  
-  #nyu-project {
-	background: #EEF2FF;
-	background-size: 78%;
-	background-repeat: no-repeat;
-	background-position: 100% 100%;
-  }
-  #nyu-project .project-card-tag {
-	background: #D8E0EE;
-  }
-  
-  #bf-project {
-	background: #FAEFD5;
-	background-size: 78%;
-	background-repeat: no-repeat;
-	background-position: 100% 100%;
-  }
-  #bf-project .project-card-tag {
-	background: #D8E0EE;
-  }
-  
-  #oracle-workshop {
-	background-color: #315357;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 100% 100%;
-  }
-  #oracle-workshop .project-card-description {
-	color: #fff;
-  }
-  #oracle-workshop .project-card-title {
-	color: #fff;
   }
   
   .project {
@@ -472,7 +363,7 @@
 	padding: 6px 12px;
 	font-size: 16px;
 	font-weight: 600;
-	color: black;
+	color: #002b36;
 	margin-right: 12px;
 	margin-top: 12px;
   }
@@ -485,14 +376,15 @@
   }
   .project .project-card-title {
 	padding-top: 3%;
-	font-family: "DM Sans", sans-serif;
+	font-family: "Lora", serif;
 	font-size: 4vh;
 	font-weight: 600;
-	color: black;
+	color: #002b36;
   }
   .project .project-card-description {
 	font-size: 20px;
 	padding-top: 3%;
+	color: #073642;
   }
   .project .project-pic {
 	width: 100%;
@@ -503,96 +395,7 @@
 	background-size: cover;
 	transition: 0.2s ease-in;
   }
-  .project .project-pic#motion-bg {
-	background: #FFF;
-	background-size: 90%;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-  }
-  .project .project-pic #google {
-	background: rgba(227, 236, 248, 0.9);
-  }
-  .project .project-pic #google .pic-hover-content {
-	color: black;
-  }
-  .project .project-pic #figure {
-	background: rgba(96, 77, 64, 0.9);
-  }
-  .project .project-pic #vtt {
-	background: rgba(241, 244, 255, 0.9);
-  }
-  .project .project-pic #vtt .pic-hover-content {
-	color: black;
-  }
-  .project .project-pic #backme {
-	background: rgba(243, 157, 9, 0.9);
-  }
-  .project .project-pic #backme .pic-hover-content {
-	color: black;
-  }
-  .project .project-pic #VR {
-	background: rgba(119, 176, 197, 0.9);
-  }
-  .project .project-pic #VR .pic-hover-content {
-	color: black;
-  }
-  .project .project-pic #blender {
-	background: rgba(46, 54, 108, 0.9);
-  }
-  .project .project-pic #blender .project-description {
-	font-size: 20px;
-  }
-  .project .project-pic #plusme {
-	background: rgba(98, 155, 245, 0.9);
-  }
-  .project .project-pic #ripple {
-	background: rgba(113, 195, 242, 0.9);
-  }
-  .project .project-pic #ripple .pic-hover-content {
-	color: black;
-  }
-  .project .project-pic #motion {
-	background: rgba(209, 244, 246, 0.9);
-  }
-  .project .project-pic #motion .pic-hover-content {
-	color: black;
-  }
-  .project .project-pic #interactive {
-	background: rgba(61, 68, 90, 0.9);
-  }
-  .project .project-pic #interactive .pic-hover-content {
-	color: #fff;
-  }
-  .project .project-pic #muse {
-	background: rgba(186, 193, 237, 0.9);
-  }
-  .project .project-pic #muse .pic-hover-content {
-	color: black;
-  }
-  .project .project-pic #meichu {
-	background: rgba(255, 162, 83, 0.9);
-  }
-  .project .project-pic #w1 {
-	background: rgba(230, 236, 238, 0.9);
-  }
-  .project .project-pic #w1 .pic-hover-content {
-	color: black;
-  }
-  .project .project-pic #w2 {
-	background: rgba(230, 236, 238, 0.9);
-  }
-  .project .project-pic #w3 {
-	background: rgba(255, 239, 217, 0.9);
-  }
-  .project .project-pic #w3 .pic-hover-content {
-	color: black;
-  }
-  .project .project-pic #w4 {
-	background: rgba(249, 197, 198, 0.9);
-  }
-  .project .project-pic #w4 .pic-hover-content {
-	color: black;
-  }
+
   .project .project-pic .pic-hover {
 	display: flex;
 	position: absolute;
@@ -615,7 +418,7 @@
 	opacity: 1;
   }
   .project .project-pic .project-description {
-	font-family: "DM Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 21px;
   }
   .project .project-pic .project-description span.note {
@@ -642,7 +445,7 @@
 	width: 31.33%;
   }
   .project-col-4 .project-pic .project-description {
-	font-family: "DM Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
   }
   .project-col-4 .project-pic .project-title {
