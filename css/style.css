@@ -10,18 +10,18 @@
 	line-height: 1.35;
 	padding: 0;
 	margin: 0;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Outfit", sans-serif;
 	font-size: 20px;
 	font-weight: 400;
-	background: #fdf6e3;
-	color: #657b83;
+	background: white;
+	color: black;
 	margin-bottom: 0px;
   }
   html h1, html h2, html h3, html h4, body h1, body h2, body h3, body h4 {
 	font-family: "Lora", serif;
 	font-weight: 600;
 	width: 100%;
-	color: #586e75;
+	color: black;
   }
   
   
@@ -32,7 +32,7 @@
   
   a {
 	text-decoration: none;
-	color: #586e75;
+	color: black;
   }
   
   h1, h2, h3, h4 {
@@ -67,7 +67,7 @@
   nav .nav-left .logo {
 	font-weight: 600;
 	font-size: 18px;
-	color: #586e75;
+	color: black;
   }
   nav .nav-right {
 	width: 70%;
@@ -80,7 +80,7 @@
 	align-items: center;
   }
   nav .nav-right ul li {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Outfit", sans-serif;
 	margin: 0px 20px;
 	list-style: none;
 	transition: 0.1s linear;
@@ -91,8 +91,8 @@
 	padding-bottom: 5px;
   }
   nav .nav-right ul li a {
-	color: #586e75;
-	border-bottom: 0px solid #586e75;
+	color: black;
+	border-bottom: 0px solid black;
 	transition: 0.1s linear;
   }
 
@@ -102,8 +102,8 @@
 	transition: 0.1s linear;
   }
   nav .nav-right ul li.active a, nav .nav-right ul li:hover a {
-	color: #586e75;
-	border-bottom: 2px solid #586e75;
+	color: black;
+	border-bottom: 2px solid black;
   }
 
   nav .nav-right ul li.active a.cta, nav .nav-right ul li:hover a.cta {
@@ -128,7 +128,7 @@
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	background: #eee8d5;
+	background: white;
 	min-height: 100%;
 	height: auto;
   }
@@ -150,7 +150,7 @@
 	}
   }
   header .header-words {
-	color: #586e75;
+	color: black;
   }
 
   header .header-words .header-title {
@@ -169,7 +169,7 @@
 	line-height: 175%;
 	display: flex;
 	flex-wrap: wrap;
-	color: #586e75;
+	color: black;
 	font-weight: 300;
 	/* padding-right: 10%; */
 	animation: loading 1.2s 0.45s 1 both ease-in-out;
@@ -181,7 +181,7 @@
   }
   header .header-words .header-description a:hover {
 	transition: transform 100ms ease-in-out;
-	color: #586e75;
+	color: black;
   }
   header .header-words .header-description a:after {
 	display: block;
@@ -211,7 +211,7 @@
   }
   header .header-words .header-contents .school {
 	font-size: 16px;
-	color:#586e75;
+	color:black;
 	margin-top: 7px;
   }
   
@@ -231,10 +231,10 @@
   .project-text .project-text-tag {
 	font-size: 13px;
 	padding: 3px 8px;
-	background: #E3EAFF;
+	background: white;
 	border-radius: 3px;
 	margin-right: 5px;
-	color: #002b36;
+	color: black;
   }
   .project-text .project-text-firstline {
 	display: flex;
@@ -245,7 +245,7 @@
   .project-text .project-text-secondline {
 	font-size: 16px;
 	margin-top: 16px;
-	color: #002b36;
+	color: black;
   }
   
   .title {
@@ -384,12 +384,12 @@
 	font-family: "Lora", serif;
 	font-size: 4vh;
 	font-weight: 600;
-	color: #002b36;
+	color: black;
   }
   .project .project-card-description {
 	font-size: 20px;
 	padding-top: 3%;
-	color: #073642;
+	color: black;
   }
   .project .project-pic {
 	width: 100%;
@@ -423,7 +423,7 @@
 	opacity: 1;
   }
   .project .project-pic .project-description {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Outfit", sans-serif;
 	font-size: 21px;
   }
   .project .project-pic .project-description span.note {
@@ -450,7 +450,7 @@
 	width: 31.33%;
   }
   .project-col-4 .project-pic .project-description {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Outfit", sans-serif;
 	font-size: 16px;
   }
   .project-col-4 .project-pic .project-title {
@@ -458,9 +458,10 @@
   }
 
   .project-image {
-	display: flex;
-	text-align: center;
-	align-items: center;
+	/* display: flex; */
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
   }
 
   .project-image img {
@@ -469,9 +470,9 @@
 	/* width: auto;
 	height: auto; */
 	border-radius: 12px;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	display: block;
-
   }
 
   .about-project {
@@ -535,7 +536,7 @@
   footer {
 	position: relative;
 	width: 100%;
-	color: #586e75;
+	color: black;
 	padding: 0;
 	padding-bottom: 40px;
 	display: flex;
@@ -557,7 +558,7 @@
   .footer li i {
 	font-size: 20px;
 	padding: 10px;
-	color: #d33682;
+	color: #0000CD;
   }
 
   .footer li i:hover {
