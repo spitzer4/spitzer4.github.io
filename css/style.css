@@ -140,22 +140,15 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	margin: auto;
 	/* justify-content: space-between; */
-  }
-
-  header .header-selfie {
-	width: 100%;
-  }
-
-  header .header-selfie .selfie {
-	width: 100%;
   }
 
 header .header-selfie {
 	width: 50%;
     height: 100%;
-    padding-left: 10%;
     position: relative;
+	margin-bottom: 400px;
     animation: loading 1.2s 0.9s 1 both ease-in-out;
 }
 
@@ -167,12 +160,13 @@ header .selfie {
     background-size: 100%;
     position: absolute;
     top: 0%;
-    animation: selfie_move 4s infinite ease-in-out;
+	margin: 0 auto;
+    /* animation: selfie_move 4s infinite ease-in-out; */
 }
 
 header .selfie img {
 	max-width: 500px;
-	margin: 5px;
+	margin: 50px;
 }
 
 @keyframes selfie_move {
