@@ -1,0 +1,39 @@
+body {
+	background-color: #f8f9fa;
+	font-family: Arial, sans-serif;
+	height: 100%;
+}
+
+.circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #6e43f3, #007bff);
+	margin-left: 15px;
+}
+
+.nav {
+	border: silver;
+	box-shadow: 2px 2px silver;
+	border-radius: 54px;
+	margin: 20px;
+	padding: 10px;
+}
+
+.nav-link {
+	color: #000;
+	font-weight: 500;
+}
+
+.nav-link:hover {
+	color: #007bff;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.border-md-right {
+	border-right: 1px solid silver;
+}
