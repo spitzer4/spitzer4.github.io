@@ -80,3 +80,7 @@ h1 {
 	padding: 15px;
 	justify-content: space-between;
 }
+
+.card {
+	border-radius: 12px;
+}
