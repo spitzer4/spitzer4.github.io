@@ -19,7 +19,6 @@ body {
 
 .nav {
 	border: #808080;
-	box-shadow: 1px 1px 1px 1px #808080;
 	border-radius: 54px;
 	margin: 20px;
 	padding: 10px;
@@ -32,9 +31,7 @@ body {
 }
 
 .nav-link.active {
-    background-color: silver;
-	color: white;
-	border-radius: 5px;
+	color: black;
 }
 
 h1 {
