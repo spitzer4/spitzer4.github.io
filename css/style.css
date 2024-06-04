@@ -1,7 +1,8 @@
 body {
-	background-color: #f8f9fa;
+	background-color: white;
 	font-family: Arial, sans-serif;
-	height: 100%;
+	height: 100vh;
+	display: flex;
 }
 
 .circle {
@@ -12,12 +13,17 @@ body {
 	margin-left: 15px;
 }
 
+.container {
+	height: 100%;
+}
+
 .nav {
-	border: silver;
-	box-shadow: 2px 2px silver;
+	border: #808080;
+	box-shadow: 1px 1px 1px 1px #808080;
 	border-radius: 54px;
 	margin: 20px;
 	padding: 10px;
+	height: 75px;
 }
 
 .nav-link {
@@ -25,8 +31,10 @@ body {
 	font-weight: 500;
 }
 
-.nav-link:hover {
-	color: #007bff;
+.nav-link.active {
+    background-color: silver;
+	color: white;
+	border-radius: 5px;
 }
 
 h1 {
@@ -36,4 +44,35 @@ h1 {
 
 .border-md-right {
 	border-right: 1px solid silver;
+}
+
+.silver-text {
+	color: #808080;
+}
+
+.height-header {
+	height: calc(100% - 250px);
+}
+
+.about-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-list li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.about-list a:hover {
+    text-decoration: underline;
 }
