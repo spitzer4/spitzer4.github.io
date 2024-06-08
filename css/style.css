@@ -94,3 +94,10 @@ h1 {
 .card-text .text-muted {
 	padding-right: 10px;
 }
+
+/* Media Query for smaller screens */
+@media (max-width: 576px) {
+    .nav-link {
+        font-size: 0.6rem;
+    }
+}
