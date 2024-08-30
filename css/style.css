@@ -236,7 +236,7 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
+  color: #00B9E8;
   text-decoration: underline;
 }
 a:hover {
@@ -6644,7 +6644,7 @@ textarea.form-control-lg {
 
 .text-bg-primary {
   color: #808080 !important;
-  background-color: white !important;
+  /* background-color: red !important; */
 }
 
 .text-bg-secondary {
@@ -7656,6 +7656,10 @@ textarea.form-control-lg {
 
 .mb-5 {
   margin-bottom: 3rem !important;
+}
+
+.mb-6 {
+	margin-bottom: 7rem !important;
 }
 
 .mb-auto {
@@ -10998,7 +11002,7 @@ html {
 }
 
 .footer {
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
   padding-bottom: 5rem;
   background-color: white;
   color: #808080;
