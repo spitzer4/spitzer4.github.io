@@ -44,105 +44,106 @@
             </div>
         </header>
 		<section class="page-section text-silver">
-		<h2>Contents</h2>
-		<ol>
-			<li><a href="#introduction">Introduction</a></li>
-			<li><a href="#installation">Installation</a></li>
-			<li><a href="#usage">Usage</a></li>
-			<li><a href="#project-architecture">Project Architecture</a></li>
-			<li><a href="#workflow">Workflow</a></li>
-			<li><a href="#future-improvements">Future Improvements</a></li>
-			<li><a href="#how-to-contribute">How to Contribute</a></li>
-		</ol>
+			<div class="container">
+			<h2>Contents</h2>
+			<ol>
+				<li><a href="#introduction">Introduction</a></li>
+				<li><a href="#installation">Installation</a></li>
+				<li><a href="#usage">Usage</a></li>
+				<li><a href="#project-architecture">Project Architecture</a></li>
+				<li><a href="#workflow">Workflow</a></li>
+				<li><a href="#future-improvements">Future Improvements</a></li>
+				<li><a href="#how-to-contribute">How to Contribute</a></li>
+			</ol>
 
-		<h2 id="introduction">Introduction</h2>
-		<p>Welcome to my Jazz Analysis Project! This project is designed to explore trends in jazz music over time using data from the Spotify API. It allows you to analyze the popularity of jazz music and visualize trends across different decades.</p>
+			<h2 id="introduction">Introduction</h2>
+			<p>Welcome to my Jazz Analysis Project! This project is designed to explore trends in jazz music over time using data from the Spotify API. It allows you to analyze the popularity of jazz music and visualize trends across different decades.</p>
 
-		<h2 id="installation">Installation</h2>
-		<p><strong>Pre-Requisites</strong></p>
-		<ul>
-			<li>Python</li>
-			<li>Spotipy</li>
-			<li>Google Cloud SDK (for interacting with Google Cloud Storage)</li>
-		</ul>
+			<h2 id="installation">Installation</h2>
+			<p><strong>Pre-Requisites</strong></p>
+			<ul>
+				<li>Python</li>
+				<li>Spotipy</li>
+				<li>Google Cloud SDK (for interacting with Google Cloud Storage)</li>
+			</ul>
 
-		<p><strong>Setup</strong></p>
-		<p>Clone the repository:</p>
-		<pre><code>git clone https://github.com/spitzer4/jazz-analysis-project.git
-		cd jazz-analysis-project
-		</code></pre>
+			<p><strong>Setup</strong></p>
+			<p>Clone the repository:</p>
+			<pre><code>git clone https://github.com/spitzer4/jazz-analysis-project.git
+			cd jazz-analysis-project
+			</code></pre>
 
-		<p>Create and activate a virtual environment:</p>
-		<pre><code>python3 -m venv venv
-		source venv/bin/activate
-		</code></pre>
+			<p>Create and activate a virtual environment:</p>
+			<pre><code>python3 -m venv venv
+			source venv/bin/activate
+			</code></pre>
 
-		<p>Install the required Python packages:</p>
-		<pre><code>pip install -r requirements.txt
-		</code></pre>
+			<p>Install the required Python packages:</p>
+			<pre><code>pip install -r requirements.txt
+			</code></pre>
 
-		<p>Set up Google Cloud authentication:</p>
-		<pre><code>export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/service-account-file.json"
-		</code></pre>
+			<p>Set up Google Cloud authentication:</p>
+			<pre><code>export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/service-account-file.json"
+			</code></pre>
 
-		<h2 id="usage">Usage</h2>
-		<ol>
-			<li><strong>Data Generation and Analysis:</strong>
-				<p>Run the main script to generate data on jazz albums, analyze the popularity of jazz over time, and save the results locally and in Google Cloud Storage:</p>
-				<pre><code>python main.py</code></pre>
-			</li>
-			<li><strong>Store Results in Google Cloud Storage:</strong>
-				<p>The script will automatically upload the raw data and analysis results (e.g., plots) to a specified Google Cloud Storage bucket.</p>
-			</li>
-		</ol>
+			<h2 id="usage">Usage</h2>
+			<ol>
+				<li><strong>Data Generation and Analysis:</strong>
+					<p>Run the main script to generate data on jazz albums, analyze the popularity of jazz over time, and save the results locally and in Google Cloud Storage:</p>
+					<pre><code>python main.py</code></pre>
+				</li>
+				<li><strong>Store Results in Google Cloud Storage:</strong>
+					<p>The script will automatically upload the raw data and analysis results (e.g., plots) to a specified Google Cloud Storage bucket.</p>
+				</li>
+			</ol>
 
-		<h2 id="project-architecture">Project Architecture</h2>
-		<p>The project is structured as follows:</p>
-		<ul>
-			<li><code>generate_jazz_data.py</code>: Contains the logic to query the Spotify API for jazz albums, process the data, and analyze trends.</li>
-			<li><code>gcs_utils.py</code>: Utility functions for interacting with Google Cloud Storage, including uploading and downloading files.</li>
-			<li><code>main.py</code>: The main script that ties together the data generation, analysis, and storage operations.</li>
-			<li><code>data/</code>: Directory where local copies of raw and processed data are stored (this directory is included in .gitignore).</li>
-		</ul>
+			<h2 id="project-architecture">Project Architecture</h2>
+			<p>The project is structured as follows:</p>
+			<ul>
+				<li><code>generate_jazz_data.py</code>: Contains the logic to query the Spotify API for jazz albums, process the data, and analyze trends.</li>
+				<li><code>gcs_utils.py</code>: Utility functions for interacting with Google Cloud Storage, including uploading and downloading files.</li>
+				<li><code>main.py</code>: The main script that ties together the data generation, analysis, and storage operations.</li>
+				<li><code>data/</code>: Directory where local copies of raw and processed data are stored (this directory is included in .gitignore).</li>
+			</ul>
 
-		<h2 id="workflow">Workflow</h2>
-		<ol>
-			<li><strong>Data Retrieval:</strong> Extracts data on jazz albums using Spotipy and saves it as a CSV file.</li>
-			<li><strong>Data Analysis:</strong> Processes the data to analyze popularity trends over time and generates visualizations.</li>
-			<li><strong>Data Storage:</strong> Saves the generated data locally and uploads it to Google Cloud Storage for backup and sharing.</li>
-		</ol>
+			<h2 id="workflow">Workflow</h2>
+			<ol>
+				<li><strong>Data Retrieval:</strong> Extracts data on jazz albums using Spotipy and saves it as a CSV file.</li>
+				<li><strong>Data Analysis:</strong> Processes the data to analyze popularity trends over time and generates visualizations.</li>
+				<li><strong>Data Storage:</strong> Saves the generated data locally and uploads it to Google Cloud Storage for backup and sharing.</li>
+			</ol>
 
-		<h2 id="future-improvements">Future Improvements</h2>
-		<ol>
-			<li><strong>Data and Analysis Improvements</strong>
-				<ul>
-					<li>Expand Dataset: Increase the number of albums analyzed by iterating over a broader range of years or by querying more tracks and albums.</li>
-					<li>Detailed Genre Analysis: Break down the analysis further by sub-genres within jazz to identify more specific trends.</li>
-				</ul>
-			</li>
-			<li><strong>Platform Improvements</strong>
-				<ul>
-					<li>Automate Data Retrieval: Implement a scheduled task (e.g., using Google Cloud Functions or a cron job) to automatically update the dataset periodically.</li>
-					<li>Web Interface: Develop a web interface to allow users to interact with the data and visualizations dynamically.</li>
-				</ul>
-			</li>
-			<li><strong>Code Quality Improvements</strong>
-				<ul>
-					<li>Refactoring: Improve modularity and reusability of code by further breaking down functions and classes.</li>
-					<li>Testing: Add unit tests for the key functions to ensure the reliability of data processing and analysis steps.</li>
-				</ul>
-			</li>
-		</ol>
+			<h2 id="future-improvements">Future Improvements</h2>
+			<ol>
+				<li><strong>Data and Analysis Improvements</strong>
+					<ul>
+						<li>Expand Dataset: Increase the number of albums analyzed by iterating over a broader range of years or by querying more tracks and albums.</li>
+						<li>Detailed Genre Analysis: Break down the analysis further by sub-genres within jazz to identify more specific trends.</li>
+					</ul>
+				</li>
+				<li><strong>Platform Improvements</strong>
+					<ul>
+						<li>Automate Data Retrieval: Implement a scheduled task (e.g., using Google Cloud Functions or a cron job) to automatically update the dataset periodically.</li>
+						<li>Web Interface: Develop a web interface to allow users to interact with the data and visualizations dynamically.</li>
+					</ul>
+				</li>
+				<li><strong>Code Quality Improvements</strong>
+					<ul>
+						<li>Refactoring: Improve modularity and reusability of code by further breaking down functions and classes.</li>
+						<li>Testing: Add unit tests for the key functions to ensure the reliability of data processing and analysis steps.</li>
+					</ul>
+				</li>
+			</ol>
 
-		<h2 id="how-to-contribute">How to Contribute</h2>
-		<ol>
-			<li><strong>Fork the Repository:</strong> Start by forking the repository to your GitHub account.</li>
-			<li><strong>Create a Branch:</strong> Create a new branch for your feature or bug fix.</li>
-			<li><strong>Make Your Changes:</strong> Implement your changes in the new branch.</li>
-			<li><strong>Submit a Pull Request:</strong> Once your changes are complete, submit a pull request to the main repository.</li>
-		</ol>
+			<h2 id="how-to-contribute">How to Contribute</h2>
+			<ol>
+				<li><strong>Fork the Repository:</strong> Start by forking the repository to your GitHub account.</li>
+				<li><strong>Create a Branch:</strong> Create a new branch for your feature or bug fix.</li>
+				<li><strong>Make Your Changes:</strong> Implement your changes in the new branch.</li>
+				<li><strong>Submit a Pull Request:</strong> Once your changes are complete, submit a pull request to the main repository.</li>
+			</ol>
+		</div>
 		</section>
-        
         <!-- Footer-->
         <footer class="footer text-center" style="padding-top: 5rem;">
             <div class="container">
