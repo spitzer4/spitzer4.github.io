@@ -19,11 +19,16 @@ body, html {
 
 .right-side {
     flex: 1; /* Takes up half of the screen */
-    background-color: pink; /* Different color for the right side */
+    background-color: #FCF75E; /* Different color for the right side */
 }
 
 header {
     text-align: center;
+}
+
+nav ul {
+	margin: 20px;
+	float: right;
 }
 
 ul {
@@ -70,7 +75,8 @@ footer {
 
 .work {
     flex: 1; /* Allow this section to grow and take available space */
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+	margin: 20px;
 }
 
 .job {
@@ -108,4 +114,31 @@ footer {
 
 .job a:hover {
     text-decoration: underline;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 16px;
+}
+
+textarea {
+	min-height: 100px;
+}
+
+.contact {
+	padding: 20px;
+}
+
+.btn-social {
+	color: #007BFF;
+}
+
+.btn-social:hover {
+	color: #0056b3;
 }
