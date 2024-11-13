@@ -1,0 +1,111 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.left-side {
+    flex: 1; /* Takes up half of the screen */
+    background-color: #ffffff; /* White background for the left side */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.right-side {
+    flex: 1; /* Takes up half of the screen */
+    background-color: pink; /* Different color for the right side */
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+ul li {
+	display: inline;
+	margin: 0 15px;
+}
+
+ul li a {
+	text-decoration: none;
+	color: #333; /* Dark text color for links */
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #fff;
+    color: black;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: #007BFF; /* Bootstrap blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.work {
+    flex: 1; /* Allow this section to grow and take available space */
+    margin-bottom: 20px;
+}
+
+.job {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.job h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.job h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.job p {
+    margin: 10px 0;
+}
+
+.job ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.job a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.job a:hover {
+    text-decoration: underline;
+}
