@@ -13,8 +13,12 @@ body, html {
 .left-side {
     flex: 1; /* Takes up half of the screen */
     background-color: #ffffff; /* White background for the left side */
-    padding: 20px;
+    /* padding: 20px; */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+	position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
 }
 
 .right-side {
