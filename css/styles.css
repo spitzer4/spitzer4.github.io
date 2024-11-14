@@ -13,8 +13,9 @@ body, html {
 .left-side {
     flex: 1; /* Takes up half of the screen */
     background-color: #ffffff; /* White background for the left side */
-    /* padding: 20px; */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.about {
 	position: absolute;
     top: 50%;
     left: 25%;
@@ -68,7 +69,6 @@ footer {
     background-color: #007BFF; /* Bootstrap blue */
     color: white;
     border: none;
-    border-radius: 5px;
     text-align: center;
     transition: background-color 0.3s ease;
 }
