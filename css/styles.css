@@ -1,38 +1,26 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    margin: auto;
+	width: 75%;
+	padding: 100px 0;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-    display: flex;
-    height: 100vh; /* Full height of the viewport */
+.title-name {
+	font-size: 80px;
 }
 
-.left-side {
-    flex: 1; /* Takes up half of the screen */
-    background-color: #ffffff; /* White background for the left side */
+.subtitle {
+	font-size: 40px;
 }
 
-.about {
-	position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-}
-
-.right-side {
-    flex: 1; /* Takes up half of the screen */
-    background-color: #FCF75E; /* Different color for the right side */
-}
-
-header {
-    text-align: center;
+nav {
+    position: absolute; /* Ensures the nav can float freely */
+    top: 0; /* Positions at the top */
+    right: 0; /* Aligns to the right */
+    padding: 20px; /* Optional, adds spacing */
 }
 
 nav ul {
-	margin: 20px;
 	float: right;
 }
 
@@ -43,7 +31,7 @@ ul {
 
 ul li {
 	display: inline;
-	margin: 0 15px;
+	margin: 0 15px 0 0;
 }
 
 ul li a {
@@ -56,8 +44,7 @@ section {
 }
 
 footer {
-    text-align: center;
-    padding: 10px 0;
+    padding: 0;
     background: #fff;
     color: black;
 }
@@ -65,8 +52,9 @@ footer {
 .button {
     display: inline-block;
     padding: 10px 15px;
-    margin: 10px 0;
+    margin: 0 0 10px 0;
     background-color: #007BFF; /* Bootstrap blue */
+	border-radius: 12px;
     color: white;
     border: none;
     text-align: center;
@@ -80,14 +68,14 @@ footer {
 .work {
     flex: 1; /* Allow this section to grow and take available space */
     /* margin-bottom: 20px; */
-	margin: 20px;
+	/* margin: 20px; */
 }
 
 .job {
     margin-bottom: 30px;
     padding: 15px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 12px;
     background-color: #fafafa;
 }
 
