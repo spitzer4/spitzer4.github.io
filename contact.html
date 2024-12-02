@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Projects</title>
 	<nav>
-		<ul>
+		<ul class="nav-list">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="work.html">Work</a></li>
 			<li><a href="contact.html">Contact</a></li>
@@ -17,17 +17,12 @@
     <div class="container">
 		<section class="contact">
         	<h2>Contact Me</h2>
-			<form action="#" method="post">
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required>
-
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required>
-
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" required></textarea>
-
-				<button type="submit">Send Message</button>
+			<form action="https://formspree.io/f/xbljqdbo" method="POST">
+				<label>Your email:</label>
+				<input type="email" name="email">
+				<label>Your message:</label>
+				<textarea name="message"></textarea>
+				<button type="submit">Send</button>
 			</form>
 		</section>
     </div>

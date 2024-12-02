@@ -1,16 +1,34 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body, html {
     margin: auto;
 	width: 75%;
-	padding: 100px 0;
+	padding: 20px;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .title-name {
-	font-size: 80px;
+    font-size: 5rem;
 }
 
 .subtitle {
-	font-size: 40px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.25rem;
 }
 
 nav {
@@ -27,16 +45,37 @@ nav ul {
 ul {
 	list-style: none;
 	padding: 0;
+	margin-top: 20px;
 }
 
 ul li {
-	display: inline;
+	display: inline-block;
 	margin: 0 15px 0 0;
 }
 
 ul li a {
 	text-decoration: none;
 	color: #333; /* Dark text color for links */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #ffcc00;
 }
 
 section {
@@ -47,6 +86,7 @@ footer {
     padding: 0;
     background: #fff;
     color: black;
+	font-size: 1.5rem;
 }
 
 .button {
@@ -67,48 +107,45 @@ footer {
 
 .work {
     flex: 1; /* Allow this section to grow and take available space */
-    /* margin-bottom: 20px; */
-	/* margin: 20px; */
+}
+
+.work h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
 }
 
 .job {
-    margin-bottom: 30px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    background-color: #fafafa;
+    border-bottom: 1px solid #ccc;
 }
 
-.job h2 {
-    margin: 0;
-    font-size: 1.5em;
+.job:last-child {
+    border-bottom: none;
+}
+
+.job h2 a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+}
+
+.job h2 a:hover {
+    color: #0056b3;
 }
 
 .job h3 {
-    margin: 5px 0;
-    font-size: 1.2em;
-    color: #555;
+    color: #666;
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
 .job p {
-    margin: 10px 0;
+    font-size: 1rem;
+    margin-top: 10px;
+    line-height: 1.5;
 }
 
-.job ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.job a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.job a:hover {
-    text-decoration: underline;
-}
-
-input[type="text"],
+/* input[type="text"],
 input[type="email"],
 textarea {
 	width: 100%;
@@ -125,12 +162,102 @@ textarea {
 
 .contact {
 	padding: 20px;
+} */
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea, button {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .btn-social {
 	color: #007BFF;
+	display: inline-block;
+    font-size: 1.5rem;
+    margin: 0 5px;
 }
 
 .btn-social:hover {
 	color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title-name {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: 8px 15px;
+    }
+
+    .btn-social {
+        font-size: 1.25rem;
+    }
+
+	.nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .work h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .button {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 0.875rem;
+    }
+	
+	.job h2 a {
+        font-size: 1.5rem;
+    }
+
+    .job h3 {
+        font-size: 1rem;
+    }
+
+    .job p {
+        font-size: 0.9rem;
+    }
 }
