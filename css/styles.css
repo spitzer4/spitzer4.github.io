@@ -19,7 +19,7 @@
 }
 
 body {
-	font-family: 'Courier New', monospace;
+	font-family: 'Arial';
 	background-color: var(--base3);
 	color: var(--base00);
 	margin: 0;
