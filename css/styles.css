@@ -40,7 +40,7 @@ header {
 
 header h1 {
 	font-size: 3rem;
-	color: var(--blue);
+	color: var(--magenta);
 }
 
 header p {
@@ -116,4 +116,13 @@ footer {
 
 .contact-form button:hover {
 	background: var(--blue);
+}
+
+.btn-social {
+	color: var(--blue);
+	font-size: 10rem;
+}
+
+.btn-social:hover {
+	color: var(--cyan);
 }
