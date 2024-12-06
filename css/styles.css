@@ -105,3 +105,15 @@ header {
 .btn-social:hover {
 	color: var(--blue);
 }
+
+.magenta-ul {
+	color: var(--magenta);
+}
+
+.green-ul {
+	color: var(--green);
+}
+
+.orange-ul {
+	color: var(--orange);
+}
