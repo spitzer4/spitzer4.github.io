@@ -18,79 +18,94 @@
 }
 
 body {
+	font-family: 'Helvetica Neue', sans-serif;
+	color: #333;
+	background-color: #fafafa;
 	margin: 0;
 	padding: 0;
-	font-family: Arial, sans-serif;
-	color: var(--base02);
-	background-color: var(--base3);
-}
-
-p {
-	color: var(--base02);
 }
 
 header {
-	display: flex;
-	justify-content: space-between;
-	padding: 20px 40px;
-	font-style: bold;
-	color: var(--base03);
-}
-
-.container {
-	display: flex;
-	flex-direction: row;
-	padding: 40px;
-	gap: 50px;
-}
-
-.left {
-	width: 50%;
-}
-
-.left h1 {
-	font-size: 2.5em;
-}
-
-.left p {
-	font-size: 1.2em;
-}
-
-.skills, .projects {
-	margin-top: 20px;
-}
-
-.skills button, .projects div {
-	margin: 10px 0;
-	padding: 10px;
-	width: 75%;
-	border: none;
-	font-size: 1em;
+	background-color: #fff;
+	padding: 20px;
 	text-align: left;
-	border-radius: 10px;
 }
 
-.skills button {
-	background-color: var(--base2);
-	box-shadow: var(--base0);
+.logo {
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
 }
 
-.projects div {
-	background-color: var(--base2);
-	box-shadow: var(--base0);
+.hero {
+	text-align: center;
+	padding: 80px 20px;
+	background-color: #fdfdfd;
 }
 
-.right {
-	width: 50%;
+.hero h1 {
+	font-size: 64px;
+	font-weight: 900;
+	margin-bottom: 10px;
 }
 
-.profile-pic {
-	width: 200px;
-	height: 200px;
-	background-image: url("../headshot.png");
-	background-size: contain;
-	margin-bottom: 20px;
-	border-radius: 10px;
+.hero p {
+	font-size: 18px;
+	max-width: 600px;
+	margin: 0 auto 20px;
+}
+
+.explore-button {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.gallery {
+	padding: 50px 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.gallery-item h3,
+.gallery-item h4 {
+	text-transform: uppercase;
+	font-size: 12px;
+	margin: 5px 0;
+}
+
+.gallery-item img {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	border-radius: 5px;
+}
+
+.description {
+	max-width: 600px;
+	padding-left: 20px;
+}
+
+.dimensions {
+	display: flex;
+	gap: 20px;
+}
+
+.dimension img {
+	width: 100%;
+	max-width: 250px;
+	height: auto;
+	border-radius: 5px;
+}
+
+.social-media {
+	text-align: center;
 }
 
 .social-media ul {
@@ -104,16 +119,4 @@ header {
 
 .btn-social:hover {
 	color: var(--blue);
-}
-
-.magenta-ul {
-	color: var(--magenta);
-}
-
-.green-ul {
-	color: var(--green);
-}
-
-.orange-ul {
-	color: var(--orange);
 }
