@@ -19,14 +19,13 @@
 
 body {
 	font-family: 'Helvetica Neue', sans-serif;
-	color: var(--base0);
-	background-color: var(--base03);
+	background-color: #f5f5f5;
 	margin: 0;
 	padding: 0;
 }
 
 header {
-	background-color: var(--base02);
+	background-color: white;
 	padding: 20px;
 	text-align: left;
 }
@@ -35,13 +34,12 @@ header {
 	font-size: 18px;
 	font-weight: bold;
 	text-decoration: none;
-	color: var(--base1)
 }
 
 .hero {
 	text-align: center;
 	padding: 80px 20px;
-	background-color: var(--base02);
+	background-color: white;
 }
 
 .hero h1 {
@@ -72,9 +70,12 @@ header {
 
 .gallery-item img {
 	width: 100%;
-	max-width: 600px;
+	max-width: 400px;
 	height: auto;
 	border-radius: 5px;
+	object-fit: cover;
+	background-position: center center;
+  	background-repeat: no-repeat;
 }
 
 .description {
@@ -90,8 +91,11 @@ header {
 .dimension img {
 	width: 100%;
 	max-width: 250px;
-	height: auto;
+	height: 100px;
 	border-radius: 5px;
+	object-fit: cover;
+	background-position: center center;
+  	background-repeat: no-repeat;
 }
 
 .social-media {
@@ -103,8 +107,8 @@ header {
 }
 
 .btn-social {
-	color: var(--cyan);
 	font-size: 2rem;
+	color: black;
 }
 
 .btn-social:hover {
