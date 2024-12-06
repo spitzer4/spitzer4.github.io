@@ -1,4 +1,3 @@
-/* Solarized Light Colors */
 :root {
 	--base03: #002b36;
 	--base02: #073642;
@@ -19,110 +18,90 @@
 }
 
 body {
-	font-family: 'Arial';
-	background-color: var(--base3);
-	color: var(--base00);
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
-	background-image: 
-		linear-gradient(0deg, var(--base01) 1px, transparent 1px),
-		linear-gradient(90deg, var(--base01) 1px, transparent 1px);
-	background-size: 40px 40px;
+	font-family: Arial, sans-serif;
+	color: var(--base02);
+	background-color: var(--base3);
+}
+
+p {
+	color: var(--base02);
 }
 
 header {
-	text-align: center;
-	padding: 4rem 2rem;
-	background: var(--base2);
-	border-bottom: 2px solid var(--base01);
-}
-
-header h1 {
-	font-size: 3rem;
-	color: var(--magenta);
-}
-
-header p {
-	font-size: 1.3rem;
-	color: var(--base01);
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 40px;
+	font-style: bold;
+	color: var(--base03);
 }
 
 .container {
-	width: 80%;
-	margin: 0 auto;
-	padding: 2rem;
+	display: flex;
+	flex-direction: row;
+	padding: 40px;
+	gap: 50px;
 }
 
-section {
-	background: var(--base2);
-	margin: 2rem 0;
-	padding: 2rem;
-	border: 1px solid var(--base1);
+.left {
+	width: 50%;
+}
+
+.left h1 {
+	font-size: 2.5em;
+}
+
+.left p {
+	font-size: 1.2em;
+}
+
+.skills, .projects {
+	margin-top: 20px;
+}
+
+.skills button, .projects div {
+	margin: 10px 0;
+	padding: 10px;
+	width: 75%;
+	border: none;
+	font-size: 1em;
+	text-align: left;
 	border-radius: 10px;
 }
 
-h2 {
-	color: var(--orange);
-	font-size: 1.8rem;
-	text-transform: uppercase;
+.skills button {
+	background-color: var(--base2);
+	box-shadow: var(--base0);
 }
 
-.skills-list, .projects-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+.projects div {
+	background-color: var(--base2);
+	box-shadow: var(--base0);
 }
 
-.skill, .project {
-	background: var(--base3);
-	padding: 1rem;
-	margin: 1rem;
-	border-radius: 8px;
-	text-align: center;
-	color: var(--base00);
-	border: 1px solid var(--base1);
-	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
-	width: calc(33% - 2rem);
+.right {
+	width: 50%;
 }
 
-footer {
-	background: var(--base2);
-	text-align: center;
-	padding: 1rem;
-	color: var(--green);
-	border-top: 2px solid var(--base01);
+.profile-pic {
+	width: 200px;
+	height: 200px;
+	background-image: url("../headshot.png");
+	background-size: contain;
+	margin-bottom: 20px;
+	border-radius: 10px;
 }
 
-.contact-form input, .contact-form textarea {
-	width: 100%;
-	padding: 0.7rem;
-	margin: 0.5rem 0;
-	background: var(--base3);
-	color: var(--base00);
-	border: 1px solid var(--base1);
-	border-radius: 5px;
-}
-
-.contact-form button {
-	background: var(--cyan);
-	color: var(--base3);
-	padding: 0.7rem 1.5rem;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	margin-top: 1rem;
-}
-
-.contact-form button:hover {
-	background: var(--blue);
+.social-media ul {
+	padding: 0;
 }
 
 .btn-social {
-	color: var(--blue);
-	font-size: 10rem;
+	color: var(--cyan);
+	font-size: 2rem;
 }
 
 .btn-social:hover {
-	color: var(--cyan);
+	color: var(--blue);
 }
