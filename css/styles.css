@@ -40,7 +40,7 @@ p {
 }
 
 a {
-	color: silver;
+	color: #808080;
 	text-decoration: none;
 }
 
@@ -58,7 +58,7 @@ a {
 }
 
 .projects img {
-	width: 100%;
+	width: 70%;
 	margin-top: 10px;
 	border-radius: 5px;
 }
