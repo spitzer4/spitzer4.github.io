@@ -51,7 +51,7 @@ nav ul li a:hover {
     color: #ff477e;
 }
 
-.main-title {
+.main-title, .about-me {
     height: 100vh;
     display: flex;
 	flex-direction: column; 
@@ -74,10 +74,21 @@ section {
     color: #eee;
 }
 
+#data-science {
+	padding-top: 80px;
+	padding-bottom: 2em;
+    display: flex;
+    flex-direction: column; /* Stack the title and cards vertically */
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center; /* Center cards horizontally */
+    background: linear-gradient(to bottom right, #111, #333);
+}
+
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2em;
+    display: flex; /* Flex layout for the cards */
+    flex-wrap: wrap; /* Allow cards to wrap onto new rows */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Space between cards */
 }
 
 .project-card {
@@ -87,6 +98,8 @@ section {
     padding: 1.5em;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px; /* Set a fixed width for the cards */
+    height: auto; /* Adjust height based on content */
 }
 
 .project-card:hover {
@@ -101,7 +114,6 @@ section {
     padding: 0.5em 1.5em;
     border-radius: 30px;
     cursor: pointer;
-    /* transition: 0.3s ease; */
 }
 
 .project-card button:hover {
