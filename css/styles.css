@@ -72,7 +72,7 @@ nav ul li a:hover {
 	flex-direction: column; 
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom right, #111, #333);
+    /* background: linear-gradient(to bottom right, #111, #333); */
 }
 
 .main-title h1 {
@@ -140,4 +140,11 @@ footer {
     padding: 1em 0;
     background: #111;
     color: #777;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1; /* Put the canvas behind the content */
 }
