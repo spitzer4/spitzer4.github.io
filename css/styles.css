@@ -42,6 +42,21 @@ nav {
     z-index: 1000;
 }
 
+nav .logo {
+    position: absolute;
+    top: 20px; /* Adjust vertical positioning */
+    left: 20px; /* Adjust horizontal positioning */
+    font-family: 'Playfair Display', serif;
+    font-size: 2em; /* Adjust size as needed */
+    color: #fff;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect for logo */
+nav .logo:hover {
+    color: #ff477e; /* Change the color on hover */
+}
+
 nav ul li {
     display: inline;
     margin: 0 15px;
@@ -74,7 +89,7 @@ section {
     color: #eee;
 }
 
-#data-science {
+#data-science, #design {
 	padding-top: 80px;
 	padding-bottom: 2em;
     display: flex;
