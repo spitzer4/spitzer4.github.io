@@ -36,7 +36,7 @@ function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(0);
 	noFill();
-	strokeWeight(3);
+	strokeWeight(10);
 
 	let colors = [
 		color(255, 0, 0),    // Red
