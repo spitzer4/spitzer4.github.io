@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v6.6.0/js/all.js" crossorigin="anonymous"></script>
-  <title>Kaleigh's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaleigh's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
-        <div class="sidebar">
-			<h1>Kaleigh Spitzer</h1>
-            <img src="headshot.png" alt="Kaleigh Spitzer">
-			<h2>Who's Kaleigh and What's She Working On?</h2>
-			<p>Previously, I was a Data Analyst at EBM Software, where I focused on making ETL pipelines more efficient.</p>
-			<p>I'm passionate about using data to tell a story, and I'm looking to transition into a career in data science.</p>
-			<p>I live in Chicago, Illinois 🌆. Outside of work, I like to practice yoga, paint with watercolor, and travel.</p>
-            <!-- <p>Aspiring Data Scientist in Chicago.</p>
-			<p>Turning raw data into actionable insights through analytics, visualization, and automation.</p> -->
-            <a href="https://www.linkedin.com/in/kaleighs724/">View my LinkedIn Profile</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#data-science">Data Science Projects</a></li>
+                <li><a href="#design-js">Design Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="main-title">
+            <h1>Kaleigh Spitzer</h1>
+			<h2>Passionate about the intersection of design and code.</h2>
         </div>
+    </header>
 
-        <div class="content">
-            <h2>Projects</h2>
-
-			<div class="projects">
-                <h3>Color Palette Analysis</h3>
-                <p>This project analyzes color palettes in famous artworks to explore their emotional impact and the use of color harmonies, including complementary, analogous, and triadic combinations</p>
-				<img src="palettes.png" alt="Figure 1: Color palettes of the first 5 artworks">
-				<div class="tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Jupyter</span>
-                    <span class="tag">K-Means Clustering</span>
-                </div>
-                <a href="https://github.com/spitzer4/color-palette-emotion-analysis"><p>View code on GitHub</p></a>
-            </div>
-
-            <div class="projects">
-                <h3>TikTok Engagement Analysis</h3>
-                <p>A/B testing video duration & engagement.</p>
-                <a href="https://github.com/spitzer4/tiktok-engagement-analysis"><p>View code on GitHub</p></a>
-            </div>
-
-            <div class="projects">
-                <h3>Ayo Dosunmu Performance Analysis</h3>
-                <p>Designed to explore trends in Ayo Dosunmu's performance on the Chicago Bulls over time using data from the NBA API.</p>
-                <img src="points_prediction.png" alt="Figure 1: Points prediction for next 5 games">
-				<!-- <img src="figure1.png" alt="Figure 1: Footfall at pharmacies and grocery stores">
-                <img src="figure2.png" alt="Figure 2: Timeline of 'Stay At Home' restrictions"> -->
-				<div class="tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Jupyter</span>
-                    <span class="tag">Linear Regression</span>
-                </div>
-				<a href="https://github.com/spitzer4/dosunmu-performance-analysis"><p>View code on GitHub</p></a>
+    <!-- <section id="data-science">
+        <h2>Data Science Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project Title</h3>
+                <p>Short description of the project.</p>
+                <button>View More</button>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="design-js">
+        <h2>Design-Based JavaScript Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Interactive Project</h3>
+                <p>Short description of the project.</p>
+                <button>View More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section> -->
+
+    <footer>
+        <p>💖 Coded with love by Kaleigh.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
