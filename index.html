@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-	<div class="wrapper">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Kaleigh's Portfolio</title>
-		<link rel="stylesheet" href="css/styles.css">
-	</head>
-	<body>
-		<canvas id="gardenCanvas"></canvas>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaleigh's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<script src="https://kit.fontawesome.com/0b4ec7f54b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>🌷 Kaleigh's Portfolio</p>
+        </div>
+        <div class="content">
+            <h1>Hello, I'm Kaleigh. 🌱</h1>
+            <p>I'm passionate about data science, design, and creating interactive experiences.</p>
 
-		<nav class="garden-path">
-			<a href="about.html" class="flower about-flower">About</a>
-			<a href="data-science.html" class="flower data-flower">Data Science Projects</a>
-			<a href="design.html" class="flower design-flower">Design Projects</a>
-			<a href="contact.html" class="flower contact-flower">Contact</a>
-		</nav>
+			<section id="data-science">
+				<h2>data science projects.</h2>
+				<div class="project">
+					<p>jan. 2025</p>
+					<p><a href="#">Ayo Dosunmu Performance Analysis</a></p>
+					<img src="points_prediction.png" alt="Ayo Dosunmu Project" class="project-image">
+				</div>
+			</section>
 
-		<section id="about">
-			<div class="main-title"></div>
-				<h1>Kaleigh Spitzer</h1>
-				<h3>Welcome to my garden! I'm passionate about data science, design, and creating interactive experiences.</h3>
+            <h2>design projects.</h2>
+			<div class="project">
+				<p>feb. 2025</p>
+				<p><a href="#">Flow Field</a></p>
+				<img src="points_prediction.png" alt="Ayo Dosunmu Project" class="project-image">
 			</div>
-		</section>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-		<script src="script.js"></script>
-	</body>
-
-	<footer>
-		<p>💖 Coded with love by Kaleigh.</p>
-	</footer>
-</div>
+			<h2>contact.</h2>
+			<div class="contact-me">
+				<ul>
+					<i class="fa-solid fa-envelope"><a href="mailto:kaleighspitz@gmail.com">email</a></i>
+					<i class="fa-brands fa-linkedin"><a href="https://www.linkedin.com/in/kaleighspitz/">linkedin</a></i>
+				</ul>
+			</div>
+        </div>
+        <div class="footer">
+            <p>Coded with 💖 by Kaleigh.</p>
+        </div>
+    </div>
+</body>
 </html>
