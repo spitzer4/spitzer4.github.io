@@ -118,6 +118,11 @@ section {
     height: auto; /* Adjust height based on content */
 }
 
+.project-card iframe {
+	width: 200px;
+	height: 100px;
+}
+
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);

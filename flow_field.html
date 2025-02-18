@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Field</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+  let particles = [];
+
+  function setup() {
+    createCanvas(windowWidth, windowHeight);
+    // Create an initial set of particles at random positions
+    for (let i = 0; i < 200; i++) {
+      particles.push(new Particle(random(width), random(height)));
+    }
+  }
+
+  function draw() {
+    background(0, 10); // Dark background with some fading
+    // Update and show each particle
+    for (let particle of particles) {
+      particle.update();
+      particle.show();
+    }
+  }
+
+  class Particle {
+    constructor(x, y) {
+      this.position = createVector(x, y);
+      this.velocity = createVector(random(-1, 1), random(-1, 1));
+      this.acceleration = createVector(0, 0);
+      this.size = random(3, 6);
+      this.alpha = 255;
+    }
+
+    update() {
+      // Apply random acceleration to create organic movement
+      this.acceleration.add(p5.Vector.random2D().mult(0.05));
+      this.velocity.add(this.acceleration);
+      this.position.add(this.velocity);
+      
+      // Make the particles fade out
+      this.alpha -= 1;
+      
+      // Wrap around the screen edges
+      if (this.position.x > width) this.position.x = 0;
+      if (this.position.x < 0) this.position.x = width;
+      if (this.position.y > height) this.position.y = 0;
+      if (this.position.y < 0) this.position.y = height;
+    }
+
+    show() {
+      noStroke();
+      fill(255, this.alpha);
+      ellipse(this.position.x, this.position.y, this.size);
+    }
+  }
+
+  function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+  }
+</script>
+
+</body>
+</html>
