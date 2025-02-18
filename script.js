@@ -1,66 +1,59 @@
-// Smooth Scroll
-const links = document.querySelectorAll('nav ul li a');
-
-links.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth' });
-    });
-});
-
-// Dark Mode Toggle
-const toggleButton = document.createElement('button');
-let darkMode = false;
-toggleButton.innerText = '🌙';
-toggleButton.style.position = 'fixed';
-toggleButton.style.top = '20px';
-toggleButton.style.right = '20px';
-toggleButton.style.background = 'transparent';
-toggleButton.style.border = 'none';
-toggleButton.style.fontSize = '2em';
-toggleButton.style.cursor = 'pointer';
-document.body.appendChild(toggleButton);
-
-toggleButton.addEventListener('click', () => {
-    darkMode = !darkMode;
-    document.body.style.backgroundColor = darkMode ? '#fff' : '#111';
-    document.body.style.color = darkMode ? '#111' : '#eee';
-    toggleButton.innerText = darkMode ? '☀️' : '🌙';
-});
-
-const canvas = document.getElementById('myCanvas');
-const ctx = canvas.getContext('2d');
+let flowers = [];
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
-	background(0);
-	noFill();
-	strokeWeight(10);
+    let canvas = createCanvas(windowWidth, windowHeight);
+    canvas.position(0, 0);
+    canvas.style('z-index', '-1');
+    for (let i = 0; i < 4; i++) {
+        flowers.push(new Flower((i + 1) * (width / 5), height - 300));
+    }
+}
 
-	let colors = [
-		color(255, 0, 0),    // Red
-		color(255, 165, 0),  // Orange
-		color(255, 255, 0),  // Yellow
-		color(0, 128, 0),    // Green
-		color(0, 0, 255),    // Blue
-		color(75, 0, 130),   // Indigo
-		color(238, 130, 238) // Violet
-	];
+function draw() {
+    clear();
 
-	for (let y = 50; y < height; y += 50) {
-		beginShape();
-		stroke(random(colors));
-		for (let x = 0; x < width; x += 20) {
-			let offsetY = map(noise(x * 0.05, y * 0.05), 0, 1, -30, 30);
-			curveVertex(x, y + offsetY);
-		}
-		endShape();
-	}
+	// Draw green rectangle at the bottom of the screen
+    fill('#81c784'); // Green color
+    noStroke();
+    rect(0, height - 300, width, 300); // Green rectangle at the bottom
+
+    for (let flower of flowers) {
+        flower.display();
+    }
+}
+
+class Flower {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+        this.angle = random(TWO_PI);
+        this.size = 50;
+		this.stemHeight = 100; // Height of the stem
+    }
+
+    display() {
+        push();
+        translate(this.x, this.y);
+
+		// Draw stem
+        stroke('#2e7d32');  // Green color for the stem
+        strokeWeight(6);  // Make the stem thick
+        line(0, 0, 0, this.stemHeight);  // Draw stem from flower's center
+
+        rotate(sin(this.angle) * 0.1);
+        fill('#ff6f61');
+        noStroke();
+        for (let i = 0; i < 6; i++) {
+            ellipse(0, this.size / 2, this.size, this.size * 1.5);
+            rotate(PI / 3);
+        }
+        fill('#fff59d');
+        ellipse(0, 0, this.size * 0.7, this.size * 0.7);
+        pop();
+        this.angle += 0.02;
+    }
 }
 
 function windowResized() {
-	resizeCanvas(windowWidth, windowHeight);
-	redraw();
+    resizeCanvas(windowWidth, windowHeight);
 }
-  
