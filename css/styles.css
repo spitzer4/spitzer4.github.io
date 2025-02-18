@@ -102,18 +102,6 @@ section {
     text-align: center;
 }
 
-section:nth-child(even) {
-    background: #e6ee9c;
-}
-
-section h2 {
-    color: #3e4e50;
-}
-
-section p {
-    color: #5d6d72;
-}
-
 footer {
 	text-align: center;
 	padding: 1em 0;
@@ -127,4 +115,28 @@ footer {
 
 .about-me {
 	padding: 100px 20px;
+}
+
+.project-grid img {
+	width: 80%;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.project-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.project-card {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 8px;	
+}
+
+.project-card a {
+	text-decoration: none;
+	color: #6F4E37;
+	display: block;
+	padding: 10px;
 }
