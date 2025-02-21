@@ -134,3 +134,15 @@ a {
 	text-align: left;
 	padding: 0;
 }
+
+.highlight {
+	background-color: #ffeb99;
+	padding: 5px;
+	border-radius: 4px;
+	margin: 0;
+}
+
+.content img {
+	width: 100%;
+	height: auto;
+}
