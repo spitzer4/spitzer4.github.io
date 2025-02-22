@@ -64,7 +64,7 @@ a {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     margin-bottom: 20px;
 }
@@ -145,4 +145,23 @@ a {
 .content img {
 	width: 100%;
 	height: auto;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 8px;
+	justify-content: center;
+}
+
+.tag {
+    background-color: #e0e0e0; /* Light gray background */
+    color: black; 
+    font-size: 0.85em;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    letter-spacing: 0.05em;
 }
