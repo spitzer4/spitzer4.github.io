@@ -165,3 +165,8 @@ a {
     display: inline-block;
     letter-spacing: 0.05em;
 }
+
+.about-content img {
+	width: 300px;
+	margin: auto;
+}
