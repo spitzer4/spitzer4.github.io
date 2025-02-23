@@ -170,3 +170,16 @@ a {
 	width: 300px;
 	margin: auto;
 }
+
+nav ul {
+	display: flex;
+	padding: 0;
+}
+
+nav li {
+	margin-right: 10px;
+}
+
+.about-content a {
+	display: block;
+}
