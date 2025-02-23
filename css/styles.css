@@ -51,7 +51,7 @@ li span {
 }
 
 a {
-    color: #007bff; /* Blue links */
+    color: #268bd2; /* Blue links */
     text-decoration: none;
 }
 
@@ -91,7 +91,7 @@ a {
 .project-card a {
     display: block;
     margin: 10px 0;
-    color: #007bff;
+    color: #268bd2;
     text-decoration: none;
 }
 
@@ -122,7 +122,7 @@ a {
 .contact-me a {
 	text-decoration: none;
 	font-family: monospace;
-	color: #007bff;
+	color: #268bd2;
 	margin-right: 10px;
 }
 
@@ -158,6 +158,28 @@ a {
 .tag {
     background-color: #e0e0e0; /* Light gray background */
     color: black; 
+    font-size: 0.85em;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    letter-spacing: 0.05em;
+}
+
+.ux-ui-tag {
+	background-color: #d33682;
+    color: white; 
+    font-size: 0.85em;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    letter-spacing: 0.05em;
+}
+
+.coding-tag {
+	background-color: #2aa198;
+    color: white; 
     font-size: 0.85em;
     font-weight: 500;
     padding: 5px 10px;
