@@ -13,6 +13,10 @@ a {
 	transition: color 0.3s;
 }
 
+a:hover {
+	background-color: #0056b3;
+}
+
 p, li {
 	font-size: 1.1em;
 }
@@ -65,7 +69,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #0056b3;
+    background-color: #0056b3;
 }
 
 .content {
@@ -97,6 +101,15 @@ h4 {
 	margin-top: 30px;
 	margin-bottom: 20px;
 	color: #555;
+}
+
+ul, ol {
+	margin: 20px 0;
+	padding-left: 20px;
+}
+
+ul li, ol li {
+	margin-bottom: 10px;
 }
 
 .project-grid {
@@ -157,6 +170,10 @@ h4 {
 	transition: background-color 0.3s;
 }
 
+.button:hover {
+	background-color: #0056b3;
+}	
+
 .footer {
     display: flex;
     justify-content: center;
@@ -180,6 +197,10 @@ h4 {
     font-family: 'Roboto', sans-serif;
     margin-right: 20px;
     transition: color 0.3s;
+}
+
+.contact-me a:hover {
+	background-color: #268bd2;
 }
 
 /* Hamburger menu styles */
