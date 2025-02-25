@@ -7,6 +7,12 @@ body {
     line-height: 1.6;
 }
 
+a {
+	color: #268bd2;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -121,6 +127,11 @@ h2 {
 
 .project-card a:hover {
     color: #0056b3;
+}
+
+#overview img {
+	width: 100%;
+	height: auto;
 }
 
 .footer {
