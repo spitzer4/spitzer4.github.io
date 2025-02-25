@@ -85,6 +85,20 @@ h2 {
     color: #555;
 }
 
+h3 {
+	font-size: 1.5em;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	color: #555;
+}
+
+h4 {
+	font-size: 1.2em;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	color: #555;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -123,14 +137,9 @@ h2 {
 .project-card a {
     display: block;
     margin: 10px 0;
-    color: #268bd2;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
-}
-
-.project-card a:hover {
-    color: #0056b3;
 }
 
 #overview img {
@@ -169,13 +178,8 @@ h2 {
 .contact-me a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    color: #268bd2;
     margin-right: 20px;
     transition: color 0.3s;
-}
-
-.contact-me a:hover {
-    color: #0056b3;
 }
 
 /* Hamburger menu styles */
@@ -205,12 +209,23 @@ h2 {
     display: none;
 }
 
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figure img,
+figure embed {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 figcaption {
-	font-size: 0.8em;
-	color: #777;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	max-width: 300px;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 10px;
 }
 
 /* Media queries for responsiveness */
