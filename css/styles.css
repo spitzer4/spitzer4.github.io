@@ -13,6 +13,10 @@ a {
 	transition: color 0.3s;
 }
 
+p, li {
+	font-size: 1.1em;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -134,6 +138,16 @@ h2 {
 	height: auto;
 }
 
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #268bd2;
+	color: white;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s;
+}
+
 .footer {
     display: flex;
     justify-content: center;
@@ -189,6 +203,14 @@ h2 {
 /* Hide the checkbox and label when checked */
 .nav-toggle:checked + .nav-toggle-label {
     display: none;
+}
+
+figcaption {
+	font-size: 0.8em;
+	color: #777;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 300px;
 }
 
 /* Media queries for responsiveness */
