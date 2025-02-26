@@ -203,6 +203,28 @@ ul li, ol li {
 	background-color: #268bd2;
 }
 
+.tag {
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #f5f5f5;
+	color: black;
+	border-radius: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-size: 0.9em;
+}
+
+.ux-ui-tag, .coding-tag {
+	background-color: #268bd2;
+	color: white;
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-size: 0.9em;
+}
+
 /* Hamburger menu styles */
 .nav-toggle {
     display: none;
