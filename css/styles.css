@@ -13,8 +13,8 @@ a {
 	transition: color 0.3s;
 }
 
-a:hover {
-	background-color: #0056b3;
+header a:hover {
+	color: #0056b3;
 }
 
 p, li {
@@ -69,7 +69,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #0056b3;
+    color: #0056b3;
 }
 
 .content {
