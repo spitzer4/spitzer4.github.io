@@ -23,6 +23,27 @@ header a:hover {
 	color: #0056b3;
 }
 
+.title {
+	align-items: center;
+	text-align: center;
+	justify-items: center;
+	justify-content: center;
+	overflow: hidden; /* Hide content that exceeds the height */
+	display: flex; /* Use flexbox to center content vertically */
+	flex-direction: column;
+	justify-content: center;
+}
+
+.title h1 {
+	font-size: 7em;
+	margin: 0;
+}
+
+.title h2 {
+	font-size: 3em;
+	margin: 0;
+}
+
 p, li {
 	font-size: 1.1em;
 }
@@ -41,7 +62,6 @@ p, li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
     position: relative;
 }
 
@@ -124,6 +144,11 @@ ul li, ol li {
 
 .socials a:hover {
 	color: #0056b3;
+}
+
+.projects {
+	border-top: 1px solid #ddd;
+	padding-top: 40px;
 }
 
 .large-project-card {
