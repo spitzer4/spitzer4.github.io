@@ -1,4 +1,10 @@
 /* Base styles */
+:root {
+	--magenta: #d33682;
+	--blue: #268bd2;
+	--green: #859900;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -112,6 +118,54 @@ ul li, ol li {
 	margin-bottom: 10px;
 }
 
+.socials {
+	font-size: 2em;
+}
+
+.socials a:hover {
+	color: #0056b3;
+}
+
+.large-project-card {
+	display: flex;
+	width: 100%;
+	border-radius: 8px;
+	overflow: hidden;
+	margin: 20px auto; /* Center the card */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.large-project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+	width: 50%;
+	overflow: hidden;
+}
+
+.project-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Ensures image fills the space */
+	display: block;
+}
+
+.project-details {
+	width: 50%;
+	padding: 20px;
+	margin: 0;
+}
+
+.project-details h2, .project-details h3, .project-details p {
+	margin: 0;
+}
+
+.project-details p {
+	margin-bottom: 10px;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -214,8 +268,19 @@ ul li, ol li {
 	font-size: 0.9em;
 }
 
-.ux-ui-tag, .coding-tag {
-	background-color: #268bd2;
+.ux-ui-tag {
+	background-color: var(--magenta);
+	color: white;
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-size: 0.9em;
+}
+
+.coding-tag {
+	background-color: var(--green);
 	color: white;
 	display: inline-block;
 	padding: 5px 10px;
