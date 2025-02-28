@@ -302,6 +302,44 @@ ul li, ol li {
 	font-weight: bold;
 }
 
+/* Table of Contents (initially hidden) */
+#table-of-contents {
+    position: fixed;
+    top: 30vh;
+    right: 10px;
+    padding: 10px 15px;
+    opacity: 0;  /* Initially hidden */
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+/* When the ToC becomes visible */
+#table-of-contents.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#table-of-contents ul {
+    list-style: none;
+	display: inline-block;
+    padding: 0;
+}
+
+#table-of-contents ul li {
+    margin-bottom: 10px;
+}
+
+#table-of-contents ul li a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#table-of-contents ul li a.active {
+    color: black;
+}
+
 
 footer {
 	background-color: #f8f8f8;
