@@ -254,6 +254,55 @@ ul li, ol li {
 	background-color: #0056b3;
 }	
 
+.info-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	margin-top: 40px;
+}
+
+.info-grid div {
+	padding-top: 20px;
+}
+
+.info-grid h3 {
+	text-align: left;
+	font-size: 1.5em;
+	margin-bottom: 5px;
+	font-weight: bold;
+	border-left: 1px solid #ddd;
+	padding-left: 20px;
+}
+
+.info-grid p {
+	padding-left: 20px;
+}
+
+#discover, #empathize, #ideate, #prototype, #reflect {
+	padding-top: 20rem;
+}
+
+#reflect {
+	padding-bottom: 10rem;
+}
+
+#discover h3, #empathize h3, #ideate h3, #prototype h3, #reflect h3 {
+	text-align: left;
+}
+
+.subtitle {
+	text-align: center;
+	margin-bottom: 10rem;
+}
+
+#overview h3 {
+	text-align: left;
+	font-size: 1.5em;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+
 footer {
 	background-color: #f8f8f8;
 	padding: 40px 50px;
