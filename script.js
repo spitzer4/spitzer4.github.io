@@ -46,3 +46,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+const accordionItems = document.querySelectorAll('.accordion-item');
+
+  accordionItems.forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+
+      // Toggle the plus/minus icon
+      const icon = item.querySelector('span');
+      if (item.classList.contains('active')) {
+        icon.textContent = '-'; // Change to minus
+      } else {
+        icon.textContent = '+'; // Change back to plus
+      }
+    });
+  });
