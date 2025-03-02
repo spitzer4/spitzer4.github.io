@@ -34,25 +34,41 @@ header a:hover {
 }
 
 .title {
-	align-items: center;
 	text-align: center;
-	justify-items: center;
-	justify-content: center;
-	overflow: hidden; /* Hide content that exceeds the height */
-	display: flex; /* Use flexbox to center content vertically */
-	flex-direction: column;
-	justify-content: center;
+	position: relative;
+	display: flex;
+    flex-direction: column; /* Align items vertically within the .title div */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text content within .title */
+}
+
+.title .heading-container {
+    position: relative; /* Create positioning context */
+    display: inline-block; /* Use inline-block to contain content */
 }
 
 .title h1 {
-	font-size: 6rem;
-	margin: 0;
+    font-size: 6rem;
+    margin: 0;
+    position: relative; /* Keep relative for text flow */
+    z-index: 1; /* Ensure heading is on top */
+}
+
+.title img {
+    width: 18rem; /* Adjust size */
+    height: auto;
+    position: absolute; /* Absolute positioning */
+    top: 50%; 
+    left: 90%;
+	padding-left: 40px;
+    /* transform: translate(-10%, -50%); */
 }
 
 .title p {
 	font-size: 2rem;
+	color: #888;
 	margin: 0;
-	color: #777;
 }
 
 p, li {
