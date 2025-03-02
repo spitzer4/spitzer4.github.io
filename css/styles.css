@@ -637,7 +637,7 @@ figcaption {
 	.title h1 {
 		text-align: center;
 	}
-	
+
 	.title img {
         position: static; /* Remove absolute positioning */
         transform: none; /* Remove transform */
@@ -647,6 +647,10 @@ figcaption {
         max-width: 300px; /* Limit the maximum width */
     }
 
+	#table-of-contents {
+		display: none;
+	}
+	
 	footer {
         flex-direction: column;
     }
