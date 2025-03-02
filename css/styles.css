@@ -625,6 +625,28 @@ figcaption {
 }
 
 @media (max-width: 768px) {
+	.title {
+		text-align: center;
+		justify-content: center;
+	}
+
+	.title .heading-container {
+		text-align: center;
+	}
+
+	.title h1 {
+		text-align: center;
+	}
+	
+	.title img {
+        position: static; /* Remove absolute positioning */
+        transform: none; /* Remove transform */
+        display: block; /* Make it a block element to take full width */
+        margin: 20px auto 0; /* Add top margin and center horizontally */
+        width: 100%; /* Make the image take full container width */
+        max-width: 300px; /* Limit the maximum width */
+    }
+
 	footer {
         flex-direction: column;
     }
