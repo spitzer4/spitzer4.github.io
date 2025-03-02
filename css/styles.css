@@ -3,10 +3,11 @@
 	--magenta: #d33682;
 	--blue: #268bd2;
 	--green: #859900;
+	--gray: #888;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Satoshi', sans-serif;
     margin: 0;
     background-color: #f8f8f8;
     line-height: 1.6;
@@ -44,12 +45,12 @@ header a:hover {
 }
 
 .title h1 {
-	font-size: 7rem;
+	font-size: 6rem;
 	margin: 0;
 }
 
-.title h2 {
-	font-size: 3rem;
+.title p {
+	font-size: 2rem;
 	margin: 0;
 	color: #777;
 }
@@ -158,6 +159,17 @@ ul li, ol li {
 
 .socials a:hover {
 	color: #0056b3;
+}
+
+.project-title {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.project-title p {
+	font-size: 1.5em;
+	margin: 0;
+	color: #888;
 }
 
 .projects {
@@ -427,7 +439,7 @@ footer {
 
 .contact-me a {
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Satoshi', sans-serif;
     margin-right: 20px;
     transition: color 0.3s;
 }
@@ -542,9 +554,11 @@ figcaption {
 	border-bottom: 1px solid #ddd;
 	padding: 20px 0;
 	cursor: pointer;
-	display: flex;
+}
+
+.accordion-title {
 	justify-content: space-between;
-	align-items: center;
+	display: flex;
 }
 
 .accordion-item h2 {
@@ -561,12 +575,18 @@ figcaption {
 }
 
 .accordion-content {
-	padding: 0 20px 20px;
+	/* padding: 20px 0 0 0; */
 	display: none; /* Initially hide the content */
 }
 
 .accordion-item.active .accordion-content {
 	display: block; /* Show content when active */
+	/* margin: 0; */
+}
+
+.accordion-content p {
+    margin: 10px 0;
+	display: block;
 }
 
 /* Media queries for responsiveness */

@@ -1,13 +1,18 @@
-window.onload = function() {
-	function adjustContentHeight() {
-		const headerHeight = document.querySelector('.header').offsetHeight;
-		document.querySelector('.title').style.height = `calc(100vh - ${headerHeight}px - 80px)`;
-	}
+document.addEventListener("DOMContentLoaded", function () {
+    function adjustContentHeight() {
+        const header = document.querySelector('.header');
+        const title = document.querySelector('.title');
 
-	adjustContentHeight(); // Initial adjustment
+        if (!header || !title) return; // Stop if elements are missing
 
-	window.addEventListener('resize', adjustContentHeight); // Adjust on resize
-};
+        const headerHeight = header.offsetHeight;
+        title.style.height = `calc(100vh - ${headerHeight}px - 80px)`;
+    }
+
+    adjustContentHeight(); // Run once when the page loads
+    window.addEventListener("resize", adjustContentHeight); // Adjust on resize
+});
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section");
@@ -46,18 +51,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-const accordionItems = document.querySelectorAll('.accordion-item');
+document.addEventListener("DOMContentLoaded", function () {
+    const accordionItems = document.querySelectorAll('.accordion-item');
 
-  accordionItems.forEach(item => {
-    item.addEventListener('click', () => {
-      item.classList.toggle('active');
+    accordionItems.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active');
 
-      // Toggle the plus/minus icon
-      const icon = item.querySelector('span');
-      if (item.classList.contains('active')) {
-        icon.textContent = '-'; // Change to minus
-      } else {
-        icon.textContent = '+'; // Change back to plus
-      }
+            // Select the accordion content inside the clicked item
+            const content = item.querySelector('.accordion-content');
+            const icon = item.querySelector('span');
+
+            if (!content || !icon) return; // Ensure elements exist before modifying
+
+            // Toggle visibility
+            if (item.classList.contains('active')) {
+                content.style.display = 'block'; // Show content
+                icon.textContent = '-'; // Change to minus
+            } else {
+                content.style.display = 'none'; // Hide content
+                icon.textContent = '+'; // Change back to plus
+            }
+        });
     });
-  });
+});
+
