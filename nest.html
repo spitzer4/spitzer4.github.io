@@ -1,226 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nest - Case Study</title>
-    <link rel="stylesheet" href="css/styles.css">
-	<link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
-	<script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nest</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt="Logo"></a>
-			</div>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-				<span></span>
-				<span></span>
-            </label>
-			<nav>
-				<ul class="nav-menu">
-					<li><a href="index.html">Work</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="Resume 2025.02.22.pdf">Resume</a></li>
-				</ul>
-			</nav>
-        </div>
-        <div class="content">
-			<nav id="table-of-contents">
-				<ul>
-					<li><a href="#overview">00</a></li>
-					<li><a href="#discover">01</a></li>
-					<li><a href="empathize">02</a></li>
-					<li><a href="#ideate">03</a></li>
-					<li><a href="#prototype">04</a></li>
-					<li><a href="#reflect">05</a></li>	
-				</ul>
-			</nav>
-			<figure>
-				<img src="images/nest/hero.png" alt="Nest Homepage">
-			</figure>
-
-			<div class="project-title">
-				<p>Website Design</p>
-				<h1>Crafting Modern Comfort Online</h1>
-			</div>
-			<section id="overview">
-				<div class="info-grid">
-					<div>
-						<h3>Solo Project</h3>
-					</div>
-					<div>
-						<h3>My Role</h3>
-						<p>Product Designer</p>
-					</div>
-					<div>
-						<h3>Timeline</h3>
-						<p>January 2025 - February 2025</p>
-					</div>
-					<div>
-						<h3>Tools</h3>
-						<p>Figma</p>
-					</div>
-				</div>
-				<p>Nest is a fictional modern and cozy furniture brand, and this project aimed to design an e-commerce website that embodies its philosophy of <strong>“modern living, warmly crafted.”</strong> My goal was to create an intuitive, visually appealing online shopping experience that highlights the brand's unique aesthetic while ensuring a seamless user journey.</p>
-				<p>As the UX/UI designer for this project, I led the entire design process—from user research and wireframing to visual design and prototyping.</p>
-				<h3>Goals</h3>
-				<ul>
-					<li>Design a clean and modern e-commerce website that embodies the brand's "modern living, warmly crafted" philosophy.</li>
-					<li>Create an intuitive and seamless shopping experience for users.</li>
-					<li>Develop a visually compelling product grid and product detail pages.</li>
-					<li>Establish a consistent brand identity through typography, color palette, and imagery.</li>
-					<li>Design a responsive layout that adapts to various screen sizes.</li>
-				</ul>
-			</section>
-			
-			<section id="discover">
-				<div class="subtitle">
-					<h2>01 DISCOVER</h2>
-					<p>What makes a great online shopping experience?</p>
-				</div>
-				<h3>Competitive Analysis</h3>
-				<p>Key Takeaways:</p>
-				<ul>
-					<li>Users expect a clean, uncluttered layout with easy navigation.</li>
-					<li>High-quality product imagery is crucial for engagement.</li>
-					<li>A well-designed filtering system enhances the shopping experience.</li>
-					<li>Storytelling and branding play a key role in customer connection.</li>
-				</ul>
-			</section>
-
-			<section id="empathize">
-				<div class="subtitle">
-					<h2>02 EMPATHIZE</h2>
-					<p>Understanding the target audience.</p>
-				</div>
-				<h3>User Persona</h3>
-				<figure>
-					<img src="images/nest/emily.png" alt="Nest User Persona">
-					<figcaption>Persona: Emily, 32</figcaption>
-				</figure>
-				<h4>Meet Emily, a Typical Nest Customer</h4>
-				<p><strong>Age:</strong> 32</p>
-				<p><strong>Needs: </strong> Stylish, well-crafted furniture that fits her aesthetic.</p>
-				<p><strong>Pain Points:</strong>
-					<ul>
-						<li>Overwhelming product choices in traditional e-commerce sites.</li>
-						<li>Difficulty visualizing furniture in her space.</li>
-						<li>Unclear product descriptions and lack of detailed images.</li>
-					</ul>
-				</p>
-				<p>Emily's frustrations helped inform the design direction, ensuring a smooth and delightful shopping experience.</p>
-			</section>
-
-			<section id="ideate">
-				<div class="subtitle">
-					<h2>03 IDEATE</h2>
-					<p>Brainstorming and conceptualizing the design.</p>		
-				</div>
-				<p>With Emily's needs in mind, I brainstormed features that would make Nest's website both functional and visually appealing.</p>
-				<h3>Key Design Concepts:</h3>
-				<ul>
-					<li><strong>Minimalist Layout:</strong> A calm and modern interface that lets products shine.</li>
-					<li><strong>Emphasis on Imagery:</strong> Large, high-quality product photos to showcase details.</li>
-					<li><strong>Seamless Navigation:</strong> Clear categories and an intuitive filtering system.</li>
-					<li><strong>Brand Storytelling:</strong> A homepage that evokes warmth and craftsmanship.</li>
-				</ul>
-				<p>I then sketched low-fidelity wireframes to establish the website's structure, focusing on usability and information hierarchy.</p>
-			</section>
-
-			<section id="prototype">
-				<div class="subtitle">
-					<h2>04 PROTOTYPE</h2>
-					<p>Bringing the design to life.</p>
-				</div>
-				<h3>Version 1.0</h3>
-				<figure>
-					<img src="images/nest/Nest v1.0.png" alt="Nest Homepage Version 1">
-					<figcaption>Version 1.0 of the Nest homepage</figcaption>
-				</figure>
-				<p>The initial design focused on:</p>
-				<ul>
-					<li>A minimalist layout with ample white space.</li>
-					<li>A visually engaging product grid.</li>
-					<li>Clear navigation and filtering options.</li>
-					<li>A simple newsletter signup form.</li>
-				</ul>
-				<p>However, after self-critique and feedback, I saw room for improvement.</p>
-				<h3>Version 2.0</h3>
-				<figure>
-					<img src="images/nest/Nest v2.0.png" alt="Nest Homepage Version 2">
-					<figcaption>Version 2.0 of the Nest homepage</figcaption>
-				</figure>
-				<ul>
-					<li><strong>Enhanced Visual Hierarchy:</strong> Increased font sizes for better readability.</li>
-					<li><strong>Stronger Brand Messaging:</strong> A more descriptive tagline emphasizing Nest's unique selling proposition.</li>
-					<li><strong>Navigation Improvements:</strong> Added a Home link for better usability.</li>
-				</ul>
-				<p>Alongside these refinements, I developed high-fidelity mockups to bring the design to life.</p>
-
-				<h3>Style Guide</h3>
-				<ul>
-					<li><strong>Color Palette:</strong> Neutral with warm undertones for a cozy, modern feel.</li>
-					<li><strong>Typography:</strong> A balance of clean sans-serif for readability and elegant serif for warmth.</li>
-					<li><strong>Imagery:</strong> High-quality product photography to highlight craftsmanship.</li>
-				</ul>
-			</section>
-
-			<section id="reflect">
-				<div class="subtitle">
-					<h2>05 REFLECT</h2>
-					<p>Lessons learned and key takeaways.</p>
-				</div>
-				<h3>Challenges & Solutions</h3>
-				<ul>
-					<li><strong>Balancing Modern & Cozy Aesthetic</strong></li>
-					<li>Solution: A neutral palette with warm accents + elegant typography.</li>
-					<li><strong>Ensuring Intuitive Navigation</strong></li>
-					<li>Solution: A simple filtering system and clear product categories.</li>
-				</ul>
-				<h3>Final Thoughts</h3>
-				<p>This project reinforced the importance of user-centric design in e-commerce. By focusing on the needs of the target audience, I created an online shopping experience that is both visually appealing and highly functional.</p>
-				<p>Would I make further improvements? Absolutely. Given more time, I'd explore:</p>
-				<ul>
-					<li>User testing to refine the shopping flow.</li>
-					<li>Augmented reality previews for better product visualization.</li>
-				</ul>
-				<p>Nest's e-commerce design demonstrates my ability to blend UX principles with strong branding to create a seamless and engaging user experience.</p>
-			</section>
-		</div>
-		<footer>
-			<div class="footer-left">
-				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" alt="Logo"></a>
-				</div>
-			</div>
-			<div class="footer-center">
-			  <div class="footer-column">
-				<h3>WORK</h3>
-				<a href="nest.html">Nest</a>
-				<a href="lumiere.html">Lumiere</a>
-				<a href="depop.html">Depop</a>
-				<h3>ARCHIVED</h3>
-			  </div>
-			</div>
-		
-			<div class="footer-column">
-				<h3>CONTACT</h3>
-				<a href="mailto:kaleighspitz@gmail.com">Mail &#8599;</a>
-				<a href="https://www.linkedin.com/in/kaleighs724/">LinkedIn &#8599;</a>
-				<a href="https://www.instagram.com/kaleigh_design/">Instagram &#8599;</a>
-				<a href="Resume 2025.02.22.pdf">Resume &#8599;</a>
-			</div>
-		
-			<div class="footer-right">
-			  <p>&copy; 2025 Kaleigh Spitzer. All Rights Reserved.</p>
-			  <small>Coded with 💖 by Kaleigh.</small>
-			</div>
-		</footer>
+  <!-- Header / Navigation -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">Kaleigh Spitzer</a></h1>
+      
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link" href="index.html#about">About</a></li>
+          <li><a class="nav-link active" href="index.html#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
     </div>
-	
+  </header>
+
+  <main id="main">
+    <!-- Breadcrumbs -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li id="project-title">Nest</li>
+        </ol>
+        <h2 id="project-heading">Nest</h2>
+      </div>
+    </section>
+
+    <!-- Project Details -->
+    <section id="project-details" class="project-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="project-details-slider">
+              <img id="project-image" src="images/nest/hero.png" alt="Project Image" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="project-info">
+              <h3>Project Details</h3>
+              <ul>
+				<li><strong>Conceptual Project </strong></li>
+                <li><strong>Category: </strong><span id="project-category">Web Design</span></li>
+                <li><strong>Client: </strong><span id="project-client">Nest</span></li>
+                <li><strong>Project date: </strong><span id="project-date">February 2025</span></li>
+              </ul>
+            </div>
+            
+            <div class="project-description">
+              <h2>Summary</h2>
+              <p id="project-description">
+                This project aimed to create a visually appealing and user-friendly online shopping experience that reflects the brand's aesthetic, showcases its product range, and encourages customer engagement. My role focused on UX/UI design, encompassing user experience research, wireframing, visual design, and prototyping.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        <p>&copy; 2025 Kaleigh Spitzer. All Rights Reserved.</p>
+		<p>Coded with 💖 by Kaleigh.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Main JS File -->
+  <script src="src/js/main.js"></script>
+  
+  <!-- Project Details JS -->
+  <script src="js/project-details.js"></script>
 </body>
 </html>
