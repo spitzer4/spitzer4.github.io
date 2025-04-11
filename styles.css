@@ -527,4 +527,9 @@ main {
   .scroll-container {
     display: none;
   }
+
+  .project__image {
+	max-width: 90%;
+	margin: 0 auto;
+  }
 }
