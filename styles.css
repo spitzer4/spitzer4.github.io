@@ -322,6 +322,13 @@ main {
   color: var(--clr-fg-alt);
 }
 
+.project__image {
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+	object-fit: cover;
+}
+
 .project .link--icon {
   margin-left: 0.5em;
 }
@@ -402,6 +409,10 @@ main {
 .project-cover {
 	border-radius: 12px;
 	border: 1px solid var(--border);
+	max-width: 100%;
+	width: 500px;
+	object-fit: cover;
+	margin: 0 auto;
 }
 
 .project-meta {
@@ -463,8 +474,9 @@ main {
 
 .project-image {
 	margin-top: 1rem;
-	border-radius: 10px;
+	border-radius: 12px;
 	border: 1px solid var(--border);
+	max-width: 100%;
 }
 
 @media (max-width: 600px) {
