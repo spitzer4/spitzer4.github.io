@@ -20,18 +20,18 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Satoshi", sans-serif;
   line-height: 1.5;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
 }
 
 .light {
-  --clr-bg: #fcfcfc;
+  --clr-bg: #f5f5f5;
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
-  --clr-primary: #2978b5;
+  --clr-primary: #268bd2;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -40,7 +40,7 @@ body {
   --clr-bg-alt: #2a2f4c;
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
-  --clr-primary: #90a0d9;
+  --clr-primary: #268bd2;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -154,6 +154,7 @@ button {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border-radius: 25px;
 }
 
 .btn--outline:focus,
@@ -279,6 +280,7 @@ main {
 
 .about .btn--outline {
   margin-right: 1em;
+  border-radius: 25px;
 }
 
 .projects__grid {
@@ -295,6 +297,7 @@ main {
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+  border-radius: 12px;
 }
 
 .project:hover {
