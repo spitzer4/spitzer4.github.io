@@ -385,6 +385,88 @@ main {
 	margin: 3em;
 }
 
+/* Project Page */
+.project-detail {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 2rem 0;
+}
+
+.project-intro {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+
+.project-cover {
+	border-radius: 12px;
+	border: 1px solid var(--border);
+}
+
+.project-meta {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.project-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.project-subtitle {
+	font-size: 1.25rem;
+	color: var(--muted);
+}
+
+.project-info {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	font-size: 0.95rem;
+	color: var(--text);
+}
+
+.project-summary {
+	font-size: 1rem;
+	color: var(--text);
+}
+
+/* Sections */
+.project-section {
+	margin-bottom: 3rem;
+}
+
+.project-section h3 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	font-weight: 600;
+}
+
+.project-section h4 {
+	font-size: 1.1rem;
+	margin: 1rem 0 0.5rem;
+}
+
+.project-section ul {
+	list-style: disc;
+	padding-left: 1.5rem;
+	margin-top: 0.5rem;
+}
+
+.project-section ol {
+	list-style: decimal;
+	padding-left: 1.5rem;
+	margin-top: 0.5rem;
+}
+
+.project-image {
+	margin-top: 1rem;
+	border-radius: 10px;
+	border: 1px solid var(--border);
+}
+
 @media (max-width: 600px) {
   .header {
     height: 6em;
