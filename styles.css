@@ -365,6 +365,26 @@ main {
   transition: transform 0.2s ease-in-out;
 }
 
+.bio-list {
+	list-style-type: disc;
+	text-align: left;
+	padding-left: 1.5rem;
+	line-height: 1.8;
+}
+
+.main-content {
+	max-width: 600px;
+	margin: 3rem auto;
+	text-align: center;
+}
+
+.main-content img {
+	max-width: 200px;
+	height: auto;
+	border-radius: 12px;
+	margin: 3em;
+}
+
 @media (max-width: 600px) {
   .header {
     height: 6em;
