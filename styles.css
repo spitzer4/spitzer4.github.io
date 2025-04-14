@@ -479,6 +479,121 @@ main {
 	max-width: 100%;
 }
 
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center; /* Vertically center items */
+	margin-bottom: 40px; /* Add spacing between rows */
+}
+
+.col-content {
+	flex: 1;
+	padding: 20px;
+}
+
+.col-image {
+	flex: 1;
+	padding: 20px;
+	display: flex; /* For centering the image */
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+}
+
+.col-image img {
+	max-width: 100%; /* Ensure image doesn't exceed its container */
+	height: auto;    /* Maintain aspect ratio */
+	border-radius: 8px; /* Rounded corners for images */
+	
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+/* Style for even rows (image on the right, text on the left) */
+.row:nth-child(even) .col-image {
+	order: 2; /* Push image to the right */
+}
+
+.row:nth-child(even) .col-content {
+	order: 1; /* Pull text to the left */
+	text-align: left; /* Align text to the left */
+}
+
+ /* Style for odd rows (image on the left, text on the right) */
+.row:nth-child(odd) .col-image {
+	order: 1;
+}
+
+.row:nth-child(odd) .col-content{
+	 order: 2;
+	 text-align: left;
+}
+
+.rounded-lg {
+	border-radius: 0.5rem;
+}
+
+.shadow-md {
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.text-3xl {
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+}
+
+.font-semibold {
+	font-weight: 600;
+}
+
+.text-gray-800 {
+	color: #1e293b;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.mb-8 {
+	margin-bottom: 2rem;
+}
+
+.text-2xl {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.text-gray-700 {
+	color: #374151;
+}
+
+.mb-4 {
+	margin-bottom: 1rem;
+}
+
+.list-disc {
+	list-style-type: disc;
+}
+
+.pl-5 {
+	padding-left: 1.25rem;
+}
+
+.text-gray-600 {
+	color: #4b5563;
+}
+
+.mb-2 {
+	margin-bottom: 0.5rem;
+}
+
 @media (max-width: 600px) {
   .header {
     height: 6em;
@@ -531,5 +646,40 @@ main {
   .project__image {
 	max-width: 90%;
 	margin: 0 auto;
+  }
+
+  .row {
+	flex-direction: column; /* Stack columns on small screens */
+	text-align: center; /* Center text on small screens */
+  }
+  .col-image {
+	order: 1; /* Image always on top on small screens */
+  }
+  .col-content {
+	order: 2; /* Text below image on small screens */
+	text-align: left;
+  }
+  .row:nth-child(even) .col-image,
+  .row:nth-child(odd) .col-image {
+	order: 1; /* Keep image on top for both odd and even rows */
+  }
+  .row:nth-child(even) .col-content,
+  .row:nth-child(odd) .col-content {
+	order: 2; /* Keep text below image for both odd and even rows */
+  }
+  .col-content {
+	padding-left: 20px;
+	padding-right: 20px;
+  }
+	/* Add padding to the left and right for better spacing */
+  }
+  .project__stack {
+	justify-content: center;
+  }
+  .project__stack-item {
+	margin: 0.5em;
+	font-weight: 500;
+	font-size: 0.8rem;
+	color: var(--clr-fg-alt);
   }
 }
