@@ -595,6 +595,75 @@ main {
 	margin-bottom: 0.5rem;
 }
 
+.carousel {
+	position: relative;
+	width: 800px;
+	height: 400px;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.carousel__slides {
+	display: flex;
+	width: 300%;
+	transition: transform 0.5s ease;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.carousel__slide {
+	width: 33.3333%;
+	flex-shrink: 0;
+}
+
+.carousel__slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+input[name="slides"] {
+	display: none;
+}
+
+#slide1:checked ~ .carousel__slides {
+	transform: translateX(0%);
+}
+#slide2:checked ~ .carousel__slides {
+	transform: translateX(-100%);
+}
+#slide3:checked ~ .carousel__slides {
+	transform: translateX(-200%);
+}
+
+.carousel__nav {
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 10px;
+}
+
+.carousel__nav label {
+	width: 12px;
+	height: 12px;
+	background: #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+	/* transition: background 0.3s; */
+}
+
+#slide1:checked ~ .carousel__nav label[for="slide1"],
+#slide2:checked ~ .carousel__nav label[for="slide2"],
+#slide3:checked ~ .carousel__nav label[for="slide3"] {
+	background: #fff;
+}
+  
+
 @media (max-width: 600px) {
   .header {
     height: 6em;
