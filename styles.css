@@ -449,7 +449,7 @@ main {
 	border-radius: 12px;
 	border: 1px solid var(--border);
 	max-width: 100%;
-	width: 500px;
+	width: 1000px;
 	object-fit: cover;
 	margin: 0 auto;
 }
