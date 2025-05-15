@@ -321,7 +321,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   margin: 1.2em 0;
-  color: black;
+  color: white;
 }
 
 .project__stack-item {
@@ -334,31 +334,30 @@ main {
 	background-color: var(--magenta);
 	border-radius: 24px;
 	margin: 8px;
-	padding: 8px;
+	padding: 8px 16px;
 	margin: 0.5em;
   	font-weight: 500;
-  	font-size: 0.8rem;
-	color: black;
+  	font-size: 1rem;
 }
 
 .project__stack-item-branding {
 	background-color: var(--orange);
 	border-radius: 24px;
 	margin: 8px;
-	padding: 8px;
+	padding: 8px 16px;
 	margin: 0.5em;
   	font-weight: 500;
-  	font-size: 0.8rem;
+  	font-size: 1rem;
 }
 
 .project__stack-item-development {
 	background-color: var(--green);
 	border-radius: 24px;
 	margin: 8px;
-	padding: 8px;
+	padding: 8px 16px;
 	margin: 0.5em;
   	font-weight: 500;
-  	font-size: 0.8rem;
+  	font-size: 1rem;
 }
 
 .project__image {
