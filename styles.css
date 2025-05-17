@@ -285,6 +285,7 @@ main {
 .about__desc,
 .about__contact {
   margin-top: 2.4em;
+  margin-bottom: 2.4em;
 }
 
 .about .link--icon {
