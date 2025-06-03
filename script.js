@@ -12,15 +12,6 @@ if (navToggle) {
   });
 }
 
-// Show scroll to top button when scrolling down
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 500) {
-    scrollTopBtn.style.display = 'block';
-  } else {
-    scrollTopBtn.style.display = 'none';
-  }
-});
-
 // Close mobile menu when link is clicked
 document.querySelectorAll('.link--nav').forEach(link => {
   link.addEventListener('click', () => {
