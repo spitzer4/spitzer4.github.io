@@ -1,174 +1,210 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Kaleigh Spitzer - UX Designer and Engineer Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
-    <script
-      src="https://kit.fontawesome.com/0b4ec7f54b.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V88C99G0QM"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-V88C99G0QM');
-    </script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Kaleigh Spitzer - UX Designer and Engineer</title>
-  </head>
-  <body class="light" id="top">
-    <!-- Header with Navigation -->
-    <header class="header center">
-      <a href="index.html" class="logo" aria-label="Kaleigh Spitzer">
-        <h2>KS.</h2>
-      </a>
-
-      <nav class="nav center" aria-label="Main navigation">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#about">About</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <button
-          type="button"
-          aria-label="Toggle mobile navigation"
-          aria-expanded="false"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaleigh - UX/UI Designer</title>
+	<link rel="stylesheet" href="styles.css"/>
+	<link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Kaleigh</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Kaleigh</h1>
+            <p class="hero-subtitle">A designer transforming problems into fun and approachable solutions through thoughtful UX/UI design</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
     <main>
-      <!-- Hero Section -->
-      <section class="hero" id="hero">
-        <div class="about">
-          <h1>Hi, I'm <span class="about__name">Kaleigh.</span></h1>
-          <h2 class="about__role">UX Designer and Engineer.</h2>
-          <p class="about__desc">
-            A UX/UI designer leveraging a computer science foundation to create technically robust and user-centered designs. I focus on building intuitive interfaces that bridge the gap between design and development, ensuring seamless user experiences for consumer-focused brands.
-          </p>
-          <div class="about__contact center">
-            <a href="Spitzer_Resume 2025.05.07.pdf" aria-label="Download Resume">
-              <span class="btn--resume">Resume</span>
-            </a>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">Logan Square Chamber of Commerce</div>
+                        <div class="project-content">
+                            <h3 class="project-title">Logan Square Chamber of Commerce</h3>
+                            <p class="project-description">Redesigning Connection, Locally - A full website redesign aimed at modernizing digital presence, improving user experience for small business owners and residents, and establishing a cohesive brand identity.</p>
+                            <div class="project-tags">
+                                <span class="tag">UX/UI</span>
+                                <span class="tag">Branding</span>
+                                <span class="tag">Development</span>
+                            </div>
+                            <a href="lscc.html" class="project-link">View Project →</a>
+                        </div>
+                    </div>
 
-            <a
-              href="https://www.instagram.com/kaleigh_design/"
-              aria-label="Instagram profile"
-              class="link link--icon"
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <i aria-hidden="true" class="fab fa-instagram"></i>
-            </a>
+                    <div class="project-card">
+                        <div class="project-image">Design Handoff Tool</div>
+                        <div class="project-content">
+                            <h3 class="project-title">Design Handoff Platform</h3>
+                            <p class="project-description">A sharing mode that helps designers hand-off review-ready designs to third-party members, streamlining the design-to-development workflow and improving collaboration.</p>
+                            <div class="project-tags">
+                                <span class="tag">UX Research</span>
+                                <span class="tag">Product Design</span>
+                                <span class="tag">Prototyping</span>
+                            </div>
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                    </div>
 
-            <a
-              href="https://linkedin.com/in/kaleighs724"
-              aria-label="LinkedIn profile"
-              class="link link--icon"
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <i aria-hidden="true" class="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </section>
+                    <div class="project-card">
+                        <div class="project-image">Healthy Eating App</div>
+                        <div class="project-content">
+                            <h3 class="project-title">Budget-Friendly Nutrition App</h3>
+                            <p class="project-description">An app that helps users solve their desire to eat healthily on a budget, combining nutritional guidance with cost-effective meal planning and grocery shopping features.</p>
+                            <div class="project-tags">
+                                <span class="tag">Mobile Design</span>
+                                <span class="tag">User Research</span>
+                                <span class="tag">Interaction Design</span>
+                            </div>
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <!-- About Section -->
-      <section id="about" class="section about-section">
-        <h2 class="section__title">About Me</h2>
-        
-        <div class="about-container">
-          <div class="about-content">
-            <ul class="bio-list">
-              <li>Currently based in Chicago, IL.</li>
-              <li>Studied Computer Science and Statistics at the University of Illinois at Urbana-Champaign.</li>
-              <li>Passionate about creating intuitive, human-centered experiences that blend form and function.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+		<section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a passionate UX/UI designer who believes great design should make complex problems feel simple and enjoyable to solve. My approach combines user-centered design principles with creative problem-solving to create digital experiences that truly resonate with users.</p>
+                        <p>With a background in both design and development, I bring a unique perspective to every project, ensuring that beautiful designs are not only visually appealing but also technically feasible and user-friendly.</p>
+                        <p>When I'm not designing, you can find me exploring new design trends, contributing to open-source projects, or enjoying the vibrant culture of Chicago.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/headshotbw.png" alt="Kaleigh" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <!-- Projects Section -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">Projects</h2>
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-icon">🎨</div>
+                        <h3 class="skill-title">Design</h3>
+                        <ul class="skill-list">
+                            <li>User Experience (UX)</li>
+                            <li>User Interface (UI)</li>
+                            <li>Visual Design</li>
+                            <li>Prototyping</li>
+                            <li>Design Systems</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon">🔬</div>
+                        <h3 class="skill-title">Research</h3>
+                        <ul class="skill-list">
+                            <li>User Research</li>
+                            <li>Usability Testing</li>
+                            <li>Information Architecture</li>
+                            <li>Personas & Journey Maps</li>
+                            <li>A/B Testing</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon">⚡</div>
+                        <h3 class="skill-title">Tools</h3>
+                        <ul class="skill-list">
+                            <li>Figma</li>
+                            <li>Sketch</li>
+                            <li>Adobe Creative Suite</li>
+                            <li>Principle</li>
+                            <li>Framer</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon">💻</div>
+                        <h3 class="skill-title">Development</h3>
+                        <ul class="skill-list">
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Git/GitHub</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="projects__grid">
-          <!-- Project 1 -->
-          <article class="project">
-            <a href="lscc.html" class="project-link">
-              <img
-                src="images/LSCC/lscc-home-devices.png"
-                alt="Logan Square Chamber of Commerce website on multiple devices"
-                class="project__image"
-              />
-              <h5 class="project-client">Logan Square Chamber of Commerce</h5>
-              <h3 class="project-title">Redesigning Connection, Locally</h3>
-              <p class="project__description">
-                A full website redesign for the Logan Square Chamber of Commerce, aimed at modernizing its digital presence, improving user experience for small business owners and residents, and establishing a more cohesive brand identity.
-              </p>
-              <ul class="project__stack">
-                <li class="project__stack-item-ux">UX/UI</li>
-                <li class="project__stack-item-branding">Branding</li>
-                <li class="project__stack-item-development">Development</li>
-              </ul>
-            </a>
-          </article>
-
-          <!-- Project 2 -->
-          <article class="project">
-            <a href="unboxed.html" class="project-link">
-              <img
-                src="images/UnBoxed/thumbnail.png"
-                alt="UnBoxed mobile app interface"
-                class="project__image"
-              />
-              <h5 class="project-client">UnBoxed</h5>
-              <h3 class="project-title">Empowering Eco-Conscious Consumers</h3>
-              <p class="project__description">
-                Designing a user-friendly mobile app that simplifies sustainable product discovery and purchase, fostering a community of eco-conscious consumers.
-              </p>
-              <ul class="project__stack">
-                <li class="project__stack-item-ux">UX/UI</li>
-              </ul>
-            </a>
-          </article>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="section contact" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <p>Email me: <a href="mailto:kaleighspitz@gmail.com">kaleighspitz@gmail.com</a></p>
-      </section>
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p>I'm always excited to collaborate on new projects and explore innovative design solutions. Whether you have a project in mind or just want to chat about design, I'd love to hear from you.</p>
+                    <a href="mailto:kaleighspitz@gmail.com" class="contact-email">kaleighspitz@gmail.com</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer">
-      <p>&copy; 2025 Kaleigh Spitzer. All rights reserved.</p>
+    <footer>
+        <div class="container">
+            <p>Designed with ❤️ by Kaleigh.</p>
+        </div>
     </footer>
 
-    <div class="scroll-container">
-      <a aria-label="Scroll to top" href="#top" class="scroll-top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
-    </div>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
 
-    <script src="./script.js"></script>
-  </body>
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease-out';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card, .skill-category').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
 </html>

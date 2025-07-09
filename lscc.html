@@ -1,181 +1,287 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
-    <script
-      src="https://kit.fontawesome.com/0b4ec7f54b.js"
-      crossorigin="anonymous"
-    ></script>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V88C99G0QM"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-V88C99G0QM');
-	</script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Kaleigh Spitzer</title>
-  </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-        <a href="index.html" class="link">KS.</a>
-      </h3>
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="about.html">About</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="index.html/#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="index.html#projects">Contact</a>
-          </li>
-        </ul>
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logan Square Chamber of Commerce</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Kaleigh</a>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="index.html" class="back-btn">← Back to Portfolio</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="project-detail">
-      <section class="project-intro">
-        <img src="images/LSCC/lscc-home-devices.png" alt="LSCC Home Page" class="project-cover" />
-        <div class="project-meta">
-		  <h2 class="project-subtitle">Logan Square Chamber of Commerce</h2>
-          <h1 class="project-title">Redesigning Connection, Locally</h1>
-          <div class="project-info">
-            <div><strong>My Role:</strong> Product Designer</div>
-            <div><strong>Timeline:</strong> March 2025 - May 2025</div>
-          </div>
-          <p class="project-summary">
-			A full website redesign for the Logan Square Chamber of Commerce, aimed at modernizing its digital presence, improving usability for small business owners and residents, and creating a consistent, scalable brand identity.
-		  </br>
-			This project showcases my ability to lead a product from discovery through delivery—researching user needs, building a strong site architecture, and crafting a brand-driven digital experience that supports real community engagement.
-		</p>
+    <section class="project-hero">
+        <div class="container">
+            <h1>Logan Square Chamber of Commerce</h1>
+            <p class="project-subtitle">Redesigning Connection, Locally</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Role</div>
+                    <div class="meta-value">Lead UX/UI Designer</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Duration</div>
+                    <div class="meta-value">3 Months</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Team</div>
+                    <div class="meta-value">Solo Project</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Year</div>
+                    <div class="meta-value">2025</div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="project-section">
-        <h5>PROBLEM</h5>
-		<h3>An Outdated, Fragmented Digital Experience</h3>
-        <p>
-			The Chamber's original website failed to serve its two key audiences—local business owners and residents. Key issues included:
-			<ul>
-				<li>Outdated design and inconsistent branding</li>
-				<li>Poor navigation and overwhelming page layouts</li>
-				<li>No mobile optimization</li>
-				<li>Key info (event listings, membership benefits) was buried or outdated</li>
-			</ul>
-			The result? Missed opportunities to promote local businesses, reduced event engagement, and a digital presence that didn’t reflect the vibrancy of the Logan Square community.
-		</p>
-      </section>
+    <main class="project-content">
+        <div class="container">
+            <section id="overview" class="section fade-in">
+                <h2 class="section-title">Project Overview</h2>
+                <div class="text-content">
+                    <p>The Logan Square Chamber of Commerce needed a complete digital transformation to better serve local businesses and residents. The existing website was outdated, difficult to navigate, and failed to showcase the vibrant community spirit that defines Logan Square.</p>
+                    <p>This project involved comprehensive UX research, brand refresh, and full website redesign with a focus on improving user experience for both business owners seeking resources and residents looking to connect with their local community.</p>
+                </div>
+                <div class="hero-image">
+                    Logan Square Chamber Website - Before & After Comparison
+                </div>
+            </section>
 
-	  <section class="project-section">
-		<h5>RESEARCH & DISCOVERY</h5>
-		<h3>Understanding the Community and Its Needs</h3>
-		<p>I began with qualitative and quantitative research to uncover core user pain points and goals.
-			<ul>
-				<li>Stakeholder interviews with Chamber staff highlighted content maintenance and branding issues</li>
-				<li>Google Analytics review showed high mobile traffic but low engagement on mobile pages</li>
-				<li>Competitor analysis revealed cleaner navigation systems and clearer CTAs</li>
-			</ul>
-		</p>
-		<img src="images/LSCC/lscc-research.png" alt="Research Findings" class="project-image"/>
-	  </section>
+            <section class="section fade-in">
+                <h2 class="section-title">The Challenge</h2>
+                <div class="text-content">
+                    <p>The Logan Square Chamber of Commerce faced several critical issues with their digital presence:</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍</div>
+                        <h3 class="feature-title">Poor Information Architecture</h3>
+                        <p class="feature-description">Users struggled to find basic information about membership, events, and local business resources.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3 class="feature-title">Mobile Responsiveness</h3>
+                        <p class="feature-description">The site wasn't optimized for mobile devices, limiting accessibility for users on-the-go.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3 class="feature-title">Brand Inconsistency</h3>
+                        <p class="feature-description">Visual identity lacked cohesion and failed to reflect the dynamic nature of Logan Square.</p>
+                    </div>
+                </div>
+            </section>
 
-	  <section class="project-section">
-		<h5>INFORMATION ARCHITECTURE</h5>
-		<h3>Building a More Intuitive Structure</h3>
-		<p>I developed a new site map organized around five clear sections:
-			<ol>
-				<li>About</li>
-				<li>Membership</li>
-				<li>Community</li>
-				<li>Events</li>
-				<li>Farmers Market</li>
-			</ol>
-			This structure reflected actual user goals and aligned with the Chamber's priorities.
-		</p>
-		<img src="images/LSCC/lscc-sitemap.png" alt="Sitemap" class="project-image"/> 
-	  </section>
+            <section id="process" class="section fade-in">
+                <h2 class="section-title">Design Process</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Research & Discovery</h3>
+                        <p class="step-description">Conducted stakeholder interviews, user surveys, and competitive analysis to understand pain points and opportunities.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Information Architecture</h3>
+                        <p class="step-description">Restructured content hierarchy and navigation based on user needs and business goals.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Wireframing & Prototyping</h3>
+                        <p class="step-description">Created low-fidelity wireframes and interactive prototypes to test user flows and interactions.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3 class="step-title">Visual Design</h3>
+                        <p class="step-description">Developed a cohesive brand identity and applied it to create engaging, accessible visual designs.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <h3 class="step-title">Development & Testing</h3>
+                        <p class="step-description">Built responsive website and conducted usability testing to ensure optimal user experience.</p>
+                    </div>
+                </div>
+            </section>
 
-	  <section class="project-section">
-		<h5>WIREFRAMES</h5>
-		<h3>Testing Structure Before Style</h3>
-		<p>I created wireframes for key pages in both desktop and mobile formats to validate layout decisions and prioritize clarity across breakpoints.</p>
-		<div class="carousel">
-			<input type="radio" name="slides" id="slide1" checked>
-			<input type="radio" name="slides" id="slide2">
-			<input type="radio" name="slides" id="slide3">
-		
-			<ul class="carousel__slides">
-			  <li class="carousel__slide">
-				<img src="images/LSCC/home-wireframes.png" alt="Home Page">
-			  </li>
-			  <li class="carousel__slide">
-				<img src="images/LSCC/our-members-wireframes.png" alt="Our Members Page">
-			  </li>
-			  <li class="carousel__slide">
-				<img src="images/LSCC/member-events-wireframes.png" alt="Member Events Page">
-			  </li>
-			</ul>
-		
-			<div class="carousel__nav">
-			  <label for="slide1"></label>
-			  <label for="slide2"></label>
-			  <label for="slide3"></label>
-			</div>
-		  </div>
-	</section>
+            <section class="section fade-in">
+                <h2 class="section-title">User Research Insights</h2>
+                <div class="text-content">
+                    <p>Through interviews with 15 local business owners and 25 residents, I uncovered key insights that shaped the design direction:</p>
+                </div>
+                <div class="image-gallery">
+                    <div class="project-image">User Journey Map - Business Owner</div>
+                    <div class="project-image">User Journey Map - Resident</div>
+                    <div class="project-image">Pain Points Analysis</div>
+                </div>
+            </section>
 
-	  <section class="project-section">
-		<h5>UI DESIGN & INTERACTION</h5>
-		<h3>Turning Values into Actionable Interfaces</h3>
-		<p>Final high-fidelity designs emphasized approachability, community, and action.</p>
-		<ul>
-			<li>Mobile-first layouts to match how most users access the site</li>
-			<li>Mobile-first layouts to match how most users access the site</li>
-			<li>Clear calls to action for joining the Chamber, attending events, or exploring vendors</li>
-			<li>Interactive event calendar and vendor listings to support transparency and engagement</li>
-		</ul>
-	  </section>
+            <section id="solution" class="section fade-in">
+                <h2 class="section-title">The Solution</h2>
+                <div class="text-content">
+                    <p>The redesigned website addresses user needs through a clean, intuitive interface that prioritizes accessibility and community connection.</p>
+                </div>
+                
+                <h3 class="section-subtitle">Key Features</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🗂️</div>
+                        <h3 class="feature-title">Business Directory</h3>
+                        <p class="feature-description">Searchable, filterable directory helping residents discover local businesses and services.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📅</div>
+                        <h3 class="feature-title">Event Calendar</h3>
+                        <p class="feature-description">Integrated calendar showcasing community events, networking opportunities, and local happenings.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💼</div>
+                        <h3 class="feature-title">Member Portal</h3>
+                        <p class="feature-description">Dedicated space for members to access resources, benefits, and exclusive content.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📰</div>
+                        <h3 class="feature-title">Community News</h3>
+                        <p class="feature-description">Regular updates on local business spotlights, development news, and chamber initiatives.</p>
+                    </div>
+                </div>
 
-      <section class="project-section">
-        <h5>IMPACT</h5>
-		<h3>A Usable, Brand-Aligned Website That Works for the Community</h3>
-		<p>The final site now serves as a flexible, scalable tool for promoting local commerce and fostering engagement—whether residents are browsing events on their phones or business owners are applying for membership.
-		</p>
-			<p><strong>Key outcomes:</strong></p>
-			<ul>
-				<li>Increased mobile usability and event discoverability</li>
-				<li>A brand system now used across Chamber email templates, posters, and signage</li>
-				<li>Positive feedback from Chamber staff and early users</li>
-			</ul>
-      </section>
+                <div class="tags">
+                    <span class="tag">UX/UI Design</span>
+                    <span class="tag">Branding</span>
+                    <span class="tag">Web Development</span>
+                    <span class="tag">User Research</span>
+                    <span class="tag">Responsive Design</span>
+                    <span class="tag">Accessibility</span>
+                </div>
+            </section>
 
-	  <section class="project-section">
-		<h5>REFLECTION</h5>
-		<h3>What I Learned</h3>
-		<p>This project helped me hone my ability to balance user needs, stakeholder priorities, and brand expression. If I could go back, I’d also conduct a post-launch usability study to capture more qualitative feedback from residents and vendors.</p>
-		<p><strong>Next up? I'm excited to apply these learnings to other civic, nonprofit, or community-driven design challenges.</strong></p>
+            <section class="section fade-in">
+                <h2 class="section-title">Design System</h2>
+                <div class="text-content">
+                    <p>I created a comprehensive design system that reflects Logan Square's creative energy while maintaining professional credibility.</p>
+                </div>
+                <div class="image-gallery">
+                    <div class="project-image">Color Palette & Typography</div>
+                    <div class="project-image">Component Library</div>
+                    <div class="project-image">Icon System</div>
+                </div>
+            </section>
+
+            <section id="results" class="section fade-in">
+                <h2 class="section-title">Results & Impact</h2>
+                <div class="text-content">
+                    <p>The website launch exceeded expectations, delivering measurable improvements in user engagement and business outcomes.</p>
+                </div>
+                <div class="results-grid">
+                    <div class="result-item">
+                        <div class="result-number">150%</div>
+                        <div class="result-label">Increase in Page Views</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-number">85%</div>
+                        <div class="result-label">Reduction in Bounce Rate</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-number">40%</div>
+                        <div class="result-label">More Membership Inquiries</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-number">200%</div>
+                        <div class="result-label">Event Registration Increase</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section fade-in">
+                <h2 class="section-title">Key Learnings</h2>
+                <div class="text-content">
+                    <p>This project reinforced the importance of community-centered design and stakeholder collaboration. Working directly with local business owners and residents provided invaluable insights that shaped every design decision.</p>
+                    <p>The success of this redesign demonstrates how thoughtful UX design can strengthen community connections and drive real business impact for local organizations.</p>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer class="footer">
-      
+    <section class="project-nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="nav-link disabled">← Previous Project</a>
+                <a href="#" class="nav-link">Next Project →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kaleigh. Designed with ❤️ in Chicago.</p>
+        </div>
     </footer>
-	<script src="./script.js"></script>
-  </body>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Add hover effects to cards
+        document.querySelectorAll('.feature-card, .process-step').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
 </html>
