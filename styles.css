@@ -40,6 +40,16 @@ nav {
 	align-items: center;
 }
 
+ul {
+	list-style: disc;
+	margin-left: 1.5rem;
+	padding-left: 1rem;
+}
+
+li {
+	margin-bottom: 0.5rem;
+}
+
 .logo {
 	font-family: 'DM Serif Display', serif;
 	font-size: 28px;
