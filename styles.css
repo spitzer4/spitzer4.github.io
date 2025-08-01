@@ -5,13 +5,13 @@
 }
 
 :root {
-	--bg-canvas: #FAFAF9;
-	--text-primary: #333333;
-	--text-secondary: #7A7A7A;
-	--accent: #A3B18A;
-	--accent-hover: #8A9B78;
+	--bg-canvas: #FAFBFF;
+	--text-primary: #1A1D29;
+	--text-secondary: #6B7280;
+	--accent: #0080FF;
+	--accent-hover: #0066CC;
 	--card-bg: #FFFFFF;
-	--border-light: #E5E5E5;
+	--border-light: #E1E8F0;
 }
 
 body {
