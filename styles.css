@@ -1001,6 +1001,27 @@ footer p {
         background-color: var(--accent-light);
         color: var(--accent);
     }
+
+	.section-layout {
+        grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+        gap: 24px; /* Reduce the gap between sections */
+    }
+
+    .section-sidebar {
+		top: 0;
+		position: relative;
+        text-align: center; /* Center-align the sidebar content */
+        margin-bottom: 16px; /* Add spacing below the sidebar */
+    }
+
+    .section-number {
+        display: block;
+        margin-bottom: 8px; /* Add spacing below the section number */
+    }
+
+    .section-title {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
 	
 	/* Hero Section */
 	.hero {
