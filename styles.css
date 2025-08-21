@@ -11,7 +11,7 @@
 	--accent: #0080FF;
 	--accent-hover: #0066CC;
 	--card-bg: #FFFFFF;
-	--border-light: #DDD7C8;
+	--border-light: #E0E0E0;
 	--section-spacing: 80px;
     --content-spacing: 32px;
 }
@@ -70,7 +70,7 @@ a {
 }
 
 .logo {
-	font-family: 'DM Serif Display', serif;
+	/* font-family: 'DM Serif Display', serif; */
 	font-size: 28px;
 	font-weight: 500;
 	color: var(--text-primary);
@@ -157,7 +157,7 @@ a {
 }
 
 .hero-text h1 {
-	font-family: 'DM Serif Display', serif;
+	/* font-family: 'DM Serif Display', serif; */
 	font-size: 56px;
 	line-height: 1.1;
 	margin-bottom: 24px;
@@ -238,7 +238,7 @@ a {
 }
 
 .section-title {
-	font-family: 'DM Serif Display', serif;
+	/* font-family: 'DM Serif Display', serif; */
 	font-size: 32px;
 	color: var(--text-primary);
 	margin-bottom: 16px;
@@ -279,7 +279,7 @@ a {
 }
 
 .text-content h3 {
-	font-family: 'DM Serif Display', serif;
+	/* font-family: 'DM Serif Display', serif; */
 	font-size: 24px;
 	color: var(--text-primary);
 	margin: 32px 0 16px 0;
@@ -297,7 +297,7 @@ a {
 }
 
 .section-header h2 {
-	font-family: 'DM Serif Display', serif;
+	/* font-family: 'DM Serif Display', serif; */
 	font-size: 42px;
 	margin-bottom: 16px;
 	color: var(--text-primary);
@@ -354,7 +354,7 @@ a {
 }
 
 .project-card-content h3 {
-	font-family: 'DM Serif Display', serif;
+	/* font-family: 'DM Serif Display', serif; */
 	font-size: 24px;
 	margin-bottom: 12px;
 	color: var(--text-primary);
@@ -422,7 +422,7 @@ a {
 }
 
 .about-text h2 {
-	font-family: 'DM Serif Display', serif;
+	/* font-family: 'DM Serif Display', serif; */
 	font-size: 42px;
 	margin-bottom: 32px;
 	color: var(--text-primary);
@@ -450,7 +450,7 @@ a {
 }
 
 .skills-content h2 {
-	font-family: 'DM Serif Display', serif;
+	/* font-family: 'DM Serif Display', serif; */
 	font-size: 42px;
 	margin-bottom: 32px;
 	color: var(--text-primary);
@@ -469,7 +469,7 @@ a {
 }
 
 .skill-category h3 {
-	font-family: 'DM Serif Display', serif;
+	/* font-family: 'DM Serif Display', serif; */
 	font-size: 20px;
 	margin-bottom: 16px;
 	color: var(--text-primary);
@@ -505,7 +505,7 @@ a {
 }
 
 .contact h2 {
-	font-family: 'DM Serif Display', serif;
+	/* font-family: 'DM Serif Display', serif; */
 	font-size: 42px;
 	margin-bottom: 24px;
 	color: var(--text-primary);
@@ -579,7 +579,7 @@ footer {
 }
 
 .project-hero h1 {
-	font-family: 'DM Serif Display', serif;
+	/* font-family: 'DM Serif Display', serif; */
 	font-size: 48px;
 	line-height: 1.1;
 	margin-bottom: 16px;
@@ -636,14 +636,14 @@ footer {
 }
 
 .section-title {
-	font-family: 'DM Serif Display', serif;
+	/* font-family: 'DM Serif Display', serif; */
 	font-size: 36px;
 	margin-bottom: 32px;
 	color: var(--text-primary);
 }
 
 .section-subtitle {
-	font-family: 'DM Serif Display', serif;
+	/* font-family: 'DM Serif Display', serif; */
 	font-size: 24px;
 	margin: 40px 0 24px 0;
 	color: var(--text-primary);
@@ -729,7 +729,7 @@ footer {
 }
 
 .feature-title {
-	font-family: 'DM Serif Display', serif;
+	/* font-family: 'DM Serif Display', serif; */
 	font-size: 20px;
 	margin-bottom: 12px;
 	color: var(--text-primary);
@@ -776,7 +776,7 @@ footer {
 }
 
 .step-title {
-	font-family: 'DM Serif Display', serif;
+	/* font-family: 'DM Serif Display', serif; */
 	font-size: 18px;
 	margin-bottom: 12px;
 	color: var(--text-primary);
