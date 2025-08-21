@@ -16,6 +16,10 @@
     --content-spacing: 32px;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'DM Sans', sans-serif;
 	line-height: 1.6;
@@ -90,6 +94,7 @@ a {
     height: 3px;
     background-color: var(--text-primary);
     transition: all 0.3s ease;
+	transform-origin: center;
 }
 
 .hamburger.open span:nth-child(1) {
