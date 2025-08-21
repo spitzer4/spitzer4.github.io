@@ -66,7 +66,7 @@ li {
 }
 
 a {
-	color: var(--accent);
+	color: var(--secondary-accent);
 	text-decoration: none;
 	transition: color 0.3s ease;
 }
@@ -75,7 +75,7 @@ a {
 	font-family: 'DM Serif Display', serif;
 	font-size: 28px;
 	font-weight: 500;
-	color: var(--text-primary);
+	color: var(--accent);
 	text-decoration: none;
 }
 
@@ -125,7 +125,7 @@ a {
 }
 
 .nav-links a:hover {
-	color: var(--accent);
+	color: var(--secondary-accent);
 }
 
 .nav-links i {
@@ -133,10 +133,10 @@ a {
 }
 
 .back-btn {
-	background: var(--accent-light);
-	color: var(--accent) !important;
+	background: var(--secondary-accent);
+	color: white;
 	padding: 8px 16px;
-	border-radius: 6px;
+	border-radius: 24px;
 	transition: all 0.3s ease;
 }
 
@@ -163,7 +163,7 @@ a {
 	font-size: 56px;
 	line-height: 1.1;
 	margin-bottom: 24px;
-	color: var(--text-primary);
+	color: var(--accent);
 }
 
 .hero-text .subtitle {
@@ -182,10 +182,10 @@ a {
 
 .cta-button {
 	display: inline-block;
-	background-color: var(--accent);
+	background-color: var(--secondary-accent);
 	color: white;
 	padding: 16px 32px;
-	border-radius: 8px;
+	border-radius: 24px;
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 16px;
@@ -194,7 +194,7 @@ a {
 }
 
 .cta-button:hover {
-	background-color: var(--accent-hover);
+	background-color: var(--secondary-accent-hover);
 	transform: translateY(-2px);
 }
 
@@ -302,7 +302,7 @@ a {
 	font-family: 'DM Serif Display', serif;
 	font-size: 42px;
 	margin-bottom: 16px;
-	color: var(--text-primary);
+	color: var(--accent);
 }
 
 .section-header p {
@@ -369,7 +369,7 @@ a {
 }
 
 .project-link {
-	color: var(--accent);
+	color: var(--secondary-accent);
 	text-decoration: none;
 	font-weight: 600;
 	display: inline-flex;
@@ -379,7 +379,7 @@ a {
 }
 
 .project-link:hover {
-	color: var(--accent-hover);
+	color: var(--secondary-accent-hover);
 	transform: translateX(4px);
 }
 
@@ -427,7 +427,7 @@ a {
 	font-family: 'DM Serif Display', serif;
 	font-size: 42px;
 	margin-bottom: 32px;
-	color: var(--text-primary);
+	color: var(--accent);
 }
 
 .about-text p {
@@ -455,7 +455,7 @@ a {
 	font-family: 'DM Serif Display', serif;
 	font-size: 42px;
 	margin-bottom: 32px;
-	color: var(--text-primary);
+	color: var(--accent);
 }
 
 .skills-content p {
@@ -510,7 +510,7 @@ a {
 	font-family: 'DM Serif Display', serif;
 	font-size: 42px;
 	margin-bottom: 24px;
-	color: var(--text-primary);
+	color: var(--accent);
 }
 
 .contact p {
@@ -524,10 +524,10 @@ a {
 
 .contact-button {
 	display: inline-block;
-	background-color: var(--text-primary);
+	background-color: var(--secondary-accent);
 	color: white;
 	padding: 20px 40px;
-	border-radius: 8px;
+	border-radius: 24px;
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 18px;
@@ -1089,7 +1089,7 @@ footer p {
 	.about,
 	.skills,
 	.contact {
-		padding: 60px 0;
+		padding: var(--section-spacing) 0;
 	}
 	
 	.section-header h2 {
