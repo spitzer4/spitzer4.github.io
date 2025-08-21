@@ -6,12 +6,18 @@
     <title>Kaleigh Spitzer - UX/UI Designer</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:wght@400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="container">
             <a href="#" class="logo">Kaleigh Spitzer</a>
-            <ul class="nav-links">
+            <button class="hamburger" aria-label="Toggle navigation">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<ul class="nav-links">
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -42,15 +48,16 @@
                 <h2>Featured Projects</h2>
             </div>
             <div class="projects-grid">
-				<div class="project-card">
+				<div class="project-card"><a href="greencue.html">
                     <div class="project-card-image"></div>
                     <div class="project-card-content">
                         <h3>GreenCue</h3>
 						<p>Designing a gentle, easy-to-use app that helps users build personalized micro-habits for sustainable living, making eco-friendly choices simple and encouraging daily progress.</p>                        
 						<a href="greencue.html" class="project-link">View Project</a>
                     </div>
+				</a>
                 </div>
-                <div class="project-card">
+                <div class="project-card"><a href="lscc.html">
                     <div class="project-card-image">
 						<img src="images/lscc/desktop-mockup.png" alt="Logan Square Chamber of Commerce Project Image">
 					</div>
@@ -59,6 +66,7 @@
                         <p>A website redesign focused on making community resources accessible and modern.</p>
                         <a href="lscc.html" class="project-link">View Project</a>
                     </div>
+				</a>
                 </div>
                 
                 <div class="project-card">

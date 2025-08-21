@@ -19,3 +19,11 @@ document.querySelectorAll('.link--nav').forEach(link => {
     navToggle.setAttribute('aria-expanded', 'false');
   });
 });
+
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('open');
+});
