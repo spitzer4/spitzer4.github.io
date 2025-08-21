@@ -215,6 +215,74 @@ a {
 	padding: 100px 0;
 }
 
+/* Two-column layout for better content flow */
+.section-layout {
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	gap: 48px;
+	align-items: start;
+}
+
+.section-sidebar {
+	position: sticky;
+	top: 120px;
+}
+
+.section-title {
+	font-family: 'DM Serif Display', serif;
+	font-size: 32px;
+	color: var(--text-primary);
+	margin-bottom: 16px;
+}
+
+.section-number {
+	display: inline-block;
+	background: var(--accent-light);
+	color: var(--accent);
+	padding: 4px 0px;
+	border-radius: 20px;
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: 8px;
+}
+
+.text-content {
+	max-width: none;
+}
+
+.text-content p {
+	font-size: 16px;
+	color: var(--text-secondary);
+	margin-bottom: 20px;
+}
+
+.text-content p:first-of-type {
+	font-size: 18px;
+	font-weight: 500;
+	color: var(--text-primary);
+}
+
+.text-content strong {
+	color: var(--text-primary);
+	font-weight: 600;
+}
+
+.text-content h3 {
+	font-family: 'DM Serif Display', serif;
+	font-size: 24px;
+	color: var(--text-primary);
+	margin: 32px 0 16px 0;
+}
+
+.text-content h4 {
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--text-primary);
+	margin: 24px 0 12px 0;
+}
+
 .section-header {
 	margin-bottom: 64px;
 }
