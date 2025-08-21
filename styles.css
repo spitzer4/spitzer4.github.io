@@ -12,6 +12,8 @@
 	--accent-hover: #0066CC;
 	--card-bg: #FFFFFF;
 	--border-light: #E1E8F0;
+	--section-spacing: 80px;
+    --content-spacing: 32px;
 }
 
 body {
@@ -32,6 +34,9 @@ header {
 	padding: 32px 0;
 	border-bottom: 1px solid var(--border-light);
 	background-color: var(--card-bg);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
 }
 
 nav {
@@ -489,13 +494,13 @@ footer {
 
 /* Main Content */
 .project-content {
-	padding: 40px 0;
+	padding: var(--section-spacing) 0;
 }
 
 .section {
-	margin-bottom: 80px;
+	margin-bottom: var(--section-spacing);
 	opacity: 0;
-	transform: translateY(30px);
+	transform: translateY(20px);
 	transition: all 0.6s ease;
 }
 
@@ -774,8 +779,9 @@ footer {
 /* Project Navigation */
 .project-nav {
 	background: var(--card-bg);
-	padding: 40px 0;
+	padding: 32px 0;
 	border-top: 1px solid var(--border-light);
+	margin-top: var(--section-spacing);
 }
 
 .nav-content {
