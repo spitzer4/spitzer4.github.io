@@ -5,15 +5,15 @@
 }
 
 :root {
-	--bg-canvas: #FAFBFF;
-	--text-primary: black;
-	--text-secondary: #1A1D29;
-	--accent: #000080;
-	--accent-hover: #0020A0;
-	--secondary-accent: #177245;
-	--secondary-accent-hover: #A3D3B8;
+	--bg-canvas: #F9F7F0;
+	--text-primary: #3E3E3E;
+	--text-secondary: #5A5A53;
+	--accent: #2A4B3A;
+	--accent-hover: #4F7061;
+	--secondary-accent: #D98869;
+	--secondary-accent-hover: #EBCBC1;
 	--card-bg: #FFFFFF;
-	--border-light: #E1E8F0;
+	--border-light: #DDD7C8;
 	--section-spacing: 80px;
     --content-spacing: 32px;
 }
