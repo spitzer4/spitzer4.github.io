@@ -150,9 +150,9 @@ a {
 }
 
 .hero-content {
-	display: grid;
-	grid-template-columns: 1fr 300px;
-	gap: 80px;
+	/* display: grid; */
+	/* grid-template-columns: 1fr 300px; */
+	/* gap: 80px; */
 	align-items: center;
 }
 
@@ -172,10 +172,10 @@ a {
 }
 
 .hero-text p {
-	font-size: 18px;
+	font-size: 36px;
 	color: var(--text-secondary);
 	margin-bottom: 40px;
-	max-width: 500px;
+	/* max-width: 500px; */
 }
 
 .cta-button {
