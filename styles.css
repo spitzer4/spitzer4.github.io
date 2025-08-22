@@ -213,7 +213,7 @@ a {
 
 /* Hero Section */
 .hero {
-	padding: 80px 0 120px;
+	padding: 120px 0 120px;
 	background: linear-gradient(135deg, var(--card-bg) 0%, var(--bg-canvas) 100%);
 }
 
@@ -660,6 +660,10 @@ footer {
 	display: flex;
 	gap: 60px;
 	margin-bottom: 60px;
+}
+
+.social-section a {
+	padding: 0 8px;
 }
 
 .meta-item {
@@ -1165,7 +1169,80 @@ footer p {
 	}
 	
 	/* Projects Grid */
-	.projects-grid {
+	/* Improved Mobile Project Layout */
+
+/* Desktop - Keep existing grid layout */
+.project-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.project-item:nth-child(even) {
+    direction: rtl;
+}
+
+.project-item:nth-child(even) > * {
+    direction: ltr;
+}
+
+/* Mobile - Stack image above content */
+@media (max-width: 768px) {
+    .project-item {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 48px;
+        align-items: stretch; /* Full width for both image and content */
+    }
+
+    /* Reset the alternating direction for mobile */
+    .project-item:nth-child(even) {
+        direction: ltr;
+        flex-direction: column;
+    }
+
+    .project-item:nth-child(even) > * {
+        direction: ltr;
+    }
+
+    /* Ensure image takes full width and has good aspect ratio */
+    .project-image {
+        width: 100%;
+        height: 300px; /* Fixed height for consistency */
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 0; /* Remove bottom margin since we're using gap */
+    }
+
+    /* Improve content spacing */
+    .project-content {
+        padding: 0; /* Remove any padding */
+    }
+
+    .project-content h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+        color: var(--text-primary);
+    }
+
+    .project-content p {
+        font-size: 16px;
+        color: var(--text-secondary);
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .project-tags {
+        margin-bottom: 20px;
+    }
+
+    .project-link {
+        font-size: 16px;
+    }
+	/* .projects-grid {
 		grid-template-columns: 1fr;
 		gap: 24px;
 	}
@@ -1181,7 +1258,7 @@ footer p {
 	.project-card-content p {
 		font-size: 14px;
 	}
-	
+	 */
 	/* About Section */
 	.about-text h2 {
 		font-size: 32px;
@@ -1377,23 +1454,34 @@ footer p {
 	}
 	
 	/* Project Cards */
-	.project-card-image {
-		height: 160px;
-	}
-	
-	.project-card-content {
-		padding: 20px;
-	}
-	
-	.project-card-content h3 {
-		font-size: 18px;
-		margin-bottom: 8px;
-	}
-	
-	.project-card-content p {
-		font-size: 13px;
-		margin-bottom: 16px;
-	}
+	.project-item {
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .project-image {
+        height: 180px;
+        border-radius: 8px;
+    }
+
+    .project-content h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .project-content p {
+        font-size: 15px;
+        margin-bottom: 16px;
+    }
+
+    .project-tags {
+        margin-bottom: 16px;
+    }
+
+    .tag {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
 	
 	/* Skills Grid */
 	.skill-list li {
