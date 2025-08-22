@@ -78,7 +78,7 @@ a {
 }
 
 /* Hamburger Button */
-.hamburger {
+/* .hamburger {
     display: none;
     flex-direction: column;
     gap: 5px;
@@ -94,7 +94,7 @@ a {
     height: 3px;
     background-color: var(--text-primary);
     transition: all 0.3s ease;
-	transform-origin: center;
+	transform-origin: center center;
 }
 
 .hamburger.open span:nth-child(1) {
@@ -107,6 +107,56 @@ a {
 
 .hamburger.open span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+} */
+.hamburger {
+    display: none;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    width: 30px;
+    height: 24px;
+    padding: 0;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-primary);
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hamburger span:nth-child(1) {
+    top: 3px;
+}
+
+.hamburger span:nth-child(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hamburger span:nth-child(3) {
+    bottom: 3px;
+}
+
+.hamburger.open span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+    transform: translate(-50%, -50%) scaleX(0);
+}
+
+.hamburger.open span:nth-child(3) {
+    bottom: 50%;
+    transform: translate(-50%, 50%) rotate(-45deg);
 }
 
 .nav-links {
@@ -220,10 +270,10 @@ a {
 	height: auto;
 }
 
-.hero-image img {
+/* .hero-image img {
 	width: 100%;
 	height: auto;
-}
+} */
 
 .hero-accent {
 	position: absolute;
@@ -596,7 +646,7 @@ footer {
 	/* font-family: 'DM Serif Display', serif; */
 	font-size: 48px;
 	line-height: 1.1;
-	margin-bottom: 16px;
+	margin: 16px 0;
 	color: var(--text-primary);
 }
 
@@ -686,7 +736,7 @@ footer {
 	height: 400px;
 	border-radius: 16px; /* Modern rounded corners */
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	margin-bottom: 20px;
+	margin-bottom: 24px;
 	object-fit: cover;
     object-position: center;
 }
@@ -1092,7 +1142,8 @@ footer p {
 	}
 	
 	.hero-image {
-		max-width: 250px;
+		/* max-width: 250px; */
+		height: 250px; /* Reduced height for mobile */
 		margin: 0 auto;
 	}
 	
@@ -1191,7 +1242,7 @@ footer p {
 	
 	/* Project Pages */
 	.project-hero {
-		padding: 80px 0 60px;
+		padding: 24px 0 60px;
 	}
 	
 	.project-hero h1 {
@@ -1294,6 +1345,12 @@ footer p {
 	.hero-text p {
 		font-size: 15px;
 	}
+
+	.hero-image {
+        height: 200px; /* Even smaller for very small screens */
+        border-radius: 8px;
+        margin-bottom: 12px;
+    }
 	
 	/* Navigation */
 	.nav-links {
