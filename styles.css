@@ -922,6 +922,55 @@ footer {
 	background: var(--accent);
 }
 
+.carousel {
+    position: relative;
+    /* width: 100%;
+    max-width: 500px; */
+    margin: 32px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    /* box-shadow: 0 4px 24px rgba(0,0,0,0.08); */
+    /* background: #fff; */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(.4,0,.2,1);
+}
+
+.carousel-img {
+    /* min-width: 100%;
+    height: 300px;
+    object-fit: cover; */
+    display: none;
+}
+
+.carousel-img.active {
+    display: block;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--border-light);
+    cursor: pointer;
+    /* transition: background 0.2s; */
+}
+
+.dot.active {
+    background: var(--accent);
+}
+
 /* Results Grid */
 .results-grid {
 	display: grid;
