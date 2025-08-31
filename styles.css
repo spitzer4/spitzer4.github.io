@@ -83,6 +83,14 @@ a {
 	letter-spacing: 0.5px;
 }
 
+h2 {
+	font-family: 'Crimson Text', serif;
+	font-size: 42px;
+	margin-bottom: 24px;
+	color: var(--text-primary);
+	font-weight: 400;
+}
+
 /* Hamburger Button */
 .hamburger {
     display: none;
@@ -261,8 +269,8 @@ a {
 }
 
 .cta-button:hover {
-	background: white;
-	color: var(--text-secondary);
+	background: black;
+	color: white;
 }
 
 .hero-image {
