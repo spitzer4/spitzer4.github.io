@@ -180,7 +180,7 @@ h2 {
 }
 
 .description {
-	font-family: 'Crimson Text', serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 20px;
 	color: var(--text-primary);
 	margin-bottom: 48px;
@@ -248,6 +248,7 @@ h2 {
 }
 
 .hero-text p {
+	font-family: 'Inter', sans-serif;
 	font-size: 36px;
 	color: white;
 	margin-bottom: 40px;
@@ -385,8 +386,7 @@ h2 {
 }
 
 .project-content p {
-	font-family: 'Crimson Text', serif;
-	font-size: 18px;
+	font-family: 'Inter', sans-serif;	font-size: 18px;
 	color: var(--text-primary);
 	margin-bottom: 32px;
 	line-height: 1.6;
@@ -482,7 +482,7 @@ figcaption {
 }
 
 .about-text p {
-	font-family: 'Crimson Text', serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 18px;
 	color: var(--text-primary);
 	margin-bottom: 24px;
@@ -570,7 +570,7 @@ figcaption {
 }
 
 .contact p {
-	font-family: 'Crimson Text', serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 18px;
 	color: var(--text-primary);
 	margin-bottom: 40px;
