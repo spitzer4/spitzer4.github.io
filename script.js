@@ -54,3 +54,31 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         startX = null;
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const filterTags = document.querySelectorAll('.filter-tag');
+  const projects = document.querySelectorAll('.project-item');
+
+  filterTags.forEach(tag => {
+    tag.style.cursor = 'pointer';
+    tag.addEventListener('click', function(e) {
+      e.stopPropagation();
+      e.preventDefault();
+
+      // Remove 'active' from all filter tags
+      filterTags.forEach(t => t.classList.remove('active'));
+      // Add 'active' to clicked tag
+      tag.classList.add('active');
+
+      const selectedTag = tag.getAttribute('data-tag');
+      projects.forEach(project => {
+        const projectTags = project.getAttribute('data-tags') || '';
+        if (selectedTag === 'All' || projectTags.split(',').map(t => t.trim()).includes(selectedTag)) {
+          project.style.display = '';
+        } else {
+          project.style.display = 'none';
+        }
+      });
+    });
+  });
+});
