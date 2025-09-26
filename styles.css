@@ -260,10 +260,9 @@ h2 {
 
 .cta-button {
 	display: inline-block;
-	background: transparent;
-	color: var(--text-primary);
+	background: black;
+	color: white;
 	padding: 16px 32px;
-	border: 1px solid var(--text-primary);
 	text-decoration: none;
 	font-weight: 400;
 	font-size: 12px;
@@ -271,11 +270,26 @@ h2 {
 	text-transform: uppercase;
 	transition: all 0.3s ease;
 	text-align: center;
+	border: 1px solid black;
 }
 
 .cta-button:hover {
+	background: transparent;
+	color: black;
+	border: 1px solid black;
+}
+
+.cta-button.secondary {
+	background: transparent;
+	color: var(--text-primary);
+	margin-left: 16px;
+	border: 1px solid var(--text-primary);
+}
+
+.cta-button.secondary:hover {
 	background: black;
 	color: white;
+	border: 1px solid var(--text-primary);
 }
 
 .hero-image {
@@ -1696,15 +1710,16 @@ footer p {
 
 .filter-tag {
     /* background: var(--border-light); */
-    color: var(--accent);
-	border: 1px solid black;
-    padding: 8px 18px;
+    color: #0000008f;
+	background: #00000012;
+    padding: 4px 12px;
     /* border-radius: 16px; */
     font-size: 14px;
     font-weight: 500;
-    letter-spacing: 0.03em;
+    /* letter-spacing: 0.03em; */
     transition: background 0.2s, color 0.2s;
     cursor: pointer;
+	border: none;
 }
 
 .filter-tag.active,
