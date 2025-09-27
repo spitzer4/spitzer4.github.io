@@ -21,7 +21,8 @@ html {
 }
 
 .serif {
-	font-family: 'Crimson Text', serif;
+	/* font-family: 'Crimson Text', serif; */
+	font-family: 'Bentham', serif;
 }
 
 body {
@@ -76,8 +77,8 @@ a {
 }
 
 .logo {
-	font-family: 'Inter', sans-serif;
-	font-size: 24px;
+	/* font-family: 'Inter', sans-serif; */
+	font-size: 32px;
 	font-weight: 500;
 	color: var(--text-primary);
 	text-decoration: none;
@@ -85,7 +86,7 @@ a {
 }
 
 h2 {
-	font-family: 'Crimson Text', serif;
+	/* font-family: 'Crimson Text', serif; */
 	font-size: 42px;
 	margin-bottom: 24px;
 	color: var(--text-primary);
@@ -172,7 +173,7 @@ h2 {
 }
 
 .greeting {
-	font-family: 'Crimson Text', serif;
+	/* font-family: 'Crimson Text', serif; */
 	font-size: 3.5rem;
 	font-weight: 400;
 	margin-bottom: 32px;
@@ -236,7 +237,7 @@ h2 {
 }
 
 .hero-text h1 {
-	font-family: 'Crimson Text', serif;
+	/* font-family: 'Crimson Text', serif; */
 	font-size: 56px;
 	line-height: 1.1;
 	margin-bottom: 24px;
@@ -488,13 +489,38 @@ figcaption {
 }
 
 .about-content {
-	display: grid;
-	gap: 80px;
-	align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start; /* changed from center -> start to top-align columns */
+}
+
+.about-left {
+    display: flex;
+    align-items: flex-start; /* align content to the top of the left column */
+    justify-content: flex-start; /* left-align the text */
+    padding: 24px 0 0 0; /* top padding only so heading lines up with right column text */
+    text-align: left;
+}
+
+.about-left h2 {
+    /* font-family: 'Crimson Text', serif; */
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: none;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    text-align: left; /* ensure heading is left aligned */
+    margin: 0; /* remove default margins so top edges align */
+}
+
+/* ensure existing text styles apply on the right column */
+.about-right {
+    padding: 8px 0;
 }
 
 .about-text h2 {
-	font-family: 'Crimson Text', serif;
+	/* font-family: 'Crimson Text', serif; */
 	font-size: 42px;
 	margin-bottom: 32px;
 	color: var(--text-primary);
@@ -728,7 +754,7 @@ footer {
 }
 
 .section-title {
-	font-family: 'Crimson Text', serif;
+	/* font-family: 'Crimson Text', serif; */
 	font-size: 36px;
 	margin-bottom: 32px;
 	color: var(--text-primary);
@@ -736,7 +762,7 @@ footer {
 }
 
 .section-subtitle {
-	font-family: 'Crimson Text', serif;
+	/* font-family: 'Crimson Text', serif; */
 	font-size: 24px;
 	margin: 40px 0 24px 0;
 	color: var(--text-primary);
@@ -1726,4 +1752,12 @@ footer p {
 .filter-tag:hover {
     background: var(--accent);
     color: #fff;
+}
+
+.box {
+    background: #00000012;
+    padding: 12px 24px;
+    margin: 32px 0 0 0;
+    font-size: 1rem;
+    color: #0000008f;
 }
