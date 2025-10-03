@@ -1896,7 +1896,7 @@ footer p {
 }
 
 .work-block-title {
-	font-size: clamp(1.5rem, 4vw, 2.25rem);
+	font-size: clamp(1.2rem, 2.5vw, 1.75rem);
 	line-height: 1.1;
 	font-weight: 800;
 }
@@ -2097,6 +2097,10 @@ footer p {
 .text-gray-400 { color: #9CA3AF; }
 .text-gray-500 { color: #6B7280; }
 .text-gray-600 { color: #4B5563; }
+.border-l-4 { border-left-width: 4px; border-left-style: solid; }
+.border-gray-300 { border-color: #D1D5DB; }
+.pl-4 { padding-left: 1rem; }
+.italic { font-style: italic; }
 .text-gray-700 { color: #374151; }
 .text-gray-800 { color: #1F2937; }
 .text-gray-900 { color: #111827; }
