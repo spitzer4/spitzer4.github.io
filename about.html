@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaleigh Spitzer - UX/UI Designer</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:wght@400;500&family=Crimson+Text:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V88C99G0QM"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-V88C99G0QM');
-	</script>
 </head>
-<body>
+<body class="mx-auto">
     <header class="site-header">
         <div class="container header-inner">
             <a href="index.html" class="logo">Kaleigh Spitzer</a>
@@ -31,139 +22,40 @@
             </button>
 
             <nav class="nav-links">
-                <a href="#work">Work</a>
+                <a href="index.html#work">Work</a>
                 <a href="about.html">About</a>
-                <a href="#contact">Contact</a>
+                <a href="index.html#contact">Contact</a>
             </nav>
         </div>
     </header>
 
-	<section class="container mx-auto px-6 lg:px-12 pt-16 pb-24">
-        <h1 class="hero-heading lg:w-3/4 mb-8">
-            <span class="text-gray-400">UX/UI Designer & Engineer.</span> <br class="hidden sm:block">
-			Designing at the intersection of <span class="text-pink-600">people, data, and code</span>.
-        </h1>
-        <p class="text-xl font-medium max-w-3xl text-gray-700">
-            Background in Computer Science & Statistics. 
-        </p>
-		</br>
-		<p class="text-xl font-medium max-w-3xl text-gray-700">
-			Currently studying HCI at DePaul.
-        </p>
-    </section>
-
-	<section id="work" class="container mx-auto px-6 lg:px-12 py-16">
-        <h2 class="text-3xl font-extrabold mb-12 text-gray-800">
-            Selected Work
-        </h2>
-
-        <!-- Changed grid to md:grid-cols-2 for consistent block width -->
-        <div class="grid md:grid-cols-2 gap-10">
-
-            <!-- CASE STUDY 1: Power BI (Uniform Size) -->
-            <div>
-                <a href="ventra.html" class="work-block-link">
-                    <!-- VISUAL BLOCK (Color Focused) -->
-                    <div class="work-visual flex items-center justify-center">
-                         <img src="images/Ventra/thumbnail.png" alt="Ventra mockup" class="w-full h-full object-cover">
-                    </div>
-                    <!-- TEXT DESCRIPTION -->
-                    <div class="pt-4 mt-4">
-                        <div class="mb-2 flex flex-wrap gap-2">
-							<span class="text-xs font-semibold uppercase text-pink-600">UX/UI Design</span>
-							<span class="text-xs font-semibold uppercase text-solarized-blue">Information Architecture</span>
-							<span class="text-xs font-semibold uppercase text-gray-500">User Research</span>
-						</div>
-                        <h3 class="work-block-title text-gray-900">
-                            Ventra Redesign: Faster, Smarter Transit
-                        </h3>
-                    </div>
-                </a>
+	<section class="container mx-auto px-6 lg:px-12 pt-24 pb-16">
+        <div class="headshot grid lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-2 text-xl leading-relaxed">
+                <p class="mb-6 font-semibold">I design products that scale because I understand how they are engineered. My work is not just about visual polish, but about optimizing the underlying system, data flow, and technical dependencies.</p>
+                <p>My journey from Computer Science showed me the necessity of logical, modular architecture. My background in Statistics taught me that every design decision must be validated by measurable user behavior. UX design is the practice where these disciplines converge.</p>
             </div>
-
-            <!-- CASE STUDY 2: Design System (Uniform Size) -->
-            <div>
-                 <a href="#" class="work-block-link">
-                    <!-- VISUAL BLOCK (Neutral Background with Image) -->
-                    <div class="work-visual bg-gray-300 flex items-center justify-center">
-                        <img src="https://placehold.co/800x400/1a1a1a/4f46e5?text=CODE-DRIVEN+COMPONENT+LIBRARY" 
-                             alt="Visual representation of the design system project" 
-                             class="w-full h-full object-cover">
-                    </div>
-                    <!-- TEXT DESCRIPTION -->
-                    <div class="pt-4 border-t border-gray-200 mt-4">
-                        <div class="mb-2 flex flex-wrap gap-2">
-                            <span class="text-xs font-semibold uppercase text-blue-600">Design System</span>
-                            <span class="text-xs font-semibold uppercase text-gray-500">React Component Library</span>
-                        </div>
-                        <h3 class="work-block-title text-gray-900">
-                            Building a Flexible, Responsive Component Library
-                        </h3>
-                    </div>
-                </a>
-            </div>
-
-            <!-- CASE STUDY 3: ML Tool (Uniform Size) -->
-            <div>
-                <a href="#" class="work-block-link">
-                    <!-- VISUAL BLOCK (Uses a single large color block) -->
-                    <div class="work-visual bg-blue-700 flex items-center justify-center p-8">
-                         <p class="text-white text-2xl font-black text-center">Information Architecture for ML</p>
-                    </div>
-                    <!-- TEXT DESCRIPTION -->
-                    <div class="pt-4 border-t border-gray-200 mt-4">
-                        <div class="mb-2 flex flex-wrap gap-2">
-                            <span class="text-xs font-semibold uppercase text-green-600">Internal Tools</span>
-                            <span class="text-xs font-semibold uppercase text-gray-500">Algorithm Visualization</span>
-                        </div>
-                        <h3 class="work-block-title text-gray-900">
-                            UX for Machine Learning: Simplifying Model Configuration
-                        </h3>
-                    </div>
-                </a>
-            </div>
-
-            <!-- PLACEHOLDER BLOCK 4: Simple, Square Block (Uniform Size) -->
-            <div>
-                 <a href="#" class="work-block-link">
-                    <!-- VISUAL BLOCK (Square/Plain Color) -->
-                    <div class="work-visual bg-gray-200 flex items-center justify-center">
-                        <p class="text-gray-600 text-lg font-semibold">New Project Coming Soon</p>
-                    </div>
-                    <!-- TEXT DESCRIPTION -->
-                    <div class="pt-4 border-t border-gray-200 mt-4">
-                        <div class="mb-2 flex flex-wrap gap-2">
-                            <span class="text-xs font-semibold uppercase text-yellow-600">E-commerce</span>
-                        </div>
-                        <h3 class="work-block-title text-gray-900">
-                            Mobile Checkout Experience
-                        </h3>
-                    </div>
-                </a>
-            </div>
+			<img src="images/headshotbw.png" alt="Photo of Kaleigh Spitzer">
         </div>
     </section>
 
-	<section id="contact" class="container mx-auto px-6 lg:px-12 py-16">
+	<section class="container mx-auto px-6 lg:px-12 py-16 section-separator">
         <div class="lg:w-3/4">
-            <h2 class="text-4xl font-extrabold text-gray-900 mb-6">
-                Let's Connect.
+            <h2 class="text-4xl font-extrabold tracking-tight text-gray-900 mb-6">
+                Let's Collaborate.
             </h2>
             <p class="text-lg text-gray-700 mb-8">
-                I'm seeking opportunities where I can bridge design and engineering. I bring the rare combination of design thinking, technical fluency, and data literacy - so I don't just design systems, I help build them.
+				I'm looking for a UX role where technical fluency and data-driven thinking aren't just nice-to-haves — they're core to the work. If your team values designers who can bridge disciplines and bring analytical rigor to the process, I'd love to connect.
             </p>
-            <div class="flex space-x-6">
-                <a href="mailto:kaleighspitz@gmail.com" class="text-lg font-bold text-pink-600 hover:text-pink-800 transition">
+            <div class="flex flex-wrap space-x-6">
+                <a href="mailto:kaleighspitz@gmail.com" class="text-lg font-bold text-pink hover:text-pink-800 transition">
                     Email me →
                 </a>
                 <a href="Spitzer_Resume 2025.09.06.pdf" class="text-lg font-bold text-gray-600 hover:text-gray-800 transition">
-                    View resume →
+                    View my resume →
                 </a>
                 <a href="https://www.linkedin.com/in/kaleighs724/" class="text-lg font-bold text-gray-600 hover:text-gray-800 transition">
                     LinkedIn →
-                </a>
-				<a href="https://www.instagram.com/kaleigh_design/" class="text-lg font-bold text-gray-600 hover:text-gray-800 transition">
-                    Instagram →
                 </a>
             </div>
         </div>
