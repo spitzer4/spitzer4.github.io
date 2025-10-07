@@ -1938,6 +1938,7 @@ footer p {
 .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
 .pt-16 { padding-top: 4rem; }
 .pb-24 { padding-bottom: 6rem; }
+.pb-2 { padding-bottom: 0.5rem; }
 .py-16 { padding-top: 4rem; padding-bottom: 4rem; }
 
 /* larger padding utilities for pages that need more vertical space */
