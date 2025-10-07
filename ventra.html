@@ -99,57 +99,52 @@
         </div>
     </section>
 
-    <!-- 3. CONTEXT & RESEARCH (The Problem) -->
-    <section class="container mx-auto px-6 lg:px-12 py-24 grid lg:grid-cols-3 gap-12">
-        <h2 class="sub-heading text-pink lg:col-span-1">
-            The Problem & Data Pivot
-        </h2>
+	<section class="container mx-auto px-6 lg:px-12 py-24 grid lg:grid-cols-3 gap-12">
+		<div class="lg:col-span-1">
+			<h3 class="sub-heading uppercase mb-1">Context</h3>
+			<h2 class="heading text-pink">
+				Ventra is widely used, but frustrating to navigate.
+			</h2>
+		</div>
         <div class="lg:col-span-2 space-y-8 text-lg text-gray-700">
-            <p>
+			<p>
+				Chicago’s Ventra app is the official mobile tool for CTA riders to buy passes, check balances, and view bus/train arrivals. While adoption is high, user feedback reveals significant usability frustrations that disrupt daily commutes.
+			</p>
+			<p>Despite its issues, most riders still use Ventra daily - showing that improving it (rather than creating a new app) would have the greatest real-world impact.</p>
+        </div>
+    </section>
+
+	<section class="container mx-auto px-6 lg:px-12 py-24 grid lg:grid-cols-3 gap-12 border-t border-gray-100">
+		<div class="lg:col-span-1">
+			<h3 class="sub-heading uppercase mb-1">Problem</h3>
+			<h2 class="heading text-pink">
+				Too many taps, too much clutter, too little clarity.
+			</h2>
+		</div>
+        <div class="lg:col-span-2 space-y-8 text-lg text-gray-700">
+			<p>
                 Chicago's official Ventra app has high adoption but suffers from severe usability friction. User surveys confirmed that the most consistent complaints centered on the <strong>confusing, tap-heavy hierarchy</strong> for viewing arrival times. Riders are seeking simplicity while moving quickly.
             </p>
             <blockquote class="border-l-4 border-gray-300 pl-4 italic text-gray-600">
                 “Opening the app and having to tap multiple times to see your train/bus arrival time.”
             </blockquote>
-            <p class="text-gray-700">
-                <strong>The Critical Insight: </strong>Despite these flaws, riders still use Ventra daily. This led to a key strategic pivot: improving the flawed, established app (maximizing impact) was a better use of design effort than building a replacement.
-            </p>
         </div>
     </section>
 
-    <!-- 4. DESIGN CHALLENGE & KEY INSIGHTS (The Why) -->
-    <section class="container mx-auto px-6 lg:px-12 py-24 grid lg:grid-cols-3 gap-12 border-t border-gray-100">
-        <h2 class="sub-heading text-pink lg:col-span-1">
-            Architectural Shift
-        </h2>
+	<section class="container mx-auto px-6 lg:px-12 py-24 grid lg:grid-cols-3 gap-12 border-t border-gray-100">
+		<div class="lg:col-span-1">
+			<h3 class="sub-heading uppercase mb-1">Solution</h3>
+			<h2 class="heading text-pink">
+				Shifting to a stop-first structure and proactive design streamlines access to information.
+			</h2>
+		</div>
         <div class="lg:col-span-2 space-y-8 text-lg text-gray-700">
-            <h3 class="text-xl font-extrabold text-gray-900">Mental Models vs. System Logic</h3>
-            <p>
-                The primary challenge was a <strong>Mental Model Mismatch</strong>. Riders think spatially ("the stop I'm at"), but the app was architected <strong>route-first</strong>. This forced riders through unnecessary cognitive steps and taps, directly violating the need for glanceable information.
-            </p>
-            <div class="grid sm:grid-cols-2 gap-6">
-                <div class="p-6 bg-gray-50 rounded-lg">
-                    <p class="font-bold text-lg text-pink mb-2">Original Flow (Route-First)</p>
-                    <p class="text-sm mt-1">3–4 taps required.</p>
-                </div>
-                 <div class="p-6 bg-gray-50 rounded-lg">
-                    <p class="font-bold text-lg text-green mb-2">Redesign Flow (Stop-Centric)</p>
-                    <p class="text-sm mt-1">1–2 taps required.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. REDESIGN SOLUTIONS (The How - Technical Design) -->
-    <section class="container mx-auto px-6 lg:px-12 py-24 border-t border-gray-100">
-        <h2 class="sub-heading mb-12 text-pink">
-            Design Solutions: Technical & Predictive
-        </h2>
-        
-        <div class="grid lg:grid-cols-2 gap-12">
-            <!-- Solution 1: Stop-Centric Drilldown -->
-            <div>
-                <h3 class="text-2xl font-extrabold mb-4 text-gray-900">1. Stop-Centric Architecture</h3>
+			<div>
+                <h4 class="text-xl font-extrabold mb-4 text-gray-900">1. Stop-Centric Architecture</h4>
+				<div class="w-full flex items-center justify-center overflow-hidden">
+					<img src="images/Ventra/home-expanded-stop.png" 
+						class="w-full h-full object-cover">
+				</div>
                 <p class="text-lg text-gray-700 mb-6">
                     I shifted the primary information architecture to be <strong>stop-centric</strong>, utilizing the rider's current location as the starting point. This implements a system of <strong>Progressive Disclosure</strong>, showing nearby stops immediately and minimizing taps to the arrival information itself.
                 </p>
@@ -158,11 +153,13 @@
                     <li><strong>Result: </strong>Eliminates redundant navigation levels.</li>
                 </ul>
             </div>
-            
-            <!-- Solution 2: AI Contextualization Layer -->
-            <div>
-                <h3 class="text-2xl font-extrabold mb-4 text-gray-900">2. AI Contextualization Layer</h3>
-                <p class="text-lg text-gray-700 mb-6">
+			<div>
+                <h4 class="text-xl font-extrabold mb-4 text-gray-900">2. AI Contextualization Layer</h4>
+                <div class="w-full flex items-center justify-center overflow-hidden">
+					<img src="images/Ventra/home.png" 
+						class="w-full h-full object-cover">
+				</div>
+				<p class="text-lg text-gray-700 mb-6">
                     A technically sophisticated layer was proposed to predict the <strong>most relevant stop or route</strong> based on time, location, and user history. This allows the app to function as a proactive assistant, surfacing predictions directly on the home screen.
                 </p>
                 <ul class="list-disc list-inside space-y-2 text-gray-700">
@@ -173,38 +170,57 @@
         </div>
     </section>
 
-    <!-- 6. IMPACT & METRICS (The Result) -->
-    <section class="container mx-auto px-6 lg:px-12 py-24 border-t border-gray-100">
-        <h2 class="sub-heading mb-12 text-pink">
-            Measured Impact & Data-Backed Framing
-        </h2>
-        
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="metric-box bg-green">
-                <p class="text-5xl font-black text-green mb-2">60–70%</p>
-                <p class="text-xl font-semibold text-gray-800">Efficiency Gain</p>
-                <p class="text-sm text-gray-600 mt-1">Reduction in average time-to-arrival information (from ~10s to 1–2s).</p>
-            </div>
-            <div class="metric-box bg-pink">
-                <p class="text-5xl font-black text-pink mb-2">3 -> 1</p>
-                <p class="text-xl font-semibold text-gray-800">Tap Count Reduction</p>
-                <p class="text-sm text-gray-600 mt-1">Elimination of up to 2-3 redundant taps in the core user flow.</p>
-            </div>
-            <div class="metric-box bg-gray-100">
-                <p class="text-5xl font-black text-gray-700 mb-2">4 of 6</p>
-                <p class="text-xl font-semibold text-gray-800">User Validation</p>
-                <p class="text-sm text-gray-600 mt-1">Respondents named "too many taps" as their primary frustration, which the solution directly addresses.</p>
-            </div>
+	<section class="container mx-auto px-6 lg:px-12 py-24 grid lg:grid-cols-3 gap-12 border-t border-gray-100">
+		<div class="lg:col-span-1">
+			<h3 class="sub-heading uppercase mb-1">Research</h3>
+			<h2 class="heading text-pink">
+				Riders think in terms of stops, not routes.
+			</h2>
+		</div>
+        <div class="lg:col-span-2 space-y-8 text-lg text-gray-700">
+			<p>
+                The primary challenge was a <strong>Mental Model Mismatch</strong>. Riders think spatially ("the stop I'm at"), but the app was architected <strong>route-first</strong>. This forced riders through unnecessary cognitive steps and taps, directly violating the need for glanceable information.
+            </p>
         </div>
     </section>
 
-    <!-- 7. REFLECTION (The Learnings) -->
-    <section class="container mx-auto px-6 lg:px-12 py-24 grid lg:grid-cols-3 gap-12 border-t border-gray-100">
-        <h2 class="sub-heading text-pink lg:col-span-1">
-            Reflection
-        </h2>
-        <div class="lg:col-span-2 space-y-6 text-lg text-gray-700">
-            <p>
+	<section class="container mx-auto px-6 lg:px-12 py-24 grid lg:grid-cols-3 gap-12 border-t border-gray-100">
+		<div class="lg:col-span-1">
+			<h3 class="sub-heading uppercase mb-1">Analysis</h3>
+			<h2 class="heading text-pink">
+				A stop-first, predictive approach measurably improves efficiency and alignment.
+			</h2>
+		</div>
+        <div class="lg:col-span-2 space-y-8 text-lg text-gray-700">
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="metric-box bg-green">
+					<p class="text-5xl font-black text-green mb-2">60–70%</p>
+					<p class="text-xl font-semibold text-gray-800">Efficiency Gain</p>
+					<p class="text-sm text-gray-600 mt-1">Reduction in average time-to-arrival information (from ~10s to 1–2s).</p>
+				</div>
+				<div class="metric-box bg-pink">
+					<p class="text-5xl font-black text-pink mb-2">3 -> 1</p>
+					<p class="text-xl font-semibold text-gray-800">Tap Count Reduction</p>
+					<p class="text-sm text-gray-600 mt-1">Elimination of up to 2-3 redundant taps in the core user flow.</p>
+				</div>
+				<div class="metric-box bg-gray-100">
+					<p class="text-5xl font-black text-gray-700 mb-2">4 of 6</p>
+					<p class="text-xl font-semibold text-gray-800">User Validation</p>
+					<p class="text-sm text-gray-600 mt-1">Respondents named "too many taps" as their primary frustration, which the solution directly addresses.</p>
+				</div>
+			</div>
+        </div>
+    </section>
+
+	<section class="container mx-auto px-6 lg:px-12 py-24 grid lg:grid-cols-3 gap-12 border-t border-gray-100">
+		<div class="lg:col-span-1">
+			<h3 class="sub-heading uppercase mb-1">Reflection</h3>
+			<h2 class="heading text-pink">
+				Redesigning within an existing system can have greater real-world impact than starting fresh.
+			</h2>
+		</div>
+        <div class="lg:col-span-2 space-y-8 text-lg text-gray-700">
+			<p>
                 This project reinforced the value of <strong>data-backed strategy</strong>. I initially planned to create a competitive app, but research showed that improving an existing, highly adopted tool maximizes real-world impact. The redesign successfully transitioned the app from a reactive search tool to a proactive assistant, making the experience clearer and smarter.
             </p>
             <p>
