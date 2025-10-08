@@ -1088,6 +1088,26 @@ footer {
 	transition: all 0.3s ease;
 }
 
+/* Slides wrapper used by JS (one-up layout) */
+.slides {
+	display: flex;
+	gap: 16px; /* small gap between slides */
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory; /* snap to each slide for one-up behavior */
+}
+
+.slide {
+	flex: 0 0 100%; /* one slide visible at a time */
+	box-sizing: border-box;
+	min-height: 150px;
+	background: transparent;
+	padding: 12px;
+	scroll-snap-align: start;
+}
+
+.previous, .next { cursor: pointer; }
+
 .carousel input:nth-child(1):checked ~ .carousel__nav label:nth-child(1),
 .carousel input:nth-child(2):checked ~ .carousel__nav label:nth-child(2),
 .carousel input:nth-child(3):checked ~ .carousel__nav label:nth-child(3) {
@@ -1098,8 +1118,8 @@ footer {
     position: relative;
     /* width: 100%;
     max-width: 500px; */
-    margin: 32px auto;
-    overflow: hidden;
+	margin: 32px auto;
+	overflow: visible; /* allow dots and controls positioned outside the box */
     /* border-radius: 8px; */
     /* box-shadow: 0 4px 24px rgba(0,0,0,0.08); */
     /* background: #fff; */
@@ -1958,7 +1978,6 @@ footer p {
 
 /* grid / gaps */
 .grid { display: grid; }
-.md\:grid-cols-2 { /* fallback: will be applied at md+ breakpoint */ }
 .gap-10 { gap: 2.5rem; }
 .flex { display: flex; }
 .items-center { align-items: center; }
@@ -2174,3 +2193,148 @@ a.transition { transition: color 0.15s ease; }
 	margin-top: 1rem;
 	max-width: 600px;
 }
+
+.carousel {
+  position: relative;
+  width: calc(100% - 40px);
+  max-width: 900px;
+  height: var(--carousel-height);
+  margin: 0 auto;
+  /* padding: 0 20px; */
+  display: flex;
+  align-items: center;
+}
+
+/** Previous/next buttons ********/
+.previous,
+.next {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/* larger hit area and visual spacing around the chevrons */
+	padding: 0px;
+	/* margin: 0; */
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	font-size: 32px;
+
+	border: 0;
+	background: transparent;
+	/* border-radius: 8px; */
+	transition: background-color 150ms ease, transform 120ms ease;
+}
+
+.previous svg,
+.next svg {
+	display: block; /* remove inline descenders */
+	width: 50px; /* consistent visual size */
+	height: 50px;
+}
+
+.previous:hover,
+.next:hover {
+	background-color: rgba(0,0,0,0.06);
+	transform: translateY(-50%) scale(1.03);
+}
+
+.previous { 
+	left: 10px;
+}
+.next { right: 10px; }
+
+/** Slides track ***************/
+.slides {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+/** Individual slides ***********/
+.slide {
+	flex: 0 0 100%; /* one slide visible at a time */
+	margin: 0 5px;
+	/* padding: 20px; */
+	height: 300px;
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	line-height: 26px;
+	background-color: white;
+}
+
+.slide p {
+	margin: 20px 20px;
+}
+
+/* Ensure carousel images fit inside slides without being cropped */
+.slides .slide img,
+.slide img {
+	display: block;
+	max-width: 100%;
+	/* width: auto; */
+	height: 100%;
+	object-fit: contain; /* show the whole image */
+	margin: 0 auto;
+}
+
+  @media screen and (max-width: 768px) {
+    .slide {
+      font-size: 14px;
+      line-height: 18px;
+      align-items: flex-start;
+    }
+  }
+
+  .slide a {
+    color: black;
+    font-weight: bold;
+  }
+
+/** Slide dots ******************/
+.navigation {
+	position: absolute;
+	left: 0;
+	bottom: -40px;
+
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.navigation li {
+	display: inline-block;
+}
+
+.navigation li button {
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	border: 0;
+	border-radius: 100px;
+	background-color: rgba(0,0,0,.2);
+	cursor: pointer;
+}
+
+	.navigation li button:focus {
+	outline-offset: 4px;
+	}
+
+	/** Active slide dot */
+	.navigation li button[aria-current="true"] {
+	background-color: black;
+	width: 15px;
+	height: 15px;
+	}
