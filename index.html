@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kaleigh Spitzer - UX/UI Designer</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:wght@400;500&family=Crimson+Text:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -20,7 +19,7 @@
 	</script>
 </head>
 <body>
-    <header class="site-header">
+    <header class="header">
         <div class="container header-inner">
             <a href="index.html" class="logo">Kaleigh Spitzer</a>
 
@@ -30,7 +29,7 @@
                 <span></span>
             </button>
 
-            <nav class="nav-links">
+            <nav class="nav">
                 <a href="#work">Work</a>
                 <a href="about.html">About</a>
                 <a href="#contact">Contact</a>
@@ -38,75 +37,72 @@
         </div>
     </header>
 
-	<section class="container mx-auto px-6 lg:px-12 pt-16 pb-24">
-        <h1 class="hero-heading lg:w-3/4 mb-8">
-            <span class="text-gray-400">UX/UI Designer & Engineer.</span> <br class="hidden sm:block">
-			Designing at the intersection of <span class="text-pink">people, data, and code</span>.
-        </h1>
-        <p class="text-xl font-medium max-w-3xl text-gray-700">
-            Leveraging 2 years of experience built on a foundation in Computer Science & Statistics. 
-        </p>
-		</br>
-		<p class="text-xl font-medium max-w-3xl text-gray-700">
-			Currently studying HCI at DePaul.
-        </p>
+	<section class="hero">
+    	<div class="container">
+			<h1 style="color: var(--color-secondary)">
+			<span>UX/UI Designer & Engineer</span>
+			</h1>
+			<h1>
+			Designing at the intersection of <span class="highlight">people, data, and code</span>.
+			</h1>
+			<p class="subtitle">
+				Leveraging 2 years of experience built on a foundation in Computer Science & Statistics.
+			</p>
+			<p class="subtitle">
+				Currently studying Human–Computer Interaction at DePaul University.
+			</p>
+    	</div>
     </section>
 
-	<section id="work" class="container mx-auto px-6 lg:px-12 py-16">
-        <h2 class="text-3xl font-extrabold mb-12 text-gray-800">
-            Selected Work
-        </h2>
-
-        <!-- Changed grid to md:grid-cols-2 for consistent block width -->
-        <div class="grid md:grid-cols-2 gap-10">
-
-			<div>
-                <a href="lscc.html" class="work-block-link">
-                    <!-- VISUAL BLOCK (Color Focused) -->
-                    <div class="work-visual flex items-center justify-center">
-                         <img src="images/LSCC/thumbnail.png" alt="LSCC mockup" class="w-full h-full object-cover">
-                    </div>
-                    <!-- TEXT DESCRIPTION -->
-                    <div class="pt-4 mt-4">
-                        <div class="mb-2 flex flex-wrap gap-2">
-							<span class="text-xs font-semibold uppercase text-pink">UX/UI Design</span>
-						</div>
-                        <h3 class="work-block-title text-gray-900">
-                            Connecting a Chicago Community Through the Logan Square Chamber of Commerce Website Redesign
-                        </h3>
-                    </div>
-                </a>
-            </div>
-        </div>
-	</section>
-
-	<section id="contact" class="container mx-auto px-6 lg:px-12 py-16">
-        <div class="lg:w-3/4">
-            <h2 class="text-4xl font-extrabold text-gray-900 mb-6">
-                Let's Connect.
-            </h2>
-            <p class="text-lg text-gray-700 mb-8">
-                I'm seeking opportunities where I can bridge design and engineering. I bring the rare combination of design thinking, technical fluency, and data literacy - so I don't just design systems, I help build them.
-            </p>
-            <div class="flex space-x-6">
-                <a href="mailto:kaleighspitz@gmail.com" class="text-lg font-bold text-pink hover:text-pink-800 transition">
-                    Email me →
-                </a>
-                <a href="Spitzer_Resume 2025.09.06 v2.pdf" class="text-lg font-bold text-gray-600 hover:text-gray-800 transition">
-                    View resume →
-                </a>
-                <a href="https://www.linkedin.com/in/kaleighs724/" class="text-lg font-bold text-gray-600 hover:text-gray-800 transition">
-                    LinkedIn →
-                </a>
-				<a href="https://www.instagram.com/kaleigh_design/" class="text-lg font-bold text-gray-600 hover:text-gray-800 transition">
-                    Instagram →
-                </a>
-            </div>
-        </div>
+	<section id="work" class="work">
+		<div class="container">
+			<h2>Selected Work</h2>
+			<div class="work-grid">
+			<article class="work-card">
+				<a href="lscc.html" class="work-link">
+				<div class="work-image">
+					<img src="images/LSCC/thumbnail.png" alt="LSCC mockup">
+				</div>
+				<div class="work-content">
+					<span class="tag">UX/UI Design</span>
+					<span class="tag">Development</span>
+					<h3>
+					Connecting a Chicago Community Through the Logan Square Chamber of Commerce Website Redesign
+					</h3>
+				</div>
+				</a>
+			</article>
+			</div>
+		</div>
     </section>
 
-    <footer class="container mx-auto px-6 py-8 text-sm text-gray-500 border-t border-gray-100 mt-12">
-        <p>&copy; 2025 Kaleigh Spitzer. Designed with ❤️ in Chicago.</p>
+	<section id="contact" class="contact">
+		<div class="container narrow">
+			<h2>Let’s Connect</h2>
+			<p>
+			I’m seeking opportunities where I can bridge design and engineering. I bring a rare combination of design thinking, technical fluency, and data literacy — so I don’t just design systems, I help build them.
+			</p>
+			<div class="contact-links">
+				<a href="mailto:kaleighspitz@gmail.com" class="primary-link">Email me →</a>
+				<a href="Spitzer_Resume 2025.09.06 v2.pdf">View résumé →</a>
+				<a href="https://www.linkedin.com/in/kaleighs724/">LinkedIn →</a>
+				<a href="https://www.instagram.com/kaleigh_design/">Instagram →</a>
+			</div>
+		</div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="mailto:kaleighspitz@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/kaleighs724/">LinkedIn</a>
+                <a href="https://www.instagram.com/kaleigh_design/">Instagram</a>
+                <a href="Spitzer_Resume 2025.09.06 v2.pdf">Résumé</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Kaleigh Spitzer · Designed with <span class="footer-heart">❤️</span> in Chicago</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
