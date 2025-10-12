@@ -554,10 +554,25 @@ section:last-of-type {
 	font-size: 1.25rem;
 }
 
+/* List Styles */
+ul, ol {
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    color: var(--base1);
+}
+
+li {
+    margin-bottom: 0.75rem;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
 .challenge-solution ul, .challenge-solution li {
-	margin: 1rem 0;
-	margin-left: 1.5rem;
-	color: var(--base1);
+    margin: 1rem 0;
+    margin-left: 1.5rem;
+    color: var(--base1);
 }
 
 /* Key Takeaways */
