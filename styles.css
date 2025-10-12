@@ -399,10 +399,17 @@ footer a:hover {
 
 /* Case Study Styles */
 .case-study-hero {
-	padding: 5rem 5%;
 	max-width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 	background-color: var(--base03);
+	padding: 4rem 0 5rem;
+}
+
+.case-study-hero-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 5%;
 }
 
 .case-study-hero h1 {
@@ -449,9 +456,15 @@ footer a:hover {
 
 /* Content Sections */
 .content-wrapper {
-	padding: 5rem 5%;
-	max-width: 1200px;
+	width: 100%;
 	margin: 0 auto;
+}
+
+.content-wrapper > section {
+	max-width: 900px;
+	margin: 0 auto;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 section {
@@ -497,6 +510,8 @@ section:last-of-type {
 
 .sub-heading {
 	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 1rem;
 }
 
 /* Challenge/Solution blocks */
@@ -648,76 +663,6 @@ section:last-of-type {
 	color: var(--green);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-	/* Homepage responsive styles */
-	.hero h1 {
-		font-size: 2.5rem;
-	}
-
-	.work-container {
-		grid-template-columns: 1fr;
-	}
-
-	nav {
-		padding: 1.5rem 5%;
-	}
-
-	nav ul {
-		gap: 1.5rem;
-		font-size: 0.9rem;
-	}
-
-	.hero {
-		padding: 4rem 5%;
-	}
-
-	.hero-info {
-		flex-direction: column;
-		gap: 1.5rem;
-	}
-
-	.connect-links {
-		gap: 1rem;
-		flex-direction: column;
-	}
-
-	.connect-link {
-		width: 100%;
-		justify-content: center;
-	}
-
-	/* Case study responsive styles */
-	.case-study-hero h1 {
-		font-size: 2rem;
-	}
-
-	.case-study-hero .subtitle {
-		font-size: 1rem;
-	}
-
-	h2 {
-		font-size: 1.5rem;
-	}
-
-	.challenge-solution {
-		grid-template-columns: 1fr;
-	}
-
-	.cta-buttons {
-		flex-direction: column;
-	}
-
-	.btn {
-		width: 100%;
-	}
-
-	.hero-metadata {
-		grid-template-columns: 1fr;
-		gap: 1.5rem;
-	}
-}
-
 /* HOMEPAGE MEDIA QUERIES */
 
 @media (max-width: 768px) {
@@ -729,9 +674,6 @@ section:last-of-type {
         grid-template-columns: 1fr;
     }
 
-    nav {
-        padding: 1.5rem 5%;
-    }
 
     nav ul {
         gap: 1.5rem;
@@ -791,9 +733,9 @@ section:last-of-type {
         gap: 1.5rem;
     }
 
-    nav {
+    /* nav {
         padding: 1.5rem 5%;
-    }
+    } */
 
     nav ul {
         gap: 1.5rem;
@@ -832,9 +774,9 @@ section:last-of-type {
         justify-content: center;
     }
 
-    nav {
+    /* nav {
         padding: 1.5rem 5%;
-    }
+    } */
 
     nav ul {
         gap: 1.5rem;
