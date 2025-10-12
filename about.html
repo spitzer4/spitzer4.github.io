@@ -3,90 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaleigh Spitzer - UX/UI Designer</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:wght@400;500&family=Crimson+Text:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>About Kaleigh Spitzer</title>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:wght@400;500&family=Crimson+Text:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 	<script src="script.js" defer></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body class="mx-auto">
-    <header class="header">
-        <div class="container header-inner">
+<body>
+    <nav>
+        <div class="nav-inner">
             <a href="index.html" class="logo">Kaleigh Spitzer</a>
-
-            <button class="hamburger" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav class="nav">
-                <a href="index.html#work">Work</a>
-                <a href="about.html">About</a>
-                <a href="index.html#contact">Contact</a>
-            </nav>
+            <ul>
+                <li><a href="index.html#work">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-	<section class="section hero">
-        <div class="container about-grid">
-            <div class="about-intro">
-                <h1>
-                    I design products that scale because I understand how they are engineered.
-                </h1>
-                <p class="subtitle">
-                    My work is not just about visual polish, but about optimizing the underlying system, data flow, and technical dependencies.
-                </p>
-            </div>
-            
-            <div class="about-visual">
-                <div class="card">
-                    <img src="images/headshotbw.png" alt="Photo of Kaleigh Spitzer">
-                </div>
-            </div>
+    <div class="about-hero">
+        <div class="hero-text">
+            <h1>I design products that scale because I understand how they are engineered.</h1>
+            <p>My work is not just about visual polish, but about optimizing the underlying system, data flow, and technical dependencies.</p>
         </div>
-    </section>
+        <div class="hero-image">
+            <div class="image-accent"></div>
+            <img src="images/headshotbw.png" alt="Kaleigh Spitzer headshot">
+        </div>
+    </div>
 
-    <section class="about-section">
-        <div class="container section-content">
-            <div>
-                <h3 class="sub-heading">My Foundation</h3>
+    <div class="content-wrapper">
+        <section id="foundation">
+            <div class="section-header">
+                <div class="section-label">My Foundation</div>
                 <h2>Bridging Disciplines</h2>
             </div>
-            <div class="space-y-4">
-                <p>
-                    My journey from <strong>Computer Science</strong> showed me the necessity of logical, modular architecture. It ensures designs are not just aesthetically pleasing but are <strong>efficiently deployable and maintainable</strong> at scale.
-                </p>
-                <p>
-                    My background in <strong>Statistics</strong> taught me that every design decision must be validated by measurable user behavior. This analytical rigor transforms subjective preference into objective, <strong>data-driven optimization</strong>.
-                </p>
-                <p>
-                    UX design is the practice where these disciplines converge, allowing me to build products that are technically sound, measurably effective, and a pleasure to use.
-                </p>
-            </div>
-        </div>
-    </section>
 
-    <section class="about-cta">
-        <div class="container">
-            <h2>Let's Collaborate.</h2>
-            <p>
-                I'm looking for a UX role where technical fluency and data-driven thinking aren't just nice-to-haves — they're core to the work. If your team values designers who can <strong>bridge disciplines</strong> and bring <strong>analytical rigor</strong> to the process, I'd love to connect.
-            </p>
-            <div class="contact-links">
-                <a href="mailto:kaleighspitz@gmail.com" class="primary-link">Email me →</a>
-                <a href="Spitzer_Resume 2025.09.06 v2.pdf">View résumé →</a>
-                <a href="https://www.linkedin.com/in/kaleighs724/">LinkedIn →</a>
-                <a href="https://www.instagram.com/kaleigh_design/">Instagram →</a>
-            </div>
-        </div>
-    </section>
+            <p>My journey from <strong>Computer Science</strong> showed me the necessity of logical, modular architecture. It ensures designs are not just aesthetically pleasing but are efficiently deployable and maintainable at scale.</p>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Kaleigh Spitzer. Designed with ❤️ in Chicago.</p>
+            <p>My background in <strong>Statistics</strong> taught me that every design decision must be validated by measurable user behavior. This analytical rigor transforms subjective preference into objective, <span class="highlight-green">data-driven optimization</span>.</p>
+
+            <p><strong>UX design</strong> is the practice where these disciplines converge, allowing me to build products that are technically sound, measurably effective, and a pleasure to use.</p>
+
+        </section>
+
+    </div>
+
+    <div class="about-cta">
+        <h2 class="cta-title">Let's Collaborate.</h2>
+        <p class="cta-text">I'm looking for a UX role where technical fluency and data-driven thinking aren't just nice-to-haves — they're core to the work. If your team values designers who bridge disciplines and bring analytical rigor to the process, I'd love to connect.</p>
+        
+        <div class="cta-links">
+            <a href="mailto:hello@kaleighspitzer.com" class="cta-link">✉ Email me</a>
+            <a href="#" class="cta-link">📄 View résumé</a>
+            <a href="#" class="cta-link">💼 LinkedIn</a>
+            <a href="#" class="cta-link">📸 Instagram</a>
         </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Kaleigh Spitzer • Designed with <span style="color: var(--red);">❤</span> in Chicago</p>
+        <p style="margin-top: 1rem;">
+            <a href="mailto:kaleighspitz@gmail.com">Email</a> • 
+			<a href="Spitzer_Resume 2025.09.06 v2.pdf">Résumé</a> •
+            <a href="https://www.linkedin.com/in/kaleighs724/">LinkedIn</a> • 
+            <a href="https://www.instagram.com/kaleigh_design/">Instagram</a>
+        </p>
     </footer>
 </body>
 </html>
