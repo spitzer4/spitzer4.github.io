@@ -120,13 +120,26 @@ nav a:hover {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 4rem;
-	align-items: center;
+	align-items: start;
 }
 
 .hero-image {
 	position: relative;
 	overflow: hidden;
-	/* border-radius: 12px; */
+	max-width: 400px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.about-hero p {
+	margin: 2rem 0;
+	font-size: 1.1rem;
+}
+
+.about-hero img {
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 .about-cta {
@@ -466,6 +479,10 @@ section {
 	border-bottom: 1px solid var(--base02);
 }
 
+section p {
+	margin: 1.5rem 0;
+}
+
 section:last-of-type {
 	border-bottom: none;
 }
@@ -743,11 +760,18 @@ section:last-of-type {
 @media (max-width: 768px) {
     .about-hero {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 3rem;
+        padding: 4rem 5%;
     }
 
     .hero-text h1 {
         font-size: 2rem;
+    }
+
+    .hero-image {
+        max-width: 300px;
+        margin: 0 auto;
+        order: -1;
     }
 
     h2 {
