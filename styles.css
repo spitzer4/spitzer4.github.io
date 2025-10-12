@@ -399,9 +399,9 @@ footer a:hover {
 
 /* Case Study Styles */
 .case-study-hero {
-	max-width: 1200px;
+	/* max-width: 1200px;
 	width: 100%;
-	margin: 0 auto;
+	margin: 0 auto; */
 	background-color: var(--base03);
 	padding: 4rem 0 5rem;
 }
@@ -456,16 +456,14 @@ footer a:hover {
 
 /* Content Sections */
 .content-wrapper {
+	/* width: 100%;
+	margin: 0; */
+	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
+	padding: 0 5%;
 }
 
-.content-wrapper > section {
-	max-width: 900px;
-	margin: 0 auto;
-	padding-left: 5%;
-	padding-right: 5%;
-}
 
 section {
 	padding: 4rem 0;
