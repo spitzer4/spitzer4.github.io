@@ -413,3 +413,124 @@ footer {
     background-color: var(--secondary-text);
     color: var(--background-color);
 }
+
+/* =========== Mobile Menu Styles =========== */
+
+.menu-toggle {
+    display: none; /* Hidden by default, shown only in mobile media query */
+	position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* padding: 0.5rem; */
+    z-index: 1001; /* Ensure it's above the menu */
+    align-items: center;
+    justify-content: center;
+	width: 40px;
+    height: 40px; 
+}
+
+.hamburger {
+    position: relative;    
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-text);
+    transition: background-color 0.3s ease;
+	margin: 0 auto;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+	left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-text);
+    transition: transform 0.3s ease;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+/* Transform the hamburger into a close 'X' */
+.menu-open .hamburger {
+    background-color: transparent;
+}
+
+.menu-open .hamburger::before {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-open .hamburger::after {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    header {
+        /* Keep existing header rules for flex/alignment */
+        flex-direction: row; /* Ensure logo and toggle are horizontal */
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* Display the hamburger button */
+    .menu-toggle {
+        display: flex;        /* show on mobile */
+        width: 44px;          /* hit area for accessibility */
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        position: relative;   /* anchor if you want absolute centering of child */
+    }
+    
+    /* Full-screen menu overlay */
+    .main-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--background-color);
+        z-index: 999;
+        display: none; /* Initially hidden */
+        padding-top: 5rem;
+        overflow-y: auto;
+    }
+
+    /* Display the menu when the 'menu-open' class is applied to the body */
+    .menu-open .main-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Stack links vertically */
+        gap: 2.5rem;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .main-nav ul li a {
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 0.5rem 0;
+        display: block;
+    }
+
+    /* Hiding elements that shouldn't scroll with the menu */
+    .menu-open body {
+        overflow: hidden; /* Prevents background scrolling when menu is open */
+    }
+}
